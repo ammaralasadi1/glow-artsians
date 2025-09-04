@@ -17,6 +17,9 @@
          * Accent (Gold): #D4AF37 (A rich, warm gold)
          * Secondary (Light): #F5F5F5 (Winter White / Soft Cream)
         */
+      html {
+        scroll-behavior: smooth;
+      }
       body {
         font-family: "Lato", sans-serif;
         background-color: #f5f5f5;
@@ -38,7 +41,7 @@
         border-color: #d4af37;
       }
       .hero-section {
-        background-image: url(assets/images/glow-atisan-hero-image.jpg);
+        background-image: url("assets/images/hero-image.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -92,7 +95,13 @@
         <nav class="hidden md:flex space-x-6 items-center">
           <a href="#process" class="hover:text-gold transition">Our Process</a>
           <a href="#portfolio" class="hover:text-gold transition">Portfolio</a>
-          <a href="#why-us" class="hover:text-gold transition">Why Us</a>
+          <a href="our-story.html" class="hover:text-gold transition"
+            >Our Story</a
+          >
+          <a href="#client-acclaim" class="hover:text-gold transition"
+            >Client Acclaim</a
+          >
+          <a href="#faq" class="hover:text-gold transition">FAQ</a>
           <a href="#contact" class="btn btn-outline text-sm"
             >Get a Consultation</a
           >
@@ -124,7 +133,13 @@
         <a href="#portfolio" class="block py-2 px-4 hover:bg-gray-700"
           >Portfolio</a
         >
-        <a href="#why-us" class="block py-2 px-4 hover:bg-gray-700">Why Us</a>
+        <a href="our-story.html" class="block py-2 px-4 hover:bg-gray-700"
+          >Our Story</a
+        >
+        <a href="#client-acclaim" class="block py-2 px-4 hover:bg-gray-700"
+          >Client Acclaim</a
+        >
+        <a href="#faq" class="block py-2 px-4 hover:bg-gray-700">FAQ</a>
         <a href="#contact" class="block py-2 px-4 mt-2 btn btn-gold w-full"
           >Get a Consultation</a
         >
@@ -269,32 +284,32 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Replace with your actual photos -->
           <img
-            src="/assets/images/A professional, magazine-quality photograph taken at blue hour of an upscale home, focusing on the architectural peaks and gables. The image features elegant and cohesive warm white, commercial-grade LED holiday lighting that is perfectly i.jpg"
+            src="assets/images/portfolio-roof-line.jpg"
             alt="Elegant Roofline Lighting"
             class="rounded-lg shadow-lg gallery-img"
           />
           <img
-            src="assets/images/professional, magazine-quality photograph taken at blue hour, showcasing the front lawn of a luxury property. The image features elegant and cohesive warm white, commercial-grade LED holiday lighting, with several large, mature trees expert.jpg"
+            src="assets/images/portfolio-tree-wrap.jpg"
             alt="Warm Tree Wraps"
             class="rounded-lg shadow-lg gallery-img"
           />
           <img
-            src="assets/images/A professional, magazine-quality photograph taken at blue hour, centered on the grand entrance of a stately home. The image features elegant and cohesive warm white, commercial-grade LED holiday lighting woven into thick garlands that wrap .jpg"
+            src="assets/images/portfolio-enterance.jpg"
             alt="Grand Entrance Lighting"
             class="rounded-lg shadow-lg gallery-img"
           />
           <img
-            src="assets/images/A professional, magazine-quality photograph taken at blue hour of a contemporary home that blends clean architectural lines with natural materials like warm wood and textured stone. The image features elegant and cohesive warm white, commer.jpg"
+            src="assets/images/portfolio-modern-design.jpg"
             alt="Modern Home Lighting Design"
             class="rounded-lg shadow-lg gallery-img"
           />
           <img
-            src="/assets/images/A professional, magazine-quality photograph taken at blue hour of a classic two-story brick colonial home. The image features elegant and cohesive warm white, commercial-grade LED holiday lighting that outlines the symmetrical roofline and .jpg"
+            src="assets/images/potrfolio-brick-colonial.jpg"
             alt="Classic Brick Colonial Lighting"
             class="rounded-lg shadow-lg gallery-img"
           />
           <img
-            src="/assets/images/A professional, magazine-quality photograph taken during blue hour of an upscale commercial storefront or office building. The image showcases elegant and cohesive warm white, commercial-grade LED C9 holiday lighting that meticulously outli.jpg"
+            src="assets/images/portfolio-commercial.jpg"
             alt="Subtle Landscape Accents"
             class="rounded-lg shadow-lg gallery-img"
           />
@@ -308,7 +323,7 @@
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="rounded-lg shadow-xl overflow-hidden">
             <img
-              src="assets/images/A professional, clean photograph focusing on a uniformed installer's hands carefully and meticulously attaching a commercial-grade lighting clip to the gutter of an upscale home. The installer is wearing clean work gloves and a uniform  (1).jpg"
+              src="https://placehold.co/800x600/1a1a1a/d4af37?text=Our+Promise"
               alt="Glow Artisans Professional Team"
               class="w-full h-full object-cover"
             />
@@ -365,7 +380,7 @@
                   </p>
                 </div>
               </li>
-              <li class="flex items-start">
+              <li class="flex items.start">
                 <svg
                   class="w-6 h-6 text-gold mr-4 flex-shrink-0 mt-1"
                   fill="none"
@@ -393,204 +408,152 @@
         </div>
       </div>
     </section>
-    <section id="faq" class="py-20 px-6">
-      <div class="container mx-auto max-w-4xl">
+
+    <!-- 6. "Client Acclaim" Section -->
+    <section id="client-acclaim" class="py-20 px-6">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-serif-display mb-4">Client Acclaim</h2>
+        <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
+        <div class="grid md:grid-cols-3 gap-8 text-left">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+            <img
+              src="https://placehold.co/600x400/002b49/d4af37?text=McLean+Home"
+              alt="Beautifully lit home in McLean"
+              class="rounded-lg mb-6"
+            />
+            <blockquote class="text-gray-600 italic mb-4 flex-grow">
+              "Working with Glow Artisans was an absolute dream. The process was
+              seamless and professional from start to finish. They transformed
+              our home into something truly magical for the holidays."
+            </blockquote>
+            <cite
+              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
+            >
+              Sarah K.<br />
+              <span class="text-sm text-gray-500 font-normal">McLean, VA</span>
+            </cite>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+            <img
+              src="https://placehold.co/600x400/003459/d4af37?text=Great+Falls+Estate"
+              alt="Beautifully lit estate in Great Falls"
+              class="rounded-lg mb-6"
+            />
+            <blockquote class="text-gray-600 italic mb-4 flex-grow">
+              "The quality and attention to detail are simply unmatched. Our
+              home has never looked better, and the compliments from our
+              neighbors haven't stopped. We will be clients for life."
+            </blockquote>
+            <cite
+              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
+            >
+              David L.<br />
+              <span class="text-sm text-gray-500 font-normal"
+                >Great Falls, VA</span
+              >
+            </cite>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col">
+            <img
+              src="https://placehold.co/600x400/00233b/d4af37?text=Vienna+Residence"
+              alt="Beautifully lit residence in Vienna"
+              class="rounded-lg mb-6"
+            />
+            <blockquote class="text-gray-600 italic mb-4 flex-grow">
+              "I can't overstate the peace of mind that comes with their
+              white-glove service. Knowing everything is handled safely and
+              professionally is priceless. Highly recommended."
+            </blockquote>
+            <cite
+              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
+            >
+              Jennifer R.<br />
+              <span class="text-sm text-gray-500 font-normal">Vienna, VA</span>
+            </cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. REDESIGNED FAQ Section -->
+    <section id="faq" class="py-20 px-6 bg-white">
+      <div class="container mx-auto max-w-5xl">
         <h2 class="text-4xl font-serif-display text-center mb-4">
           Frequently Asked Questions
         </h2>
         <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
-        <div class="space-y-4">
-          <!-- FAQ Item 1 -->
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >Are you fully licensed and insured?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10 text-left">
+          <!-- Column 1 -->
+          <div class="space-y-8">
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Are you fully licensed and insured?
+              </h4>
               <p class="text-gray-600">
-                Absolutely. Glow Artisans is a fully licensed business in the
-                state of Virginia and carries comprehensive general liability
-                insurance to protect your property and our team. We believe in
-                complete professionalism and peace of mind for our clients.
+                Absolutely. Glow Artisans is a fully licensed business in
+                Virginia and carries comprehensive general liability insurance
+                to protect your property and our team, ensuring complete peace
+                of mind.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                What kind of lights and materials do you use?
+              </h4>
+              <p class="text-gray-600">
+                We exclusively use premium, commercial-grade LED lights. Unlike
+                store-bought lights, our products are more durable, shine
+                brighter, and are far more energy-efficient and reliable for a
+                flawless display.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                What happens if a bulb burns out?
+              </h4>
+              <p class="text-gray-600">
+                Our white-glove service includes proactive maintenance. While
+                our lights are extremely reliable, if any issue arises, we will
+                promptly send a technician to make repairs at no additional
+                cost.
               </p>
             </div>
           </div>
-          <!-- FAQ Item 2 -->
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >Can I see a mock-up on my home before committing?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
+          <!-- Column 2 -->
+          <div class="space-y-8">
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Can I see a mock-up on my home first?
+              </h4>
               <p class="text-gray-600">
-                Yes! Our design process is centered around your vision. After
-                our initial consultation, we provide a digital rendering of our
+                Yes. Our design process includes a digital rendering of our
                 proposed design on a photo of your home. This ensures you can
-                visualize and approve the final look before we begin any
-                installation work.
+                visualize and approve the final look before we begin
+                installation.
               </p>
             </div>
-          </div>
-          <!-- Add the rest of the FAQs in the same format -->
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >What kind of lights and materials do you use?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Will your installation methods cause any damage?
+              </h4>
               <p class="text-gray-600">
-                We exclusively use premium, commercial-grade LED lights and
-                materials. Unlike store-bought lights, our products are more
-                durable, shine significantly brighter, and are far more
-                energy-efficient and reliable, ensuring a flawless display all
-                season long.
+                No. Protecting your home is our top priority. We use a variety
+                of industry-best, non-damaging clips and attachment methods
+                specifically chosen for your home's surfaces, never using
+                staples or nails.
               </p>
             </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >Will your installation methods cause any damage?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
-              <p class="text-gray-600">
-                Protecting your home is our top priority. We use a variety of
-                industry-best, non-damaging clips and attachment methods that
-                are specifically chosen for your home's surfaces, whether it's
-                gutters, shingles, or brick. We never use staples or nails that
-                could cause permanent damage.
-              </p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >What happens if a bulb burns out during the season?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
-              <p class="text-gray-600">
-                Our service is truly "white-glove." While our commercial-grade
-                lights are extremely reliable, if any part of your display
-                malfunctions, simply contact us. We provide proactive
-                maintenance and will promptly send a technician to make repairs
-                at no additional cost.
-              </p>
-            </div>
-          </div>
-          <div class="bg-white rounded-lg shadow-md">
-            <button
-              class="faq-question w-full flex justify-between items-center text-left p-6"
-            >
-              <span class="text-lg font-bold"
-                >Do you handle takedown and storage?</span
-              >
-              <svg
-                class="w-6 h-6 flex-shrink-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                ></path>
-              </svg>
-            </button>
-            <div class="faq-answer px-6 pb-6">
+            <div>
+              <h4 class="font-bold text-lg mb-2">
+                Do you handle takedown and storage?
+              </h4>
               <p class="text-gray-600">
                 Yes, our all-inclusive service includes complete post-season
-                takedown. We carefully remove all lights, label them for your
-                specific property, and store them in our secure,
-                climate-controlled facility. This ensures they remain in perfect
-                condition and makes re-installation next year even more
+                takedown. We carefully label, check, and store all materials in
+                our secure facility, making re-installation next year even more
                 efficient.
               </p>
             </div>
@@ -599,7 +562,7 @@
       </div>
     </section>
 
-    <!-- 6. Final CTA Section -->
+    <!-- 8. Final CTA Section -->
     <section id="contact" class="bg-charcoal text-white py-20 px-6">
       <div class="container mx-auto text-center max-w-3xl">
         <h2 class="text-4xl font-serif-display mb-4">
@@ -616,7 +579,7 @@
       </div>
     </section>
 
-    <!-- 7. Footer -->
+    <!-- 9. Footer -->
     <footer class="bg-black text-gray-400 py-12 px-6">
       <div class="container mx-auto text-center">
         <p class="text-2xl font-serif-display text-gold mb-4">Glow Artisans</p>
@@ -651,7 +614,7 @@
             >
               <path
                 fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.728.058-1.033.048-1.63.2-2.113.385a3.27 3.27 0 00-1.18.812 3.27 3.27 0 00-.812 1.18c-.185.483-.337 1.08-.385 2.113-.048.98-.058 1.325-.058 3.728s.01 2.748.058 3.728c.048 1.033.2 1.63.385 2.113a3.27 3.27 0 00.812 1.18 3.27 3.27 0 001.18.812c.483.185 1.08.337 2.113.385.98.048 1.325.058 3.728.058s2.748-.01 3.728-.058c1.033-.048 1.63-.2 2.113-.385a3.27 3.27 0 001.18-.812 3.27 3.27 0 00.812-1.18c.185-.483.337-1.08.385-2.113.048-.98.058-1.325.058-3.728s-.01-2.748-.058-3.728c-.048-1.033-.2-1.63-.385-2.113a3.27 3.27 0 00-.812-1.18 3.27 3.27 0 00-1.18-.812c-.483-.185-1.08-.337-2.113-.385-.98-.048-1.325-.058-3.728-.058z"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.728.058-1.033.048-1.63.2-2.113.385a3.27 3.27 0 00-1.18.812 3.27 3.27 0 00-.812 1.18c-.185.483-.337 1.08-.385 2.113-.048.98-.058 1.325-.058 3.728s.01 2.748.058 3.728c.048 1.033.2 1.63.385 2.113a3.27 3.27 0 00.812 1.18 3.27 3.27 0 001.18.812c.483.185 1.08.337 2.113.385.98.048 1.325.058 3.728.058s2.748-.01 3.728-.058c1.033-.048 1.63-.2 2.113-.385a3.27 3.27 0 001.18-.812 3.27 3.27 0 00.812-1.18c.185-.483-.337-1.08-.385-2.113.048-.98.058-1.325-.058-3.728s-.01-2.748-.058-3.728c-.048-1.033-.2-1.63-.385-2.113a3.27 3.27 0 00-.812-1.18 3.27 3.27 0 00-1.18-.812c-.483-.185-1.08-.337-2.113-.385-.98-.048-1.325-.058-3.728-.058z"
                 clip-rule="evenodd"
               />
               <path
@@ -669,26 +632,11 @@
     </footer>
 
     <script>
-      // Mobile menu toggle
+      // --- Mobile menu toggle ---
       const mobileMenuButton = document.getElementById("mobile-menu-button");
       const mobileMenu = document.getElementById("mobile-menu");
       mobileMenuButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
-      });
-
-      // --- FAQ Accordion Logic ---
-      const faqQuestions = document.querySelectorAll(".faq-question");
-      faqQuestions.forEach((question) => {
-        question.addEventListener("click", () => {
-          const answer = question.nextElementSibling;
-          question.classList.toggle("open");
-
-          if (answer.style.maxHeight) {
-            answer.style.maxHeight = null;
-          } else {
-            answer.style.maxHeight = answer.scrollHeight + "px";
-          }
-        });
       });
     </script>
   </body>
