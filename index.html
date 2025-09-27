@@ -1221,49 +1221,48 @@
     </footer>
 
     <!-- AOS (Animate on Scroll) Library JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-      </scrip>
-          <script>
-            // --- Mobile menu toggle ---
-            const mobileMenuButton = document.getElementById("mobile-menu-button");
-            const mobileMenu = document.getElementById("mobile-menu");
-            mobileMenuButton.addEventListener("click", () => {
-              mobileMenu.classList.toggle("hidden");
-            });
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // --- Mobile menu toggle ---
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
 
-            // --- Gentle Parallax Snowfall & Sparkle Logic ---
-            document.addEventListener("DOMContentLoaded", () => {
-              const snowContainer = document.getElementById("snow-container");
-              if (snowContainer) {
-                // ... snow logic ...
-              }
-            });
+      // --- Gentle Parallax Snowfall & Sparkle Logic ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const snowContainer = document.getElementById("snow-container");
+        if (snowContainer) {
+          // ... snow logic ...
+        }
+      });
 
-            // --- Initialize AOS ---
-            AOS.init({
-              duration: 800,
-              once: true,
-            });
+      // --- Initialize AOS ---
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
 
-            // --- Guiding Star Logic ---
-            const guidingStar = document.getElementById("guiding-star");
+      // --- Guiding Star Logic ---
+      const guidingStar = document.getElementById("guiding-star");
 
-            window.addEventListener("scroll", () => {
-              if (!guidingStar) return;
-              const scrollTotal =
-                document.documentElement.scrollHeight - window.innerHeight;
-              const scrollPosition = window.scrollY;
-              if (scrollPosition > 50) {
-                guidingStar.style.opacity = "1";
-                const starY =
-                  (scrollPosition / scrollTotal) * (window.innerHeight + 50);
-                guidingStar.style.transform = `translateY(${starY}px) rotate(${
-                  scrollPosition / 10
-                }deg)`;
-              } else {
-                guidingStar.style.opacity = "0";
-              }
-            });
+      window.addEventListener("scroll", () => {
+        if (!guidingStar) return;
+        const scrollTotal =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 50) {
+          guidingStar.style.opacity = "1";
+          const starY =
+            (scrollPosition / scrollTotal) * (window.innerHeight + 50);
+          guidingStar.style.transform = `translateY(${starY}px) rotate(${
+            scrollPosition / 10
+          }deg)`;
+        } else {
+          guidingStar.style.opacity = "0";
+        }
+      });
     </script>
   </body>
 </html>
