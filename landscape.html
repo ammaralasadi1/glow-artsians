@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0c0c" />
 
     <!-- Optimized SEO Title: Brand + Primary Keyword + Location -->
     <title>Artisan Landscape Lighting Northern Virginia | Glow Artisans</title>
@@ -36,7 +37,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
 
-    <!-- Local Business Schema (Rich Snippet Optimization) -->
+    <!-- Local Business Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -82,6 +83,40 @@
       }
     </script>
 
+    <!-- FAQ Schema for Voice Search & SERP -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you service historical estates in Great Falls and McLean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We specialize in heritage properties and use non-invasive installation methods specifically designed to protect mature root systems and historic masonry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between standard LEDs and your 2700K lighting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard LEDs often emit a cold, blueish light (3000K-5000K) that can feel clinical. We exclusively use 2700K warm-white fixtures that mimic the inviting glow of halogen or candlelight, perfect for residential warmth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does installation damage my existing landscaping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We utilize a surgical installation method that carefully lifts sod and weaves wiring beneath the soil. Your lawn is restored to its pristine condition immediately after we finish."
+            }
+          }
+        ]
+      }
+    </script>
+
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23D4AF37' d='M50,0 L60,40 L100,50 L60,60 L50,100 L40,60 L0,50 L40,40 Z' /></svg>"
@@ -92,13 +127,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
 
-    <!-- Fonts: Swapped for display performance -->
+    <!-- Preload LCP Image -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1920"
+    />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Tailwind (CDN for demo, would be purged in build) -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Icons & Animation -->
@@ -128,6 +170,7 @@
         -webkit-font-smoothing: antialiased;
         font-weight: 400;
       }
+
       .font-serif-display {
         font-family: "Playfair Display", serif;
       }
@@ -151,7 +194,7 @@
         color: #0c0c0c;
       }
 
-      /* Artisan Aura Cursor - Hidden on Touch Devices for Performance */
+      /* Artisan Aura Cursor */
       @media (pointer: fine) {
         #artisan-aura {
           position: fixed;
@@ -218,49 +261,7 @@
         color: #d4af37;
       }
 
-      /* Concierge Nav Remote */
-      #nav-toggle {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 60px;
-        height: 60px;
-        background: rgba(12, 12, 12, 0.95);
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        border-radius: 50%;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-        transition: all 0.4s ease;
-        -webkit-tap-highlight-color: transparent;
-      }
-      #nav-toggle:hover {
-        border-color: #d4af37;
-        transform: scale(1.05);
-      }
-      #nav-toggle .bar {
-        width: 24px;
-        height: 1px;
-        background: #d4af37;
-        position: absolute;
-        transition: all 0.3s ease;
-      }
-      #nav-toggle .bar-1 {
-        transform: translateY(-4px);
-      }
-      #nav-toggle .bar-2 {
-        transform: translateY(4px);
-      }
-      #nav-toggle.active .bar-1 {
-        transform: rotate(45deg);
-      }
-      #nav-toggle.active .bar-2 {
-        transform: rotate(-45deg);
-      }
-
+      /* Navigation Overlay */
       #nav-overlay {
         position: fixed;
         inset: 0;
@@ -294,33 +295,6 @@
       .overlay-link:hover {
         color: #d4af37;
         transform: translateX(10px);
-      }
-
-      /* Mobile Concierge Sticky Button */
-      #mobile-concierge {
-        position: fixed;
-        bottom: 30px;
-        left: 30px;
-        width: 60px;
-        height: 60px;
-        background: #d4af37;
-        color: #0c0c0c;
-        border-radius: 50%;
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-        transform: translateY(150%);
-        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-      #mobile-concierge.visible {
-        transform: translateY(0);
-      }
-      @media (min-width: 1024px) {
-        #mobile-concierge {
-          display: none;
-        }
       }
 
       /* Invitational Cards (Minimalist Noir) */
@@ -661,23 +635,7 @@
   <body class="antialiased">
     <div id="artisan-aura"></div>
 
-    <!-- Concierge Navigation Toggle -->
-    <div id="nav-toggle" aria-label="Open Navigation Menu">
-      <div class="bar bar-1"></div>
-      <div class="bar bar-2"></div>
-      <span
-        class="absolute -top-8 text-[9px] uppercase tracking-[0.4em] text-gold font-bold opacity-0 transition-opacity"
-        id="toggle-label"
-        >Menu</span
-      >
-    </div>
-
-    <!-- Mobile Concierge Sticky Button -->
-    <a href="contact.html" id="mobile-concierge" aria-label="Book Consultation">
-      <i class="fa-regular fa-calendar-check text-xl"></i>
-    </a>
-
-    <!-- Artistic Navigation Overlay -->
+    <!-- Artistic Navigation Overlay (Unified Content) -->
     <nav id="nav-overlay" aria-hidden="true">
       <div
         class="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 max-h-screen overflow-y-auto py-10"
@@ -696,9 +654,9 @@
           </div>
         </div>
 
-        <!-- Right Side: Branding & Direct CTA -->
+        <!-- Right Side: Branding & Direct CTA (Unified for Mobile) -->
         <div
-          class="hidden lg:flex flex-col border-l border-white/10 pl-20 justify-between py-10"
+          class="flex flex-col lg:border-l lg:border-white/10 lg:pl-20 justify-between py-10 gap-10 lg:gap-0 border-t border-white/10 lg:border-t-0 pt-10 lg:pt-10"
         >
           <div>
             <span
@@ -757,8 +715,10 @@
       </div>
     </nav>
 
-    <!-- Header Navigation -->
-    <header class="py-4 md:py-6 px-6 md:px-12 fixed w-full z-50">
+    <!-- Header Navigation with Classic Hamburger -->
+    <header
+      class="py-4 md:py-6 px-6 md:px-12 fixed w-full z-[1001] pointer-events-none transition-all duration-300"
+    >
       <div class="container mx-auto flex justify-between items-center">
         <a href="index.html" class="group pointer-events-auto z-50">
           <span
@@ -766,6 +726,8 @@
             >GLOW ARTISANS</span
           >
         </a>
+
+        <!-- Desktop Nav -->
         <nav class="hidden lg:flex space-x-6 items-center pointer-events-auto">
           <a href="#archetypes" class="nav-link">Services</a>
           <a href="#glow-path" class="nav-link">Our Process</a>
@@ -798,6 +760,15 @@
             >Request Private Demo</a
           >
         </nav>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button
+          id="header-menu-trigger"
+          class="lg:hidden text-gold text-2xl focus:outline-none pointer-events-auto transition-transform duration-300"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </button>
       </div>
     </header>
 
@@ -806,9 +777,13 @@
       <!-- Hero Background Image -->
       <div class="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1920"
+          src="assets/images/landscape-lighting/hero-2.png"
           class="w-full h-full object-cover opacity-60"
           alt="Luxury Northern Virginia Estate at Night"
+          fetchpriority="high"
+          loading="eager"
+          width="1920"
+          height="1080"
         />
         <!-- Gradient Overlay to ensure text readability -->
         <div
@@ -819,7 +794,7 @@
       <div id="hero-reveal-light"></div>
       <canvas
         id="particle-canvas"
-        class="absolute inset-0 pointer-events-none opacity-40 z-10"
+        class="absolute inset-0 pointer-events-none opacity-100 z-10"
       ></canvas>
       <div
         class="hero-content relative z-20 text-center px-4 max-w-5xl mx-auto"
@@ -835,7 +810,8 @@
           class="text-white text-sm md:text-base uppercase tracking-[0.2em] md:tracking-[0.6em] mt-8 leading-relaxed font-bold"
           id="shimmer-sub"
         >
-          Premier Landscape Lighting in Northern Virginia & Washington D.C.
+          Custom landscape lighting for homes in Northern Virginia. Design,
+          installation, and maintenance.
         </h2>
 
         <div
@@ -911,19 +887,23 @@
       <!-- Background Texture -->
       <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <img
-          src="https://images.unsplash.com/photo-1510925758641-869d353cecc7?auto=format&fit=crop&q=80&w=1500"
+          src="assets/images/landscape-lighting/services-background.png"
           class="w-full h-full object-cover"
           alt="Artisan Texture"
+          loading="lazy"
+          decoding="async"
+          width="1500"
+          height="1000"
         />
       </div>
       <div class="container mx-auto max-w-7xl relative z-10">
         <div class="mb-16 md:mb-20" data-aos="fade-up">
           <span
             class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block italic"
-            >Our Artisan Offerings</span
+            >Signature Services</span
           >
           <h2 class="text-4xl md:text-5xl font-serif-display text-white">
-            Luminous Compositions
+            Landscape Lighting Solutions
           </h2>
         </div>
         <div
@@ -932,61 +912,61 @@
           <article class="archetype-card group">
             <div class="archetype-num">I</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Luminous Design
+              Custom Landscape Design
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Custom lighting compositions that blend technical mastery with the
-              unique character of your estate.
+              Tailored lighting plans that match your home's
+              <strong>unique architecture</strong>.
             </p>
           </article>
           <article class="archetype-card group">
             <div class="archetype-num">II</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Architectural Reveal
+              Home Façade Lighting
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Expertly grazing stone, columns, and peaks to ensure your home's
-              grandeur never sleeps.
+              Expertly grazing stone, columns, and peaks to showcase your
+              <strong>home's grandeur</strong> at night.
             </p>
           </article>
           <article class="archetype-card group">
             <div class="archetype-num">III</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Al Fresco Sanctuaries
+              Outdoor Living Spaces
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Creating warm, inviting retreat spaces for evening hosting and
-              private family relaxation.
+              Warm, inviting lighting for <strong>patios and pools</strong>,
+              perfect for evening hosting.
             </p>
           </article>
           <article class="archetype-card group">
             <div class="archetype-num">IV</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Sylvan Portraits
+              Tree & Garden Illumination
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Artistic landscape lighting that utilizes light and shadow to
-              bring your heritage trees to life.
+              Artistic illumination that brings your
+              <strong>heritage trees</strong> and gardens to life.
             </p>
           </article>
           <article class="archetype-card group">
             <div class="archetype-num">V</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Invisible Outdoor Audio
+              Hidden Outdoor Audio Systems
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Premium architectural sound hidden within your landscape for an
-              immersive sensory environment.
+              High-performance <strong>outdoor audio systems</strong> concealed
+              within your landscape.
             </p>
           </article>
           <article class="archetype-card group">
             <div class="archetype-num">VI</div>
             <h3 class="text-2xl font-serif-display text-white mb-2">
-              Commercial Composition
+              Commercial Outdoor Lighting
             </h3>
             <p class="text-white/90 text-base leading-relaxed">
-              Sophisticated evening presence for Northern Virginia businesses
-              that demand an elite aesthetic.
+              Professional evening lighting for businesses that require an
+              <strong>elite aesthetic</strong>.
             </p>
           </article>
         </div>
@@ -1016,23 +996,21 @@
             <div data-aos="fade-right" class="text-left">
               <span
                 class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
-                >Transformation Spotlight</span
+                >Project Spotlight</span
               >
               <h3
                 class="text-3xl md:text-4xl font-serif-display mb-6 text-white text-left"
               >
-                The Georgian Reveal:<br /><span
-                  class="italic font-light text-gold"
-                  >McLean, Virginia</span
+                Georgian Estate:<br /><span class="italic font-light text-gold"
+                  >Landscape Lighting in McLean, VA</span
                 >
               </h3>
               <p
                 class="text-white/90 text-reading mb-10 leading-relaxed text-left"
               >
-                We transformed this 12,000 sq. ft. Georgian masterpiece into a
-                local landmark. By utilizing 2700K warm-white LED technology, we
-                ensured its architectural grandeur is visible from the Potomac
-                approach.
+                We transformed this Georgian home into a nighttime landmark.
+                Using warm-white light, we highlighted the architecture so it
+                stands out from the street.
               </p>
 
               <div class="invitational-card mb-12">
@@ -1049,12 +1027,13 @@
             </div>
             <div class="relative" data-aos="zoom-in">
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000"
+                src="/assets/images/landscape-lighting/project-spotlight.png"
                 class="rounded opacity-90 w-full h-auto"
                 alt="Luxury Landscape Lighting Design McLean Virginia Georgian Estate"
                 width="800"
                 height="600"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -1074,16 +1053,12 @@
             <h2
               class="text-4xl md:text-5xl font-serif-display mb-8 leading-tight text-black"
             >
-              Elegance Over<br /><span class="italic text-gold"
-                >The Clinical.</span
-              >
+              Warmth Over<br /><span class="italic text-gold">Glare.</span>
             </h2>
             <p class="text-black/80 text-reading leading-relaxed mb-8">
-              Avoid the clinical, blueish glare of standard LEDs that can make a
-              home feel cold and exposed. We exclusively utilize a curated
-              warm-spectrum palette—matching the inviting radiance of a
-              flickering fireplace—to bathe your estate in a perpetual "Golden
-              Hour" glow.
+              Avoid the cold, blue glare of standard LEDs. We use warm, 2700K
+              lights that mimic the glow of a fireplace, making your home feel
+              welcoming, not exposed.
             </p>
             <p class="text-black/70 text-lg leading-relaxed mb-10">
               Our expertise lies in recommending the proper intensity and hue
@@ -1104,12 +1079,13 @@
           </div>
           <div class="relative" data-aos="fade-left">
             <img
-              src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=800"
+              src="/assets/images/landscape-lighting/glow over cilincal.png"
               class="rounded border border-black/5 w-full h-auto"
               alt="Warm LED Outdoor Lighting Northern Virginia"
               width="800"
               height="1000"
               loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -1139,20 +1115,26 @@
               <span>Drag to Illuminate</span>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1575517111478-7f6afd0973db?auto=format&fit=crop&q=80&w=1600"
+              src="/assets/images/landscape-lighting/slider-after.png"
               class="comparison-img"
               alt="Estate Home Before Landscape Lighting"
               loading="lazy"
+              decoding="async"
+              width="1600"
+              height="900"
             />
             <div
               class="comparison-img comparison-overlay overflow-hidden"
               id="slider-overlay"
             >
               <img
-                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1600"
+                src="/assets/images/landscape-lighting/slider-before.png"
                 class="w-[100vw] h-[60vh] object-cover max-w-none"
                 alt="Estate Home After Landscape Lighting Installation"
                 loading="lazy"
+                decoding="async"
+                width="1600"
+                height="900"
               />
             </div>
             <div class="slider-handle" id="slider-handle">
@@ -1185,30 +1167,31 @@
         >
           <div class="relative order-2 md:order-1" data-aos="fade-right">
             <img
-              src="https://images.unsplash.com/photo-1621905238291-08823efe207e?auto=format&fit=crop&q=80&w=800"
+              src="/assets/images/landscape-lighting/services-background.png"
               class="rounded grayscale w-full h-auto"
               alt="Solid Brass Landscape Lighting Fixtures"
               width="800"
               height="1000"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="order-1 md:order-2 text-left" data-aos="fade-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
-              >The Brass Standard</span
+              >Built to Last</span
             >
             <h2
               class="text-4xl md:text-5xl font-serif-display mb-8 text-white text-left"
             >
-              Metals of Heritage.
+              Solid Brass & Copper Fixtures.
             </h2>
             <p
               class="text-white/90 text-reading mb-12 leading-relaxed text-left"
             >
-              Plastic and aluminum are temporary. We build for generations using
-              marine-grade <strong>Solid Brass and Copper</strong> that age into
-              a distinguished patina, becoming part of your home’s history.
+              Plastic and aluminum don't last. We use marine-grade
+              <strong>Solid Brass and Copper</strong> fixtures that age
+              beautifully and withstand the elements for generations.
             </p>
           </div>
         </div>
@@ -1227,16 +1210,14 @@
             <h2
               class="text-4xl md:text-5xl font-serif-display mb-6 leading-tight text-black text-left"
             >
-              Vigilance,<br /><span class="italic text-gold"
-                >Beautifully Rendered.</span
-              >
+              Security &<br /><span class="italic text-gold">Aesthetics.</span>
             </h2>
             <p
               class="text-black/80 text-reading leading-relaxed mb-12 text-left"
             >
-              Intruders thrive in shadows. We eliminate blind spots with a soft,
-              intentional wash of light that provides 4K camera clarity without
-              the harsh, invasive glare of commercial floodlights.
+              A well-lit home is a safer home. We eliminate dark corners with
+              <strong>low-voltage security lighting</strong> that improves
+              visibility and camera clarity without harsh floodlights.
             </p>
 
             <div
@@ -1258,12 +1239,13 @@
           </div>
           <div class="relative" data-aos="fade-left">
             <img
-              src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80&w=800"
+              src="/assets/images/landscape-lighting/security-well-house and garden.png"
               class="rounded border border-black/5 w-full h-auto"
               alt="Security Landscape Lighting Northern Virginia"
               width="800"
               height="600"
               loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -1276,30 +1258,31 @@
         <div class="grid lg:grid-cols-2 gap-24 items-center text-left">
           <div class="relative order-2 lg:order-1" data-aos="fade-right">
             <img
-              src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&q=80&w=800"
-              class="rounded grayscale opacity-70 w-full h-auto"
+              src="/assets/images/landscape-lighting/maintinance program.png"
+              class="rounded opacity-70 w-full h-auto"
               alt="Landscape Lighting Maintenance Concierge"
               width="800"
               height="1000"
               loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="order-1 lg:order-2 text-left" data-aos="fade-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
-              >GlowCare Stewardship</span
+              >Lifetime Maintenance</span
             >
             <h2
               class="text-4xl md:text-5xl font-serif-display mb-8 text-white text-left"
             >
-              The Stewardship of Light.
+              Lighting Maintenance & Care.
             </h2>
             <p
               class="text-white/90 text-reading leading-relaxed mb-12 text-left"
             >
-              A lightscape is a living element. Through GlowCare, we provide
-              proactive detailing and seasonal re-aiming to ensure your garden's
-              growth never obscures your home's brilliance.
+              Gardens grow and lights need care. Our GlowCare plans include
+              seasonal adjustments and cleaning to ensure your system always
+              performs like new.
             </p>
 
             <div class="invitational-card text-left">
@@ -1329,7 +1312,7 @@
         <h2
           class="text-4xl md:text-5xl font-serif-display mb-16 text-black text-left"
         >
-          Effortless Command.
+          Smart Landscape Lighting Control.
         </h2>
         <div class="grid md:grid-cols-3 gap-8 md:gap-12 text-left mb-20">
           <div class="p-8 border border-black/10 rounded" data-aos="fade-up">
@@ -1361,7 +1344,7 @@
                 Total Integration
               </h3>
               <p class="text-black/80 text-base text-left leading-relaxed">
-                Seamless command via
+                Seamless <strong>smart lighting control</strong> via
                 <strong>Lutron, Control4, and Crestron</strong> systems.
               </p>
             </div>
@@ -1375,7 +1358,7 @@
             <h3
               class="font-bold uppercase tracking-widest text-xs mb-4 text-black text-left"
             >
-              Seasonal Scenes
+              Custom Lighting Scenes
             </h3>
             <p class="text-black/80 text-base text-left leading-relaxed">
               Adjust ambiance from "Summer Social" to "Winter Security" with one
@@ -1423,7 +1406,7 @@
             >Concierge Experience</span
           >
           <h2 class="text-4xl md:text-6xl font-serif-display text-white">
-            The Glow Path
+            Our Process
           </h2>
         </div>
         <div class="grid md:grid-cols-4 gap-8 text-left mb-20 relative">
@@ -1434,12 +1417,20 @@
               01
             </p>
             <h3 class="text-white uppercase font-bold text-sm mb-4">
-              The Vision Call
+              Consultation
             </h3>
-            <p class="text-white/80 text-base leading-relaxed">
-              A respectful conversation to align architectural goals and ensure
-              your property's character is the priority.
-            </p>
+            <ul
+              class="text-white/80 text-base leading-relaxed list-inside space-y-2"
+            >
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> We discuss
+                your aesthetic goals
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> Design plan
+                prioritizing character
+              </li>
+            </ul>
           </div>
           <div
             class="p-6 md:p-10 rounded relative group"
@@ -1452,12 +1443,20 @@
               02
             </p>
             <h3 class="text-white uppercase font-bold text-sm mb-4">
-              The Dusk Preview
+              Live Demo
             </h3>
-            <p class="text-white/80 text-base leading-relaxed">
-              Experience a live demonstration of your design risk-free, before a
-              single permanent wire is laid into the soil.
-            </p>
+            <ul
+              class="text-white/80 text-base leading-relaxed list-inside space-y-2"
+            >
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> See the
+                lights before you buy
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> No permanent
+                wires, just a preview
+              </li>
+            </ul>
           </div>
           <div
             class="p-6 md:p-10 rounded relative group"
@@ -1470,12 +1469,20 @@
               03
             </p>
             <h3 class="text-white uppercase font-bold text-sm mb-4">
-              Artisan Execution
+              Expert Installation
             </h3>
-            <p class="text-white/80 text-base leading-relaxed">
-              Our specialized team works like ghosts, utilizing surgical methods
-              to leave only light behind—no trace of our visit remains.
-            </p>
+            <ul
+              class="text-white/80 text-base leading-relaxed list-inside space-y-2"
+            >
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> Surgical,
+                non-invasive methods
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> Pristine lawn
+                after departure
+              </li>
+            </ul>
           </div>
           <div
             class="p-6 md:p-10 rounded relative group"
@@ -1488,12 +1495,20 @@
               04
             </p>
             <h3 class="text-white uppercase font-bold text-sm mb-4">
-              The Midnight Handover
+              Final Adjustments
             </h3>
-            <p class="text-white/80 text-base leading-relaxed">
-              Precision aiming at dusk and final smart-home scene creation as
-              your estate officially assumes its evening identity.
-            </p>
+            <ul
+              class="text-white/80 text-base leading-relaxed list-inside space-y-2"
+            >
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> Precise
+                aiming at dusk
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5 text-[8px]">●</span> Smart control
+                setup & training
+              </li>
+            </ul>
           </div>
         </div>
         <div class="flex justify-center pt-10 md:pt-20" data-aos="fade-up">
@@ -1554,10 +1569,11 @@
               class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
             >
               <img
-                src="https://images.unsplash.com/photo-1615811361269-669243c15853?auto=format&fit=crop&q=80&w=600"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
+                src="/assets/images/landscape-lighting/before-installation.png"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
                 alt="Surgical Installation Method"
                 loading="lazy"
+                decoding="async"
               />
               <div
                 class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors duration-500"
@@ -1572,10 +1588,11 @@
               class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
             >
               <img
-                src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=600"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale hover:grayscale-0"
+                src="/assets/images/landscape-lighting/after-installation.png"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
                 alt="Restored Lawn"
                 loading="lazy"
+                decoding="async"
               />
               <div
                 class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors duration-500"
@@ -1743,9 +1760,12 @@
                 Beyond the Primary Corridor?
               </h4>
               <p class="text-white/80 text-lg leading-relaxed mb-10">
-                While our primary corridor ensures rapid concierge response, we
-                evaluate select high-value commissions throughout Virginia on a
-                case-by-case basis.
+                While we prioritize
+                <strong
+                  >landscape lighting projects in Great Falls, McLean, Vienna,
+                  and Reston</strong
+                >, we evaluate select high-value commissions throughout Northern
+                Virginia on a case-by-case basis.
               </p>
               <a
                 href="contact.html"
@@ -1774,6 +1794,59 @@
         <cite class="font-bold uppercase tracking-widest text-xs text-white/80"
           >— The Sterling Family, Great Falls</cite
         >
+      </div>
+    </section>
+
+    <!-- 15. FAQ SECTION -->
+    <section class="py-24 px-6 bg-[#0c0c0c] border-t border-white/5">
+      <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
+            >Concierge FAQ</span
+          >
+          <h2 class="text-4xl font-serif-display text-white">
+            Common Inquiries
+          </h2>
+        </div>
+        <div class="space-y-8">
+          <div class="border-b border-white/10 pb-8" data-aos="fade-up">
+            <h3 class="text-xl font-serif-display text-white mb-4">
+              Do you service historical estates in Great Falls and McLean?
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Yes. We specialize in heritage properties and use non-invasive
+              installation methods specifically designed to protect mature root
+              systems and historic masonry.
+            </p>
+          </div>
+          <div
+            class="border-b border-white/10 pb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-serif-display text-white mb-4">
+              What is the difference between standard LEDs and your 2700K
+              lighting?
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Standard LEDs often emit a cold, blueish light (3000K-5000K) that
+              can feel clinical. We exclusively use 2700K warm-white fixtures
+              that mimic the inviting glow of halogen or candlelight, perfect
+              for residential warmth.
+            </p>
+          </div>
+          <div class="pb-8" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-xl font-serif-display text-white mb-4">
+              Does installation damage my existing landscaping?
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              No. We utilize a surgical installation method that carefully lifts
+              sod and weaves wiring beneath the soil. Your lawn is restored to
+              its pristine condition immediately after we finish.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1812,7 +1885,8 @@
         GLOW ARTISANS
       </p>
       <p class="text-[9px] uppercase tracking-[0.4em] font-bold text-center">
-        Northern Virginia's Elite Landscape Lighting
+        Northern Virginia's Elite Landscape Lighting serving Great Falls, McLean
+        & Vienna
       </p>
       <div class="mt-8 flex justify-center items-center space-x-6">
         <a
@@ -1845,293 +1919,334 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-        disable: "mobile",
-      });
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          duration: 800,
+          once: true,
+          disable: "mobile",
+        });
 
-      // Header Scroll
-      window.addEventListener(
-        "scroll",
-        () => {
-          const header = document.querySelector("header");
-          if (window.scrollY > 100) header.classList.add("scrolled");
-          else header.classList.remove("scrolled");
-        },
-        { passive: true }
-      );
-
-      // Mobile Concierge Sticky Button Logic
-      const mobileConcierge = document.getElementById("mobile-concierge");
-      if (mobileConcierge) {
+        // Header Scroll
         window.addEventListener(
           "scroll",
           () => {
-            // Show after scrolling past 500px
-            if (window.scrollY > 500) {
-              mobileConcierge.classList.add("visible");
-            } else {
-              mobileConcierge.classList.remove("visible");
-            }
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
           },
           { passive: true }
         );
-      }
 
-      // Magnetic Button Effect (Desktop Only)
-      if (window.matchMedia("(pointer: fine)").matches) {
-        const magneticBtns = document.querySelectorAll(".magnetic-btn");
-        magneticBtns.forEach((btn) => {
-          btn.addEventListener("mousemove", (e) => {
-            const rect = btn.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
+        // Magnetic Button Effect (Desktop Only) - OPTIMIZED for Layout Thrashing
+        if (window.matchMedia("(pointer: fine)").matches) {
+          const magneticBtns = document.querySelectorAll(".magnetic-btn");
+          magneticBtns.forEach((btn) => {
+            let rect = btn.getBoundingClientRect();
 
-            // Subtle movement
-            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-          });
-
-          btn.addEventListener("mouseleave", () => {
-            btn.style.transform = "translate(0px, 0px)";
-          });
-        });
-      }
-
-      // Glow Path Line Scroll Animation
-      const pathLine = document.getElementById("active-path-line");
-      const pathSection = document.getElementById("glow-path");
-
-      if (pathLine && pathSection) {
-        window.addEventListener(
-          "scroll",
-          () => {
-            const rect = pathSection.getBoundingClientRect();
-            const windowHeight = window.innerHeight;
-
-            if (rect.top < windowHeight && rect.bottom > 0) {
-              const scrollStart = windowHeight * 0.8;
-              const scrollEnd = -rect.height * 0.5;
-              let progress =
-                (scrollStart - rect.top) / (scrollStart - scrollEnd);
-              progress = Math.max(0, Math.min(1, progress));
-              pathLine.strokeDashoffset = 1 - progress;
-            }
-          },
-          { passive: true }
-        );
-      }
-
-      // Nav Toggle
-      const navToggle = document.getElementById("nav-toggle");
-      const navOverlay = document.getElementById("nav-overlay");
-      navToggle.addEventListener("click", () => {
-        const isActive = navOverlay.classList.toggle("active");
-        navToggle.classList.toggle("active");
-        navOverlay.setAttribute("aria-hidden", !isActive);
-        document.body.style.overflow = isActive ? "hidden" : "";
-      });
-
-      // Artisan Aura (Desktop Only)
-      const aura = document.getElementById("artisan-aura");
-      if (window.matchMedia("(pointer: fine)").matches) {
-        document.addEventListener(
-          "mousemove",
-          (e) => {
-            requestAnimationFrame(() => {
-              aura.style.opacity = "1";
-              aura.style.left = e.clientX + "px";
-              aura.style.top = e.clientY + "px";
+            // Recalculate on hover entry (avoids layout thrashing during move)
+            btn.addEventListener("mouseenter", () => {
+              rect = btn.getBoundingClientRect();
             });
-          },
-          { passive: true }
-        );
-      }
 
-      // Hero Reveal Treatment
-      const hero = document.getElementById("hero-canvas");
-      const revealLight = document.getElementById("hero-reveal-light");
-      const shimmerText = document.getElementById("shimmer-text");
+            // Handle window resize
+            window.addEventListener(
+              "resize",
+              () => {
+                rect = btn.getBoundingClientRect();
+              },
+              { passive: true }
+            );
 
-      if (hero && window.matchMedia("(pointer: fine)").matches) {
-        hero.addEventListener(
-          "mousemove",
-          (e) => {
-            requestAnimationFrame(() => {
-              const rect = hero.getBoundingClientRect();
-              revealLight.style.left = e.clientX - rect.left + "px";
-              revealLight.style.top = e.clientY - rect.top + "px";
-              revealLight.style.opacity = "1";
-              const moveX = (e.clientX / window.innerWidth) * 100;
-              shimmerText.style.backgroundPosition = `${moveX}% 50%`;
-              shimmerText.style.color = `rgba(255, 255, 255, ${
-                0.15 + Math.random() * 0.15
-              })`;
-            });
-          },
-          { passive: true }
-        );
+            btn.addEventListener(
+              "mousemove",
+              (e) => {
+                // Use cached rect
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
 
-        hero.addEventListener("mouseleave", () => {
-          revealLight.style.opacity = "0";
-          shimmerText.style.color = `rgba(255, 255, 255, 0.15)`;
-        });
-      }
+                // Subtle movement
+                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+              },
+              { passive: true }
+            );
 
-      /* --- OPTIMIZED PARTICLE CANVAS --- */
-      const canvas = document.getElementById("particle-canvas");
-      if (canvas) {
-        const ctx = canvas.getContext("2d", { alpha: true });
-        let particles = [];
-        let isAnimating = true;
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            isAnimating = entry.isIntersecting;
-            if (isAnimating) animate();
+            btn.addEventListener(
+              "mouseleave",
+              () => {
+                btn.style.transform = "translate(0px, 0px)";
+              },
+              { passive: true }
+            );
           });
-        });
-        observer.observe(canvas);
-
-        function resize() {
-          canvas.width = window.innerWidth;
-          canvas.height = window.innerHeight;
         }
-        window.addEventListener("resize", resize);
-        resize();
 
-        class Particle {
-          constructor() {
-            this.reset();
+        // Glow Path Line Scroll Animation
+        const pathLine = document.getElementById("active-path-line");
+        const pathSection = document.getElementById("glow-path");
+
+        if (pathLine && pathSection) {
+          // Initialize path length for cross-browser consistency if pathLength="1" fails,
+          // but since we rely on CSS stroke-dasharray: 1, let's assume pathLength works or fix it via JS.
+          // The safer "fix" for visual glitches is just the property access.
+
+          window.addEventListener(
+            "scroll",
+            () => {
+              const rect = pathSection.getBoundingClientRect();
+              const windowHeight = window.innerHeight;
+
+              if (rect.top < windowHeight && rect.bottom > 0) {
+                const scrollStart = windowHeight * 0.8;
+                const scrollEnd = -rect.height * 0.5;
+                let progress =
+                  (scrollStart - rect.top) / (scrollStart - scrollEnd);
+                progress = Math.max(0, Math.min(1, progress));
+
+                // FIXED: Use style.strokeDashoffset instead of direct property
+                pathLine.style.strokeDashoffset = 1 - progress;
+              }
+            },
+            { passive: true }
+          );
+        }
+
+        // Nav Overlay Logic (Shared by Desktop & Mobile)
+        const headerMenuTrigger = document.getElementById(
+          "header-menu-trigger"
+        );
+        const navOverlay = document.getElementById("nav-overlay");
+        const menuIcon = document.getElementById("menu-icon");
+
+        const toggleMenu = () => {
+          const isActive = navOverlay.classList.toggle("active");
+
+          if (menuIcon) {
+            if (isActive) {
+              menuIcon.classList.remove("fa-bars");
+              menuIcon.classList.add("fa-xmark");
+            } else {
+              menuIcon.classList.remove("fa-xmark");
+              menuIcon.classList.add("fa-bars");
+            }
           }
-          reset() {
-            this.x = Math.random() * canvas.width;
-            this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 2 + 0.5;
-            this.speedX = Math.random() * 0.5 - 0.25;
-            this.speedY = Math.random() * 0.5 - 0.25;
-            this.life = Math.random() * 1;
-            this.opacity = Math.random() * 0.5;
+
+          navOverlay.setAttribute("aria-hidden", !isActive);
+          document.body.style.overflow = isActive ? "hidden" : "";
+        };
+
+        if (headerMenuTrigger)
+          headerMenuTrigger.addEventListener("click", toggleMenu);
+
+        // Close menu when a link is clicked
+        const overlayLinks = document.querySelectorAll(".overlay-link");
+        overlayLinks.forEach((link) => {
+          link.addEventListener("click", toggleMenu);
+        });
+
+        // Artisan Aura (Desktop Only)
+        const aura = document.getElementById("artisan-aura");
+        if (window.matchMedia("(pointer: fine)").matches) {
+          document.addEventListener(
+            "mousemove",
+            (e) => {
+              requestAnimationFrame(() => {
+                aura.style.opacity = "1";
+                aura.style.left = e.clientX + "px";
+                aura.style.top = e.clientY + "px";
+              });
+            },
+            { passive: true }
+          );
+        }
+
+        // Hero Reveal Treatment
+        const hero = document.getElementById("hero-canvas");
+        const revealLight = document.getElementById("hero-reveal-light");
+        const shimmerText = document.getElementById("shimmer-text");
+
+        if (hero && window.matchMedia("(pointer: fine)").matches) {
+          hero.addEventListener(
+            "mousemove",
+            (e) => {
+              requestAnimationFrame(() => {
+                const rect = hero.getBoundingClientRect();
+                revealLight.style.left = e.clientX - rect.left + "px";
+                revealLight.style.top = e.clientY - rect.top + "px";
+                revealLight.style.opacity = "1";
+                const moveX = (e.clientX / window.innerWidth) * 100;
+                shimmerText.style.backgroundPosition = `${moveX}% 50%`;
+                shimmerText.style.color = `rgba(255, 255, 255, ${
+                  0.15 + Math.random() * 0.15
+                })`;
+              });
+            },
+            { passive: true }
+          );
+
+          hero.addEventListener("mouseleave", () => {
+            revealLight.style.opacity = "0";
+            shimmerText.style.color = `rgba(255, 255, 255, 0.15)`;
+          });
+        }
+
+        /* --- OPTIMIZED PARTICLE CANVAS --- */
+        const canvas = document.getElementById("particle-canvas");
+        if (canvas) {
+          const ctx = canvas.getContext("2d", { alpha: true });
+          let particles = [];
+          let isAnimating = true;
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              isAnimating = entry.isIntersecting;
+              if (isAnimating) animate();
+            });
+          });
+          observer.observe(canvas);
+
+          function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
           }
-          update() {
-            this.x += this.speedX;
-            this.y += this.speedY;
-            this.life -= 0.002;
-            if (
-              this.life <= 0 ||
-              this.x < 0 ||
-              this.x > canvas.width ||
-              this.y < 0 ||
-              this.y > canvas.height
-            ) {
+          window.addEventListener("resize", resize);
+          resize();
+
+          class Particle {
+            constructor() {
               this.reset();
             }
-          }
-          draw() {
-            ctx.fillStyle = `rgba(212, 175, 55, ${this.opacity * this.life})`;
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fill();
-          }
-        }
-
-        const particleCount = window.innerWidth < 768 ? 30 : 60;
-        for (let i = 0; i < particleCount; i++) particles.push(new Particle());
-
-        function animate() {
-          if (!isAnimating) return;
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          particles.forEach((p) => {
-            p.update();
-            p.draw();
-          });
-          requestAnimationFrame(animate);
-        }
-        animate();
-      }
-
-      // Robust Slider Logic with Interaction Overlay
-      const sliderRoot = document.getElementById("slider-root");
-      const sliderOverlay = document.getElementById("slider-overlay");
-      const sliderHandle = document.getElementById("slider-handle");
-      const sliderCTA = document.getElementById("slider-cta");
-      const sliderSuccessCTA = document.getElementById("slider-success-cta");
-
-      if (sliderRoot) {
-        let isDragging = false;
-        let hasInteracted = false;
-
-        const revealSuccessCTA = () => {
-          if (!hasInteracted) {
-            hasInteracted = true;
-            // Fade out instruction
-            if (sliderCTA) sliderCTA.style.opacity = "0";
-            // Reveal button
-            if (sliderSuccessCTA) {
-              sliderSuccessCTA.style.opacity = "1";
-              sliderSuccessCTA.style.pointerEvents = "auto";
-              sliderSuccessCTA.style.bottom = "-80px"; // Ensure position is correct
-              // Small timeout to animate translation/appearance if needed, but opacity is simple
+            reset() {
+              this.x = Math.random() * canvas.width;
+              this.y = Math.random() * canvas.height;
+              this.size = Math.random() * 2 + 0.5;
+              this.speedX = Math.random() * 0.5 - 0.25;
+              this.speedY = Math.random() * 0.5 - 0.25;
+              this.life = Math.random() * 1;
+              this.opacity = Math.random() * 0.5;
+            }
+            update() {
+              this.x += this.speedX;
+              this.y += this.speedY;
+              this.life -= 0.002;
+              if (
+                this.life <= 0 ||
+                this.x < 0 ||
+                this.x > canvas.width ||
+                this.y < 0 ||
+                this.y > canvas.height
+              ) {
+                this.reset();
+              }
+            }
+            draw() {
+              ctx.fillStyle = `rgba(212, 175, 55, ${this.opacity * this.life})`;
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+              ctx.fill();
             }
           }
-        };
 
-        const updateSlider = (clientX) => {
-          const rect = sliderRoot.getBoundingClientRect();
-          const x = clientX - rect.left;
-          let percent = (x / rect.width) * 100;
-          if (percent < 0) percent = 0;
-          if (percent > 100) percent = 100;
+          const particleCount = window.innerWidth < 768 ? 30 : 60;
+          for (let i = 0; i < particleCount; i++)
+            particles.push(new Particle());
 
-          sliderOverlay.style.width = percent + "%";
-          sliderHandle.style.left = percent + "%";
-        };
+          function animate() {
+            if (!isAnimating) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p) => {
+              p.update();
+              p.draw();
+            });
+            requestAnimationFrame(animate);
+          }
+          animate();
+        }
 
-        const startDrag = (e) => {
-          isDragging = true;
-          revealSuccessCTA();
-          updateSlider(e.clientX || e.touches[0].clientX);
-        };
+        // Robust Slider Logic with Interaction Overlay
+        const sliderRoot = document.getElementById("slider-root");
+        const sliderOverlay = document.getElementById("slider-overlay");
+        const sliderHandle = document.getElementById("slider-handle");
+        const sliderCTA = document.getElementById("slider-cta");
+        const sliderSuccessCTA = document.getElementById("slider-success-cta");
 
-        const stopDrag = () => {
-          isDragging = false;
-        };
+        if (sliderRoot) {
+          let isDragging = false;
+          let hasInteracted = false;
 
-        const moveDrag = (e) => {
-          if (!isDragging) return;
-          updateSlider(e.clientX || e.touches[0].clientX);
-        };
+          const revealSuccessCTA = () => {
+            if (!hasInteracted) {
+              hasInteracted = true;
+              // Fade out instruction
+              if (sliderCTA) sliderCTA.style.opacity = "0";
+              // Reveal button
+              if (sliderSuccessCTA) {
+                sliderSuccessCTA.style.opacity = "1";
+                sliderSuccessCTA.style.pointerEvents = "auto";
+                sliderSuccessCTA.style.bottom = "-80px"; // Ensure position is correct
+                // Small timeout to animate translation/appearance if needed, but opacity is simple
+              }
+            }
+          };
 
-        sliderRoot.addEventListener("mousedown", startDrag);
-        window.addEventListener("mouseup", stopDrag);
-        window.addEventListener("mousemove", moveDrag);
+          const updateSlider = (clientX) => {
+            const rect = sliderRoot.getBoundingClientRect();
+            const x = clientX - rect.left;
+            let percent = (x / rect.width) * 100;
+            if (percent < 0) percent = 0;
+            if (percent > 100) percent = 100;
 
-        sliderRoot.addEventListener("touchstart", startDrag, { passive: true });
-        window.addEventListener("touchend", stopDrag);
-        window.addEventListener("touchmove", moveDrag, { passive: true });
-      }
+            sliderOverlay.style.width = percent + "%";
+            sliderHandle.style.left = percent + "%";
+          };
 
-      // Territory Interaction
-      const selectors = document.querySelectorAll(".ledger-item");
-      selectors.forEach((item) => {
-        const activateItem = () => {
-          const target = item.getAttribute("data-target");
-          selectors.forEach((s) => s.classList.remove("active"));
-          document
-            .querySelectorAll(".clean-map-node, .clean-map-label")
-            .forEach((el) => el.classList.remove("active"));
-          item.classList.add("active");
+          const startDrag = (e) => {
+            isDragging = true;
+            revealSuccessCTA();
+            updateSlider(e.clientX || e.touches[0].clientX);
+          };
 
-          const node = document.getElementById(`node-${target}`);
-          const label = document.getElementById(`label-${target}`);
-          if (node) node.classList.add("active");
-          if (label) label.classList.add("active");
-        };
+          const stopDrag = () => {
+            isDragging = false;
+          };
 
-        item.addEventListener("mouseenter", activateItem);
-        item.addEventListener("click", activateItem);
+          const moveDrag = (e) => {
+            if (!isDragging) return;
+            updateSlider(e.clientX || e.touches[0].clientX);
+          };
+
+          sliderRoot.addEventListener("mousedown", startDrag);
+          window.addEventListener("mouseup", stopDrag);
+          window.addEventListener("mousemove", moveDrag);
+
+          sliderRoot.addEventListener("touchstart", startDrag, {
+            passive: true,
+          });
+          window.addEventListener("touchend", stopDrag);
+          window.addEventListener("touchmove", moveDrag, { passive: true });
+        }
+
+        // Territory Interaction
+        const selectors = document.querySelectorAll(".ledger-item");
+        selectors.forEach((item) => {
+          const activateItem = () => {
+            const target = item.getAttribute("data-target");
+            selectors.forEach((s) => s.classList.remove("active"));
+            document
+              .querySelectorAll(".clean-map-node, .clean-map-label")
+              .forEach((el) => el.classList.remove("active"));
+            item.classList.add("active");
+
+            const node = document.getElementById(`node-${target}`);
+            const label = document.getElementById(`label-${target}`);
+            if (node) node.classList.add("active");
+            if (label) label.classList.add("active");
+          };
+
+          item.addEventListener("mouseenter", activateItem);
+          item.addEventListener("click", activateItem);
+        });
       });
     </script>
   </body>
