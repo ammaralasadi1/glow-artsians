@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glow Artisans - Premium Holiday Lighting in Northern Virginia</title>
-    <meta
-      name="description"
-      content="Experience Northern Virginia's premier Christmas light installation with Glow Artisans. We offer bespoke holiday lighting design and a white-glove service for discerning homeowners. Request your complimentary consultation today."
-    />
-    <!-- NEW: Website Favicon -->
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23D4AF37' d='M50,0 L60,40 L100,50 L60,60 L50,100 L40,60 L0,50 L40,40 Z' /></svg>"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- AOS (Animate on Scroll) Library CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -36,211 +15,759 @@
       })(window, document, "script", "dataLayer", "GTM-NZZ28DDL");
     </script>
     <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0c0c" />
+
+    <!-- SEO TODO: Verify Google Site Verification code if you have one -->
+    <!-- <meta name="google-site-verification" content="..." /> -->
+
+    <!-- Optimized SEO Title: Brand + Primary Keyword + Location -->
+    <title>
+      Landscape Lighting McLean & Great Falls | Luxury Outdoor Audio | Glow
+      Artisans
+    </title>
+
+    <!-- Meta Description: Action-oriented, keyword-rich, local focus -->
+    <meta
+      name="description"
+      content="Turn your dark driveway into a welcoming sanctuary. The premier landscape lighting specialists for McLean (22101), Great Falls (22066), and Vienna. Schedule your free evening demo."
+    />
+    <meta
+      name="keywords"
+      content="landscape lighting great falls va, outdoor lighting mclean va, security lighting vienna, estate lighting northern virginia, architectural lighting installation, outdoor audio mclean"
+    />
+
+    <!-- Canonical Tag to prevent duplicate content issues -->
+    <link rel="canonical" href="https://glowartisans.com/" />
+
+    <!-- Geo Meta Tags for Local SEO Authority -->
+    <meta name="geo.region" content="US-VA" />
+    <meta name="geo.placename" content="Great Falls" />
+    <meta name="geo.position" content="38.9985;-77.2888" />
+    <meta name="ICBM" content="38.9985, -77.2888" />
+
+    <!-- Open Graph for Facebook/LinkedIn -->
+    <meta
+      property="og:title"
+      content="Glow Artisans | Estate Landscape Lighting Northern Virginia"
+    />
+    <meta
+      property="og:description"
+      content="Come home to a beautifully lit estate. Serving Great Falls, McLean, and Vienna with bespoke design and lifetime maintenance."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1543589077-47d81606c1bf"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Glow Artisans | Landscape Lighting Great Falls & McLean"
+    />
+    <meta
+      name="twitter:description"
+      content="Turn a dark driveway into a welcoming sanctuary. Professional outdoor lighting for Northern Virginia estates."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1543589077-47d81606c1bf"
+    />
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Glow Artisans LLC",
+        "image": "https://images.unsplash.com/photo-1543589077-47d81606c1bf",
+        "@id": "https://glowartisans.com/#localbusiness",
+        "url": "https://glowartisans.com/",
+        "telephone": "571-741-2444",
+        "email": "design@m.glowartisans.com",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Artisan Way" /* SEO TODO: Ensure this matches your Google Business Profile exactly */,
+          "addressLocality": "Centreville",
+          "addressRegion": "VA",
+          "postalCode": "20121",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 38.8404,
+          "longitude": -77.4289
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "McLean", "postalCode": "22101" },
+          { "@type": "City", "name": "McLean", "postalCode": "22102" },
+          { "@type": "City", "name": "Great Falls", "postalCode": "22066" },
+          { "@type": "City", "name": "Vienna", "postalCode": "22180" },
+          { "@type": "City", "name": "Vienna", "postalCode": "22181" },
+          { "@type": "City", "name": "Vienna", "postalCode": "22182" },
+          { "@type": "City", "name": "Oakton", "postalCode": "22124" },
+          { "@type": "City", "name": "Reston" },
+          { "@type": "City", "name": "Arlington" },
+          { "@type": "City", "name": "Fairfax" },
+          { "@type": "City", "name": "Clifton" },
+          { "@type": "City", "name": "Fairfax Station" }
+        ],
+        "hasMap": "https://goo.gl/maps/placeholder" /* SEO TODO: Replace with your actual Google Maps Link */,
+        "sameAs": [
+          "https://www.instagram.com/glowartsianslighting/",
+          "https://www.facebook.com/glowartisanslighting"
+        ]
+      }
+    </script>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23D4AF37' d='M50,0 L60,40 L100,50 L60,60 L50,100 L40,60 L0,50 L40,40 Z' /></svg>"
+    />
+
+    <!-- Preconnect to critical domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
-      /* Brand Palette */
+      /* ... (Styles remain unchanged) ... */
       html {
         scroll-behavior: smooth;
       }
+      /* 1. MIDNIGHT NOIR BACKGROUND */
       body {
         font-family: "Lato", sans-serif;
-        background-color: #f5f5f5;
-        color: #1a1a1a;
+        background-color: #0c0c0c;
+        color: #ffffff;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
       }
+
       .font-serif-display {
         font-family: "Playfair Display", serif;
       }
-      .bg-charcoal {
-        background-color: #1a1a1a;
+
+      /* 2. ARTISAN GOLD ACCENTS */
+      .text-gold {
+        color: #d4af37;
       }
       .bg-gold {
         background-color: #d4af37;
-      }
-      .text-gold {
-        color: #d4af37;
       }
       .border-gold {
         border-color: #d4af37;
       }
 
-      /* Hero Section for Video Background */
-      .hero-section {
-        position: relative;
-        overflow: hidden;
-        background-color: #001a2b;
+      /* 3. GALLERY WHITE ELEMENTS */
+      .bg-white {
+        background-color: #ffffff;
       }
-      #hero-video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 0;
-        transform: translateX(-50%) translateY(-50%);
-        object-fit: cover;
+      .text-black {
+        color: #0c0c0c;
       }
 
-      /* Buttons and Interactive Elements */
-      .btn {
-        display: inline-block;
-        padding: 0.75rem 2rem;
+      /* Artisan Aura Cursor */
+      @media (pointer: fine) {
+        #artisan-aura {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 400px;
+          height: 400px;
+          background: radial-gradient(
+            circle,
+            rgba(212, 175, 55, 0.08) 0%,
+            transparent 70%
+          );
+          pointer-events: none;
+          z-index: 9999;
+          transform: translate(-50%, -50%);
+          transition: opacity 0.3s ease;
+          opacity: 0;
+          mix-blend-mode: screen;
+          will-change: transform, opacity;
+        }
+      }
+      @media (pointer: coarse) {
+        #artisan-aura {
+          display: none;
+        }
+      }
+
+      /* --- NAVIGATION --- */
+      header {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        background: transparent;
+      }
+      header.scrolled {
+        background: rgba(12, 12, 12, 0.8);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      .nav-link {
+        font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 0.5rem;
-        transition: all 0.3s ease;
-        text-align: center;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        opacity: 0.9;
+        transition: color 0.4s ease, opacity 0.4s ease;
+        position: relative;
+        padding: 10px 0;
       }
-      .btn-gold {
-        background-color: #d4af37;
-        color: #1a1a1a;
-        border: 2px solid #d4af37;
-      }
-      .btn-gold:hover {
-        background-color: transparent;
+      .nav-link:hover,
+      .nav-link.active {
+        opacity: 1;
         color: #d4af37;
       }
-      .btn-outline {
-        background-color: transparent;
-        color: #f5f5f5;
-        border: 2px solid #d4af37;
-      }
-      .btn-outline:hover {
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1px;
         background-color: #d4af37;
-        color: #1a1a1a;
+        box-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
+        transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        opacity: 0.8;
       }
-      .gallery-img:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      .nav-link:hover::before {
+        width: 100%;
+      }
+      .nav-link.active::after {
+        content: "✦";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 8px;
+        color: #d4af37;
       }
 
-      /* Snowfall & Sparkle Animation */
-      #snow-container {
+      /* Navigation Overlay */
+      #nav-overlay {
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(
+          circle at bottom right,
+          rgba(12, 12, 12, 0.95) 0%,
+          rgba(0, 0, 0, 0.98) 100%
+        );
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+      }
+      #nav-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .overlay-link {
+        font-size: clamp(1.8rem, 5vw, 4rem);
+        font-family: "Playfair Display", serif;
+        color: rgba(255, 255, 255, 0.4);
+        transition: color 0.4s ease;
+        display: inline-block;
+        margin-bottom: 1rem;
+        position: relative;
+      }
+      .overlay-link:hover {
+        color: #d4af37;
+      }
+      .overlay-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #d4af37;
+        box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+        transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      }
+      .overlay-link:hover::after {
+        width: 100%;
+      }
+
+      /* Invitational Cards (Minimalist Noir) */
+      .invitational-card {
+        background: rgba(20, 20, 20, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        padding: 2.5rem;
+        border-radius: 4px;
+        transition: all 0.5s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .invitational-card:hover {
+        border-color: #d4af37;
+        background: rgba(25, 25, 25, 0.8);
+        transform: translateY(-5px);
+      }
+
+      /* Hero Calibration */
+      .hero-canvas-section {
+        position: relative;
+        height: 100vh;
+        height: 100dvh;
+        min-height: 600px;
+        width: 100%;
+        background: radial-gradient(circle at center, #0c0c0c 0%, #000000 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      #hero-reveal-light {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 800px;
+        height: 800px;
+        background: radial-gradient(
+          circle,
+          rgba(212, 175, 55, 0.15) 0%,
+          rgba(212, 175, 55, 0.05) 40%,
+          transparent 70%
+        );
+        pointer-events: none;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        will-change: left, top;
+      }
+      .brand-h1 {
+        font-size: clamp(2.5rem, 7vw, 6rem);
+        font-family: "Playfair Display", serif;
+        color: rgba(255, 255, 255, 0.15);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        background: linear-gradient(90deg, #333, #fff, #333);
+        background-size: 200% 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: color 0.5s;
+        pointer-events: none;
+      }
+
+      /* Buttons */
+      .btn {
+        position: relative;
+        display: inline-block;
+        padding: 1.2rem 2.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        border-radius: 0.25rem;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        text-align: center;
+        font-size: 0.8rem;
+        pointer-events: auto;
+        overflow: hidden;
+      }
+
+      /* Option 1: Luminescent Style */
+      .btn-gold {
+        background-color: #d4af37;
+        color: #0c0c0c;
+        border: 2px solid #d4af37;
+        /* Permanent Pulse Animation */
+        animation: permanent-pulse 3s infinite ease-in-out;
+      }
+
+      .btn-gold:hover {
+        background-color: #c49f32;
+        color: #000;
+        transform: translateY(-2px);
+        /* Intensify pulse on hover */
+        box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
+      }
+
+      /* The "Sheen" Sweep Animation */
+      .btn-luminescent::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        transform: skewX(-20deg);
+        /* Sweeps across every 4.5 seconds */
+        animation: sheen-sweep 4.5s infinite linear;
+        pointer-events: none;
+      }
+
+      @keyframes permanent-pulse {
+        0% {
+          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+      }
+
+      @keyframes sheen-sweep {
+        0% {
+          left: -150%;
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        20% {
+          left: 150%;
+          opacity: 0;
+        }
+        100% {
+          left: 150%;
+          opacity: 0;
+        }
+      }
+
+      /* Secondary Button (No Pulse, for contrast) */
+      .btn-outline {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+      }
+      .btn-outline:hover {
+        border-color: #d4af37;
+        background: rgba(212, 175, 55, 0.1);
+      }
+
+      /* Mobile adjustment for buttons */
+      @media (max-width: 640px) {
+        .btn {
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+
+      /* REFINED SERVICES STYLING */
+      .archetype-card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 3rem 2rem;
+        border-radius: 4px;
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        overflow: hidden;
+        z-index: 1;
+      }
+      .archetype-card:hover {
+        transform: translateY(-10px);
+        border-color: rgba(212, 175, 55, 0.4);
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
+          0 0 20px rgba(212, 175, 55, 0.05);
+      }
+      .archetype-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at top right,
+          rgba(212, 175, 55, 0.1),
+          transparent 70%
+        );
+        opacity: 0;
+        transition: opacity 0.6s ease;
+      }
+      .archetype-card:hover::before {
+        opacity: 1;
+      }
+      .archetype-num {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        line-height: 1;
+        opacity: 0.3;
+        color: #d4af37;
+        margin-bottom: 1.5rem;
+        display: block;
+        letter-spacing: 0.2em;
+      }
+      .archetype-icon {
+        width: 48px;
+        height: 48px;
+        color: #d4af37;
+        margin-bottom: 2rem;
+        transition: transform 0.6s ease;
+      }
+      .archetype-card:hover .archetype-icon {
+        transform: scale(1.1) rotate(-5deg);
+      }
+
+      .comparison-container {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        cursor: ew-resize;
+        background: #000;
+        touch-action: none;
+        user-select: none;
+      }
+      .comparison-img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        overflow: hidden;
-        pointer-events: none;
+        object-fit: cover;
       }
-      .particle {
+      .comparison-overlay {
+        width: 50%;
+        z-index: 10;
+        border-right: 2px solid #d4af37;
+      }
+      .slider-handle {
         position: absolute;
-        border-radius: 50%;
-        animation: snowfall linear infinite;
-      }
-      .snowflake {
-        background: white;
-      }
-      .sparkle {
-        background: #d4af37;
-        box-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37;
-        animation-name: snowfall, twinkle;
-        animation-timing-function: linear, ease-in-out;
-        animation-iteration-count: infinite, infinite;
-        animation-direction: normal, alternate;
-      }
-      @keyframes snowfall {
-        0% {
-          transform: translateY(-10vh) translateX(0px);
-        }
-        100% {
-          transform: translateY(110vh) translateX(20px);
-        }
-      }
-      @keyframes twinkle {
-        from {
-          opacity: 0.2;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      /* Artisan's Sketch SVG Animation */
-      .house-outline {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-      }
-      [data-aos="draw-house"].aos-animate .house-outline {
-        animation: draw-line 2s ease-out forwards;
-      }
-      .light-path {
-        stroke-dasharray: 500;
-        stroke-dashoffset: 500;
-      }
-      [data-aos="draw-house"].aos-animate .light-path {
-        animation: draw-line 2s ease-out 1s forwards;
-      }
-      @keyframes draw-line {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-
-      /* Living Icons Micro-interactions */
-      .icon-container {
-        transition: transform 0.3s ease;
-      }
-      .icon-container:hover {
-        transform: scale(1.05);
-      }
-      .icon-container .icon-svg {
-        transition: transform 0.4s ease;
-      }
-      .icon-container:hover .icon-rotate {
-        transform: rotate(360deg);
-      }
-      .icon-container:hover .icon-sway {
-        animation: sway 1.5s ease-in-out infinite alternate;
-      }
-      .icon-container:hover .icon-pop {
-        animation: pop 0.5s ease;
-      }
-      @keyframes sway {
-        from {
-          transform: rotate(-7deg);
-        }
-        to {
-          transform: rotate(7deg);
-        }
-      }
-      @keyframes pop {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-      }
-
-      /* Guiding Star Animation */
-      #guiding-star {
-        position: fixed;
         top: 0;
-        right: 5vw;
-        z-index: 9999;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        background: #d4af37;
+        z-index: 20;
+        transform: translateX(-50%);
         pointer-events: none;
-        color: #d4af37;
-        filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.8));
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-        transform: translateY(-50px);
+      }
+      .slider-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: #d4af37;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
       }
 
-      /* Map Sparkle Animation */
-      .map-sparkle {
-        animation: map-twinkle 2s ease-in-out infinite alternate;
+      /* Slider CTA Overlay */
+      .slider-instruction {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 30;
+        pointer-events: none;
+        text-align: center;
+        transition: opacity 0.5s ease;
       }
-      @keyframes map-twinkle {
-        from {
-          opacity: 0.5;
+      .slider-instruction span {
+        background: rgba(12, 12, 12, 0.8);
+        backdrop-filter: blur(4px);
+        color: #d4af37;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-weight: 700;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+      }
+
+      /* Service Ledger Styles */
+      .ledger-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 1.5rem 0;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+      }
+      .ledger-item:hover,
+      .ledger-item.active {
+        border-bottom-color: #d4af37;
+      }
+      .ledger-item.active .ledger-city {
+        color: #d4af37;
+        transform: translateX(10px);
+      }
+      .ledger-city {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.4);
+        transition: all 0.4s ease;
+      }
+
+      .artisan-link {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        color: #d4af37;
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .artisan-link:hover {
+        opacity: 0.8;
+        transform: translateX(10px);
+      }
+
+      /* REFINED PROCESS PATH STYLING */
+      #path-glow-container {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .glow-line {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        transition: stroke-dashoffset 0.1s linear;
+      }
+      .process-card {
+        opacity: 0.3;
+        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        padding: 2rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0);
+      }
+      .process-card.active {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.02);
+        border-color: rgba(212, 175, 55, 0.2);
+        transform: translateY(-10px);
+      }
+      .process-icon-wrap {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1.5rem;
+        color: #d4af37;
+        transition: transform 0.5s ease;
+      }
+      .process-card.active .process-icon-wrap {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+      }
+
+      /* Territory Specifics */
+      .status-tag {
+        font-size: 8px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 3px 8px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        border-radius: 2px;
+        color: #d4af37;
+        margin-left: auto;
+        white-space: nowrap;
+      }
+      .clean-map-node {
+        fill: rgba(255, 255, 255, 0.1);
+        stroke: rgba(212, 175, 55, 0.2);
+        stroke-width: 1;
+        transition: all 0.4s ease;
+      }
+      .clean-map-node.active {
+        fill: #d4af37;
+        filter: drop-shadow(0 0 10px #d4af37);
+      }
+      .clean-map-label {
+        font-size: 8px;
+        fill: rgba(255, 255, 255, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        pointer-events: none;
+        transition: all 0.4s ease;
+      }
+      .clean-map-label.active {
+        fill: #d4af37;
+        opacity: 1;
+        font-weight: 700;
+      }
+
+      /* Utility for Text Sizing Mobile - IMPROVED READABILITY */
+      .text-reading {
+        font-size: 1.1rem;
+        line-height: 1.75;
+        font-weight: 400;
+      }
+      @media (min-width: 768px) {
+        .text-reading {
+          font-size: 1.25rem;
         }
-        to {
-          opacity: 1;
-        }
+      }
+
+      /* FAQ Accordion Styles */
+      .faq-answer {
+        /* Removed conflicting max-height styles to allow Grid animation to work */
+        opacity: 0.8;
+      }
+      .faq-icon {
+        transition: transform 0.4s ease;
+        font-family: "Courier New", monospace;
+        font-weight: 200;
+        font-size: 1.5rem;
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+      .faq-item.active .faq-answer {
+        padding-bottom: 1.5rem;
       }
     </style>
   </head>
@@ -255,1012 +782,2941 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Guiding Star Element -->
-    <div id="guiding-star">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path
-          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-        />
-      </svg>
-    </div>
+    <div id="artisan-aura"></div>
 
-    <!-- Header Navigation -->
-    <header
-      class="bg-charcoal text-white py-4 px-6 md:px-12 fixed w-full z-30 shadow-lg"
-    >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-2xl font-serif-display text-gold"
-          >Glow Artisans</a
+    <!-- Artistic Navigation Overlay (Unified Content) -->
+    <nav id="nav-overlay" aria-hidden="true">
+      <div
+        class="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-8 lg:gap-20 max-h-screen overflow-y-auto pt-24 pb-10 lg:py-10"
+      >
+        <!-- Left Side: Nav Links -->
+        <div class="flex flex-col justify-start lg:justify-center">
+          <span
+            class="text-gold uppercase tracking-[0.5em] text-[10px] font-bold mb-4 lg:mb-12 block opacity-50"
+            >The Vision</span
+          >
+          <div class="flex flex-col items-start space-y-4 lg:space-y-4">
+            <a href="#archetypes" class="overlay-link">Services</a>
+            <a href="#spotlight" class="overlay-link">Portfolio</a>
+            <a href="#glow-path" class="overlay-link">Our Process</a>
+            <a href="#regions" class="overlay-link">Service Areas</a>
+          </div>
+        </div>
+
+        <!-- Right Side: Branding & Direct CTA (Unified for Mobile) -->
+        <div
+          class="flex flex-col lg:border-l lg:border-white/10 lg:pl-20 justify-between gap-8 lg:gap-0 border-t-0 lg:border-t-0 pt-0 lg:pt-10"
         >
-        <nav class="hidden md:flex space-x-6 items-center">
-          <a href="#process" class="hover:text-gold transition">Our Process</a>
-          <a href="#portfolio" class="hover:text-gold transition">Portfolio</a>
-          <a href="our-story.html" class="hover:text-gold transition"
-            >Our Story</a
-          >
-          <a href="#artisan-promise" class="hover:text-gold transition"
-            >Our Promise</a
-          >
-          <a href="#client-acclaim" class="hover:text-gold transition"
-            >Client Acclaim</a
-          >
-          <a href="#faq" class="hover:text-gold transition">FAQ</a>
-          <a href="#contact" class="btn btn-outline text-sm"
-            >Request Holiday Design</a
-          >
-          <a
-            href="tel:571-741-2444"
-            class="hover:text-gold transition"
-            aria-label="Call Glow Artisans"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <!-- Branding (Hidden on Mobile to save space/reduce redundancy with Sticky Header) -->
+          <div class="hidden lg:block">
+            <span
+              class="text-3xl font-serif-display text-gold leading-none tracking-tighter block mb-2"
+              >GLOW ARTISANS</span
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              ></path>
-            </svg>
-          </a>
-        </nav>
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            <span
+              class="text-[10px] uppercase tracking-[0.5em] text-white/40 font-bold"
+              >Centreville, Virginia</span
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+          </div>
+
+          <!-- CTA (Prioritized on Mobile: Order 1) -->
+          <div class="pt-0 lg:pt-10 order-1 lg:order-3">
+            <a
+              href="contact.html"
+              class="btn btn-gold btn-luminescent w-full py-5 text-xs tracking-[0.2em]"
+              >Schedule Design Consultation</a
+            >
+          </div>
+
+          <!-- Phone & Socials (Secondary on Mobile: Order 2) -->
+          <div class="space-y-8 lg:space-y-12 order-2 lg:order-2">
+            <div>
+              <span
+                class="text-gold uppercase tracking-[0.5em] text-[9px] font-bold mb-2 lg:mb-4 block opacity-50"
+                >Direct Consultation</span
+              >
+              <a
+                href="tel:5717412444"
+                class="text-white font-serif-display text-xl lg:text-4xl hover:text-gold transition"
+                >(571) 741-2444</a
+              >
+            </div>
+
+            <div>
+              <span
+                class="text-gold uppercase tracking-[0.5em] text-[9px] font-bold mb-4 block opacity-50"
+                >Social Registry</span
+              >
+              <div class="flex items-center space-x-8 text-white/40">
+                <a
+                  href="https://www.instagram.com/glowartsianslighting/"
+                  class="hover:text-gold transition"
+                  aria-label="Instagram"
+                  ><svg
+                    class="w-8 h-8 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+                <a
+                  href="https://www.facebook.com/glowartisanslighting"
+                  class="hover:text-gold transition"
+                  aria-label="Facebook"
+                  ><svg
+                    class="w-6 h-6 fill-current"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4">
-        <a href="#process" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Process</a
+    </nav>
+
+    <!-- Header Navigation with Classic Hamburger -->
+    <header
+      class="py-4 md:py-6 px-6 md:px-12 fixed w-full z-[1001] pointer-events-none transition-all duration-300"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="group pointer-events-auto z-50">
+          <span
+            class="text-xl md:text-2xl font-serif-display text-gold leading-none tracking-tighter"
+            >GLOW ARTISANS</span
+          >
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex space-x-6 items-center pointer-events-auto">
+          <a href="#archetypes" class="nav-link">Design</a>
+          <a href="#spotlight" class="nav-link">Portfolio</a>
+          <a href="#glow-path" class="nav-link">Our Process</a>
+          <a href="#regions" class="nav-link">Service Areas</a>
+          <div
+            class="flex items-center space-x-4 border-l border-white/10 pl-6 ml-2"
+          >
+            <a
+              href="https://www.instagram.com/glowartsianslighting/"
+              class="text-white/40 hover:text-gold transition"
+              aria-label="Instagram"
+              ><svg
+                class="w-4 h-4 fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                /></svg
+            ></a>
+            <a
+              href="https://www.facebook.com/glowartisanslighting"
+              class="text-white/40 hover:text-gold transition"
+              aria-label="Facebook"
+              ><svg
+                class="w-6 h-6 fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
+                /></svg
+            ></a>
+          </div>
+          <a
+            href="tel:5717412444"
+            class="text-[11px] font-bold text-white hover:text-gold transition tracking-widest ml-4"
+            >(571) 741-2444</a
+          >
+          <!-- Primary CTA with Luminescent Effect -->
+          <a
+            href="contact.html"
+            class="btn btn-gold btn-luminescent text-xs py-3 px-8 ml-2"
+            >Schedule Design Consultation</a
+          >
+        </nav>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button
+          id="header-menu-trigger"
+          class="lg:hidden text-gold text-2xl focus:outline-none pointer-events-auto transition-transform duration-300"
+          aria-label="Toggle Navigation"
         >
-        <a href="#portfolio" class="block py-2 px-4 hover:bg-gray-700"
-          >Portfolio</a
-        >
-        <a href="our-story.html" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Story</a
-        >
-        <a href="#artisan-promise" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Promise</a
-        >
-        <a href="#client-acclaim" class="block py-2 px-4 hover:bg-gray-700"
-          >Client Acclaim</a
-        >
-        <a href="#faq" class="block py-2 px-4 hover:bg-gray-700">FAQ</a>
-        <a href="#contact" class="block py-2 px-4 mt-2 btn btn-gold w-full"
-          >Request Holiday Design</a
-        >
-        <a
-          href="tel:571-741-2444"
-          class="block text-center py-3 px-4 text-gold mt-2 font-bold"
-          >Call (571) 741-2444</a
-        >
+          <div id="menu-icon">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </div>
+        </button>
       </div>
     </header>
 
-    <!-- 1. Hero Section with Video Background -->
-    <section
-      class="hero-section h-screen flex items-center justify-center text-center text-white pt-16"
-    >
-      <video autoplay loop muted playsinline id="hero-video">
-        <source
-          src="assets/video/glow-artisan-holiday-light-installation-video-2.mp4"
-          type="video/mp4"
+    <!-- 1. HERO CANVAS -->
+    <section class="hero-canvas-section" id="hero-canvas">
+      <!-- Hero Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/assets/images/landscape-lighting/optimized/hero-image-1.png"
+          class="w-full h-full object-cover opacity-60"
+          alt="Luxury estate landscape lighting in McLean VA"
+          fetchpriority="high"
+          loading="eager"
+          width="1920"
+          height="1080"
         />
-        Your browser does not support the video tag.
-      </video>
-      <div id="snow-container" class="z-10"></div>
+        <!-- Gradient Overlay to ensure text readability -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-[#0c0c0c] via-black/30 to-[#0c0c0c]/80"
+        ></div>
+      </div>
+
+      <div id="hero-reveal-light"></div>
+      <canvas
+        id="particle-canvas"
+        class="absolute inset-0 pointer-events-none opacity-100 z-10"
+      ></canvas>
       <div
-        class="bg-black bg-opacity-60 p-8 md:p-16 rounded-lg max-w-4xl mx-auto z-20 relative"
+        class="hero-content relative z-20 text-center pt-40 max-w-5xl mx-auto"
+        data-aos="fade-up"
+        data-aos-duration="2000"
       >
-        <h1 class="text-4xl md:text-7xl font-serif-display leading-tight mb-4">
-          Custom Holiday Lighting Design & Installation
-        </h1>
-        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          Your vision, artfully illuminated. We specialize in creating stunning,
-          architectural Christmas lighting displays for discerning homeowners
-          across Northern Virginia.
-        </p>
-        <a href="#contact" class="btn btn-gold text-lg"
-          >Request Your Holiday Design Consultation</a
-        >
-        <p class="mt-6 text-gray-200">
-          Or call for a direct consultation:
-          <a
-            href="tel:571-741-2444"
-            class="font-bold text-white hover:text-gold transition"
-            >(571) 741-2444</a
+        <!-- Keyword-optimized H1 -->
+        <h1 class="brand-h1" id="shimmer-text">
+          Come Home to a<br /><span class="italic font-light"
+            >Beautifully Lit</span
           >
-        </p>
+          Estate.
+        </h1>
+        <h2
+          class="text-white text-xl md:text-base md:tracking-[0.2em] mt-8 leading-relaxed font-bold"
+          id="shimmer-sub"
+        >
+          The premier landscape lighting specialists for Great Falls, McLean,
+          and Vienna. We design, install, and maintain your system so you never
+          have to worry about a dark driveway again.
+        </h2>
+
+        <div
+          class="mt-12 md:mt-16 flex flex-col items-center pointer-events-auto pr-2 pl-2"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-center gap-6 md:gap-8 w-full"
+          >
+            <!-- Primary Hero CTA -->
+            <a
+              href="contact.html"
+              class="btn btn-gold btn-luminescent text-sm px-10 py-5 magnetic-btn"
+              >Reveal Your Estate at Night</a
+            >
+            <!-- Secondary CTA (Outline) -->
+            <a
+              href="#archetypes"
+              class="btn btn-outline text-white hover:bg-white/10 text-sm uppercase tracking-widest font-bold px-10 py-5 transition-all magnetic-btn"
+              >Explore Design</a
+            >
+          </div>
+          <p
+            class="text-white/40 text-[9px] uppercase tracking-[0.2em] mt-4 italic font-light"
+          >
+            * Complimentary for Northern Virginia Estates
+          </p>
+          <p class="text-white/60 text-sm uppercase tracking-[0.2em] mt-4">
+            Prefer a direct conversation?
+            <a
+              href="tel:5717412444"
+              class="text-gold hover:text-white transition border-b border-gold/30 pb-0.5"
+              >Call (571) 741-2444</a
+            >
+          </p>
+        </div>
+
+        <div class="mt-20 md:mt-24 opacity-40 animate-bounce text-white">
+          <svg
+            class="w-6 h-6 mx-auto"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            ></path>
+          </svg>
+        </div>
       </div>
     </section>
 
-    <!-- 2. Community Spotlight Section -->
-    <section id="community" class="py-20 px-6 bg-white">
-      <div class="container mx-auto" data-aos="fade-up">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="text-center md:text-left">
-            <h2 class="text-4xl font-serif-display mb-4">
-              Illuminating Communities Across Northern Virginia
-            </h2>
-            <p class="text-lg text-gray-600 mb-6">
-              As a local business rooted in the heart of Northern Virginia, our
-              passion is bringing the holiday spirit to the homes and
-              neighborhoods that make our region so special. Whether it's a
-              historic home in Alexandria, a classic colonial in Fairfax, or a
-              beautiful estate in Leesburg, our mission is the same: to deliver
-              an elegant, artisan-level holiday lighting display that enhances
-              the unique character of your home.
-            </p>
-            <p class="text-sm text-gray-500">
-              <em
-                >We proudly serve clients throughout Fairfax, Loudoun, and
-                Arlington counties.</em
-              >
-            </p>
-          </div>
-          <div>
-            <svg
-              class="w-full h-auto"
-              viewBox="0 0 200 120"
-              xmlns="http://www.w3.org/2000/svg"
+    <!-- 2. TRUST BAR -->
+    <section
+      class="py-10 px-6 bg-[#0c0c0c] border-b border-white/5 text-center"
+    >
+      <div class="container mx-auto">
+        <a
+          href="#regions"
+          class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 opacity-90 text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-white hover:opacity-80 transition-opacity"
+        >
+          <span
+            class="opacity-60 italic lowercase normal-case tracking-normal w-full md:w-auto mb-2 md:mb-0"
+            >Serving our neighbors in:</span
+          >
+          <span>Great Falls</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span>McLean</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span class="text-gold">Vienna</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span>Oakton</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span>Reston</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span>Arlington</span>
+          <span class="text-gold opacity-40 hidden md:inline">|</span>
+          <span class="text-gold italic">&amp; Beyond</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3. THE NIGHTLY REVEAL (Slider - WAS #6) -->
+    <section class="py-24 md:py-32 px-6 bg-black text-center">
+      <div class="container mx-auto max-w-6xl">
+        <div class="mb-16" data-aos="fade-up">
+          <span
+            class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
+            >A Study in Contrast</span
+          >
+          <h2 class="text-4xl md:text-5xl font-serif-display mb-4 text-white">
+            The Nightly Reveal
+          </h2>
+        </div>
+
+        <!-- Slider with Interactive Overlay -->
+        <div class="relative mx-auto mb-16">
+          <div
+            class="comparison-container rounded-lg border border-white/10"
+            id="slider-root"
+          >
+            <div class="slider-instruction" id="slider-cta">
+              <span>Slide to Illuminate</span>
+            </div>
+            <!-- Base Image (Dark - Right side initially) -->
+            <img
+              src="/assets/images/landscape-lighting/optimized/slider-after.png"
+              class="comparison-img"
+              alt="Before and after landscape lighting installation Northern Virginia - Dark"
+              loading="lazy"
+              decoding="async"
+              width="1600"
+              height="900"
+            />
+            <!-- Overlay Image (Light - Left side, revealing as you slide right) -->
+            <div
+              class="comparison-img comparison-overlay overflow-hidden"
+              id="slider-overlay"
             >
-              <defs>
-                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur stdDeviation="1.5" result="coloredBlur" />
-                  <feMerge>
-                    <feMergeNode in="coloredBlur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-              </defs>
-              <!-- Simplified NoVA outline -->
-              <path
-                d="M 10 110 L 30 50 L 80 20 L 150 10 L 190 40 L 170 90 L 120 115 Z"
-                fill="#F5F5F5"
-                stroke="#e0e0e0"
-                stroke-width="1"
+              <img
+                id="slider-inner-img"
+                src="/assets/images/landscape-lighting/optimized/slider-before.png"
+                class="absolute top-0 left-0 h-full max-w-none object-cover"
+                alt="Before and after landscape lighting installation Northern Virginia - Light"
+                loading="lazy"
+                decoding="async"
+                width="1600"
+                height="900"
               />
-              <!-- Sparkle Locations -->
-              <g class="map-sparkle" style="animation-delay: 0s">
-                <path
-                  d="M100 50 L102 48 L100 46 L98 48 Z"
-                  fill="#D4AF37"
-                  filter="url(#glow)"
-                />
-                <text
-                  x="105"
-                  y="51"
-                  font-family="Lato"
-                  font-size="5"
-                  fill="#1a1a1a"
+            </div>
+            <div class="slider-handle" id="slider-handle">
+              <div class="slider-circle">
+                <svg
+                  class="w-4 h-4 fill-current text-black"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  McLean
-                </text>
-              </g>
-              <g class="map-sparkle" style="animation-delay: 0.3s">
-                <path
-                  d="M80 70 L82 68 L80 66 L78 68 Z"
-                  fill="#D4AF37"
-                  filter="url(#glow)"
-                />
-                <text
-                  x="85"
-                  y="71"
-                  font-family="Lato"
-                  font-size="5"
-                  fill="#1a1a1a"
-                >
-                  Vienna
-                </text>
-              </g>
-              <g class="map-sparkle" style="animation-delay: 0.6s">
-                <path
-                  d="M60 40 L62 38 L60 36 L58 38 Z"
-                  fill="#D4AF37"
-                  filter="url(#glow)"
-                />
-                <text
-                  x="40"
-                  y="36"
-                  font-family="Lato"
-                  font-size="5"
-                  fill="#1a1a1a"
-                >
-                  Great Falls
-                </text>
-              </g>
-              <g class="map-sparkle" style="animation-delay: 0.9s">
-                <path
-                  d="M130 65 L132 63 L130 61 L128 63 Z"
-                  fill="#D4AF37"
-                  filter="url(#glow)"
-                />
-                <text
-                  x="135"
-                  y="66"
-                  font-family="Lato"
-                  font-size="5"
-                  fill="#1a1a1a"
-                >
-                  Arlington
-                </text>
-              </g>
-            </svg>
+                  <path
+                    d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hidden CTA that appears after interaction -->
+          <div
+            id="slider-success-cta"
+            class="absolute bottom-[-80px] left-0 right-0 flex justify-center opacity-0 transition-opacity duration-700 pointer-events-none"
+          >
+            <a
+              href="contact.html"
+              class="btn btn-gold btn-glow text-xs magnetic-btn pointer-events-auto"
+              >See This On Your Home</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. "How It Works" Process Section -->
-    <section id="process" class="py-20 px-6">
-      <div class="container mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-4xl font-serif-display mb-4">
-          Our Seamless Holiday Lighting Process
-        </h2>
-        <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
-        <div class="grid md:grid-cols-3 gap-12">
+    <!-- 4. SAFETY THROUGH ARTISTRY (WHITE SECTION - WAS #8) -->
+    <section class="py-24 md:py-32 px-6 bg-white text-black">
+      <div class="container mx-auto max-w-6xl text-left">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right" class="text-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+              >Peace of Mind</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-6 leading-tight text-black text-left"
+            >
+              Safety &<br /><span class="italic text-gold">Security.</span>
+            </h2>
+            <p
+              class="text-black/80 text-reading leading-relaxed mb-12 text-left"
+            >
+              A dark home feels unsafe. We light the perimeter so you feel
+              secure pulling in at 6:30 PM. We eliminate dark corners with
+              <strong>low-voltage security lighting</strong> that improves
+              visibility and camera clarity without harsh floodlights.
+            </p>
+
+            <div
+              class="bg-[#0c0c0c] p-10 rounded text-white mb-12 shadow-2xl text-left"
+            >
+              <h4 class="text-gold font-serif-display text-xl mb-4 text-left">
+                Security Redefined.
+              </h4>
+              <p class="text-white/90 text-base mb-8 text-left">
+                Identify perimeter vulnerabilities before they become
+                liabilities with a private artisan audit.
+              </p>
+              <a
+                href="contact.html"
+                class="btn btn-gold btn-glow text-[10px] w-full text-center magnetic-btn"
+                >Secure Your Perimeter</a
+              >
+            </div>
+          </div>
+          <div class="relative" data-aos="fade-left">
+            <img
+              src="/assets/images/landscape-lighting/optimized/security-focused lighting.png"
+              class="rounded border border-black/5 w-full h-auto shadow"
+              alt="Security perimeter lighting for estates in Oakton"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MCLEAN PROJECT SPOTLIGHT (WAS #4) -->
+    <section class="py-24 md:py-32 px-6 bg-black" id="spotlight">
+      <div class="container mx-auto max-w-6xl">
+        <div class="spotlight-card rounded relative">
           <div
-            class="flex flex-col items-center"
+            class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center text-left"
+          >
+            <div data-aos="fade-right" class="text-left">
+              <span
+                class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
+                >Project Spotlight</span
+              >
+              <h3
+                class="text-3xl md:text-4xl font-serif-display mb-6 text-white text-left"
+              >
+                See How We Transformed<br /><span
+                  class="italic font-light text-gold"
+                  >This McLean Home</span
+                >
+              </h3>
+              <p
+                class="text-white/90 text-reading mb-10 leading-relaxed text-left"
+              >
+                We transformed this Georgian home into a nighttime landmark.
+                Using precise warm-white LED technology, we highlighted the
+                architecture so it stands out from the street.
+              </p>
+
+              <div class="invitational-card mb-12">
+                <p class="text-white font-serif-display text-lg italic mb-6">
+                  "They didn't just add lights; they created an entire evening
+                  environment that feels like a resort."
+                </p>
+                <a
+                  href="contact.html"
+                  class="btn btn-gold btn-glow text-[10px] px-10 magnetic-btn"
+                  >Start Your Transformation</a
+                >
+              </div>
+            </div>
+            <div class="relative" data-aos="zoom-in">
+              <img
+                src="/assets/images/landscape-lighting/optimized/project-spotlight.png"
+                class="rounded opacity-90 w-full h-auto"
+                alt="Georgian estate outdoor lighting McLean 22101"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. THE GLOW PATH (FOUR PILLARS GRID - WAS #11) -->
+    <section
+      class="py-24 px-6 bg-[#0c0c0c] border-t border-white/5"
+      id="glow-path"
+    >
+      <div class="container mx-auto max-w-7xl">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <span
+            class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block italic"
+            >Concierge Experience</span
+          >
+          <h2 class="text-4xl md:text-5xl font-serif-display text-white">
+            Our Process
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          <!-- Step 01 -->
+          <div
+            class="process-pillar group"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="pillar-icon">
+              <svg
+                class="w-10 h-10 fill-none stroke-current"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-gold font-serif-display text-4xl block mb-4 opacity-50 group-hover:opacity-100 transition-opacity"
+              >01</span
+            >
+            <h3
+              class="text-white uppercase font-bold text-sm tracking-widest mb-3"
+            >
+              Consultation
+            </h3>
+            <p class="text-white/60 text-sm leading-relaxed">
+              We begin with a brief, respectful conversation to understand your
+              aesthetic goals and analyze your home's architecture.
+            </p>
+          </div>
+
+          <!-- Step 02 -->
+          <div
+            class="process-pillar group"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div
-              class="icon-container bg-white p-6 rounded-full shadow-lg mb-4"
-            >
+            <div class="pillar-icon">
               <svg
-                class="w-12 h-12 text-gold icon-svg icon-rotate"
-                fill="none"
-                stroke="currentColor"
+                class="w-10 h-10 fill-none stroke-current"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                ></path>
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-serif-display mb-2">The Consultation</h3>
-            <p class="text-gray-600">
-              It begins with a conversation. We learn your vision and use
-              digital renderings to show you exactly how our artisan design will
-              accentuate your home's unique architecture.
+            <span
+              class="text-gold font-serif-display text-4xl block mb-4 opacity-50 group-hover:opacity-100 transition-opacity"
+              >02</span
+            >
+            <h3
+              class="text-white uppercase font-bold text-sm tracking-widest mb-3"
+            >
+              Live Demo
+            </h3>
+            <p class="text-white/60 text-sm leading-relaxed">
+              See the magic before you buy. We set up a temporary, wire-free
+              demonstration on your property at dusk to prove the concept.
             </p>
           </div>
+
+          <!-- Step 03 -->
           <div
-            class="flex flex-col items-center"
+            class="process-pillar group"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div
-              class="icon-container bg-white p-6 rounded-full shadow-lg mb-4"
-            >
+            <div class="pillar-icon">
               <svg
-                class="w-12 h-12 text-gold icon-svg icon-sway"
-                fill="none"
-                stroke="currentColor"
+                class="w-10 h-10 fill-none stroke-current"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                ></path>
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-serif-display mb-2">
-              The White-Glove Installation
+            <span
+              class="text-gold font-serif-display text-4xl block mb-4 opacity-50 group-hover:opacity-100 transition-opacity"
+              >03</span
+            >
+            <h3
+              class="text-white uppercase font-bold text-sm tracking-widest mb-3"
+            >
+              Installation
             </h3>
-            <p class="text-gray-600">
-              Our professional, insured team handles every aspect of the
-              installation with meticulous care, using only commercial-grade
-              components for a brilliant, season-long display.
+            <p class="text-white/60 text-sm leading-relaxed">
+              Surgical precision. Our
+              <strong>uniformed, background-checked</strong> technicians
+              carefully lift sod to weave wiring beneath the soil, ensuring your
+              lawn looks pristine immediately.
             </p>
           </div>
+
+          <!-- Step 04 -->
           <div
-            class="flex flex-col items-center"
+            class="process-pillar group"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div
-              class="icon-container bg-white p-6 rounded-full shadow-lg mb-4"
-            >
+            <div class="pillar-icon">
               <svg
-                class="w-12 h-12 text-gold icon-svg icon-pop"
-                fill="none"
-                stroke="currentColor"
+                class="w-10 h-10 fill-none stroke-current"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="1.5"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 7v10a2 2 0 002 2h12a2 2 0 002-2V7M10 12h4"
-                ></path>
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-serif-display mb-2">
-              The Takedown & Storage
+            <span
+              class="text-gold font-serif-display text-4xl block mb-4 opacity-50 group-hover:opacity-100 transition-opacity"
+              >04</span
+            >
+            <h3
+              class="text-white uppercase font-bold text-sm tracking-widest mb-3"
+            >
+              Final Reveal
             </h3>
-            <p class="text-gray-600">
-              After the holidays, we carefully remove your display, perform a
-              quality check, and securely store it in our climate-controlled
-              facility, ready for next year.
+            <p class="text-white/60 text-sm leading-relaxed">
+              We return at dusk for final aiming and smart-home programming. We
+              then initiate your "GlowCare" maintenance plan.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-16" data-aos="fade-up">
+          <a
+            href="contact.html"
+            class="btn btn-gold btn-luminescent text-[10px] px-10 magnetic-btn"
+          >
+            Begin Your Experience
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. BESPOKE SERVICES (WAS #3) -->
+    <section
+      id="archetypes"
+      class="py-24 md:py-32 px-6 bg-[#0c0c0c] border-b border-white/5 text-center relative overflow-hidden"
+    >
+      <!-- Background Texture -->
+      <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+        <img
+          src="/assets/images/landscape-lighting/optimized/services-backgroud-texture.png"
+          class="w-full h-full object-cover"
+          alt="Architectural lighting design Great Falls VA"
+          loading="lazy"
+          decoding="async"
+          width="1500"
+          height="1000"
+        />
+      </div>
+      <div class="container mx-auto max-w-7xl relative z-10">
+        <div class="mb-16 md:mb-24" data-aos="fade-up">
+          <span
+            class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block italic"
+            >Signature Services</span
+          >
+          <h2 class="text-4xl md:text-6xl font-serif-display text-white">
+            Landscape Lighting Solutions
+          </h2>
+        </div>
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 text-left mb-24"
+        >
+          <!-- I: Custom Landscape Design -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <span class="archetype-num">I</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Custom Landscape Design
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Tailored lighting plans that match your home's
+              <strong>unique architecture</strong>. We design for depth,
+              texture, and drama.
+            </p>
+          </div>
+
+          <!-- II: Home Façade Lighting -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <span class="archetype-num">II</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M3 9.5L12 3l9 6.5V20a2 2 0 01-2 2H5a2 2 0 01-2-2V9.5z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 22V12h6v10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Home Façade Lighting
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Expertly grazing stone, columns, and peaks to showcase your
+              <strong>home's grandeur</strong> at night.
+            </p>
+          </div>
+
+          <!-- III: Outdoor Living Spaces -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <span class="archetype-num">III</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m11.314 11.314l.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Outdoor Living Spaces
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Warm, inviting lighting for <strong>patios and pools</strong>,
+              perfect for evening hosting and relaxation.
+            </p>
+          </div>
+
+          <!-- IV: Tree & Garden Illumination -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <span class="archetype-num">IV</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M12 22V12m0 0l-4-4m4 4l4-4m-4 4v-4m0 0l-3-3m3 3l3-3m-3 3v-2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Tree & Garden Illumination
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Artistic illumination that brings your
+              <strong>heritage trees</strong> and specimen gardens to life
+              through moonlighting.
+            </p>
+          </div>
+
+          <!-- V: Hidden Outdoor Audio -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <span class="archetype-num">V</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M15.5 8.511a5 5 0 010 6.978M18.5 5.011a9 9 0 010 13.978M12 6L8 10H5a1 1 0 00-1 1v2a1 1 0 001 1h3l4 4V6z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Hidden Outdoor Audio
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              High-performance <strong>outdoor audio systems</strong> concealed
+              within your landscape for a truly sensory environment.
+            </p>
+          </div>
+
+          <!-- VI: Commercial Outdoor Lighting -->
+          <div
+            class="archetype-card group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <span class="archetype-num">VI</span>
+            <div class="archetype-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                class="w-full h-full"
+              >
+                <path
+                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m-1 4h1m5-8h1m-1 4h1m-1 4h1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-2xl font-serif-display text-white mb-4 group-hover:text-gold transition-colors"
+            >
+              Commercial Lighting
+            </h3>
+            <p class="text-white/70 text-base leading-relaxed">
+              Professional evening lighting for luxury businesses requiring an
+              <strong>elite aesthetic</strong> and reliable durability.
+            </p>
+          </div>
+
+          <!-- VII: The Tradition Card (Holiday Division) -->
+          <div
+            class="archetype-card group md:col-span-2 lg:col-span-3 relative overflow-hidden !p-0 !bg-transparent !border-gold/30 hover:!border-gold transition-colors duration-500"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <!-- Background Image -->
+            <img
+              src="/assets/images/portfolio-modern-design.jpg"
+              class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000 grayscale group-hover:grayscale-0"
+              alt="Wrapped Heritage Oak Tree - Holiday Lighting"
+            />
+            <!-- Dark Gradient Overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"
+            ></div>
+
+            <!-- Content -->
+            <div
+              class="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between h-full gap-6"
+            >
+              <div class="max-w-2xl text-left">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="bg-gold text-black text-[9px] uppercase tracking-[0.2em] font-bold px-3 py-1 rounded-sm"
+                    >Seasonal Exclusive</span
+                  >
+                </div>
+                <h3
+                  class="text-3xl md:text-4xl font-serif-display text-white mb-3"
+                >
+                  The Holiday Division
+                </h3>
+                <p class="text-white/80 text-base leading-relaxed">
+                  Architectural Christmas lighting for the discerning estate. We
+                  accept a limited number of bespoke commissions to keep your
+                  family's tradition bright.
+                </p>
+              </div>
+
+              <div class="flex-shrink-0">
+                <a
+                  href="holiday.html"
+                  class="btn btn-outline text-xs px-8 py-4 border-gold text-gold hover:bg-gold transition-all"
+                >
+                  View Holiday Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center" data-aos="fade-up">
+          <div class="invitational-card max-w-xl text-left w-full">
+            <p class="text-white/90 text-base mb-6">
+              How would these compositions translate to your specific
+              architecture?
+            </p>
+            <a
+              href="contact.html"
+              class="btn btn-gold btn-luminescent text-[10px] w-full md:w-auto px-12 magnetic-btn"
+              >Request a Private Design Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. GLOWCARE STEWARDSHIP (WAS #9) -->
+    <section class="py-24 md:py-32 px-6 bg-[#0c0c0c] border-y border-white/5">
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid lg:grid-cols-2 gap-24 items-center text-left">
+          <div class="relative order-2 lg:order-1" data-aos="fade-right">
+            <img
+              src="/assets/images/landscape-lighting/optimized/maintinance program.png"
+              class="rounded opacity-70 w-full h-auto"
+              alt="Landscape lighting maintenance service Reston"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="order-1 lg:order-2 text-left" data-aos="fade-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+              >We Handle The Maintenance</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-8 text-white text-left"
+            >
+              Lighting Maintenance & Care.
+            </h2>
+            <p
+              class="text-white/90 text-reading leading-relaxed mb-12 text-left"
+            >
+              You're busy. We proactively check your system so you don't have to
+              call us. Our GlowCare plans include seasonal adjustments and
+              cleaning to ensure your system always performs like new.
+            </p>
+
+            <div class="invitational-card text-left">
+              <p
+                class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-center"
+              >
+                Proactive Care
+              </p>
+              <a
+                href="contact.html"
+                class="btn btn-outline text-[10px] w-full text-center border-white/20 text-white hover:border-gold hover:text-gold magnetic-btn"
+                >Explore Concierge Maintenance</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. THE ART OF ATMOSPHERE (PURE WHITE SECTION - WAS #5) -->
+    <section class="py-24 md:py-32 px-6 bg-white text-black">
+      <div class="container mx-auto max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div data-aos="fade-right" class="text-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
+              >The Art of Atmosphere</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-8 leading-tight text-black"
+            >
+              Warmth Over<br /><span class="italic text-gold">Glare.</span>
+            </h2>
+            <p class="text-black/80 text-reading leading-relaxed mb-8">
+              Avoid the cold, blue glare of standard LEDs. We rely on years of
+              experience to
+              <strong>find the right light for every application</strong>,
+              selecting warm tones that mimic the glow of a fireplace to make
+              your home feel welcoming, not exposed.
+            </p>
+            <p class="text-black/70 text-lg leading-relaxed mb-10">
+              Our expertise lies in recommending the proper intensity and hue
+              that complements your home’s specific masonry, whether it's McLean
+              brick or Great Falls stone.
+            </p>
+            <div class="border border-black/10 p-8 rounded mb-10 relative">
+              <p class="text-black/70 text-base mb-6 italic italic">
+                Seeing is believing. We can demonstrate the exact spectrum on
+                your property at dusk.
+              </p>
+              <a
+                href="contact.html"
+                class="artisan-link font-bold text-black magnetic-btn"
+                >Experience the Warmth Live <span>✦</span></a
+              >
+            </div>
+          </div>
+          <div class="relative" data-aos="fade-left">
+            <img
+              src="/assets/images/landscape-lighting/optimized/warmth-glow-over-glare.png"
+              class="rounded border border-black/5 w-full h-auto"
+              alt="Warm 2700K LED landscape lighting Vienna VA"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. MATERIALS OF HERITAGE (WAS #7) -->
+    <section class="py-24 md:py-32 px-6 bg-[#0c0c0c] border-b border-white/5">
+      <div class="container mx-auto max-w-6xl">
+        <div
+          class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center text-left"
+        >
+          <div class="relative order-2 md:order-1" data-aos="fade-right">
+            <img
+              src="/assets/images/landscape-lighting/optimized/Quality material and standards.png"
+              class="rounded w-full h-auto"
+              alt="Solid brass landscape lighting fixtures"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="order-1 md:order-2 text-left" data-aos="fade-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+              >Innovation & Durability</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-8 text-white text-left"
+            >
+              Qulaity Materials & Reliability.
+            </h2>
+            <p
+              class="text-white/90 text-reading mb-12 leading-relaxed text-left"
+            >
+              We reject compromise. We utilize the most
+              <strong
+                >cutting-edge materials, technologies, and techniques</strong
+              >
+              available to ensure your system withstands the elements for
+              generations while delivering precise, reliable performance.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4. Portfolio Gallery Section -->
-    <section id="portfolio" class="py-20 px-6 bg-white">
-      <div class="container mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-4xl font-serif-display mb-4">
-          Our Holiday Lighting Portfolio
+    <!-- 11. SMART HUB INTEGRATION (WHITE SECTION - WAS #10) -->
+    <section class="py-24 md:py-32 px-6 bg-white text-black text-center">
+      <div class="container mx-auto max-w-5xl">
+        <span
+          class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+          >Elite Integration</span
+        >
+        <h2
+          class="text-4xl md:text-5xl font-serif-display mb-16 text-black text-left"
+        >
+          Smart Landscape Lighting Control.
         </h2>
-        <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <img
-              src="/assets/images/portfolio-roof-line.jpg"
-              alt="Elegant Roofline Lighting"
-              class="rounded-lg shadow-lg gallery-img"
-            />
+        <div class="grid md:grid-cols-3 gap-8 md:gap-12 text-left mb-20">
+          <div class="p-8 border border-black/10 rounded" data-aos="fade-up">
+            <svg
+              class="w-8 h-8 text-gold mb-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9s-9-4.03-9-9 9-9 9-9zm0-2C5.93 0 0 5.93 0 12s5.93 12 12 12 12-5.93 12-12S18.07 0 12 0zm0 4a1 1 0 0 0-1 1v5.59l3.3 3.3a1 1 0 0 0 1.4-1.42l-2.7-2.7V5a1 1 0 0 0-1-1z"
+              />
+            </svg>
+            <h3
+              class="font-bold uppercase tracking-widest text-xs mb-4 text-black text-left"
+            >
+              Astronomical Sync
+            </h3>
+            <p class="text-black/80 text-base text-left leading-relaxed">
+              Your lightscape automatically calculates Northern Virginia's
+              precise sunset every day.
+            </p>
           </div>
-          <div data-aos="zoom-in" data-aos-delay="200">
-            <img
-              src="/assets/images/portfolio-tree-wrap.jpg"
-              alt="Warm Tree Wraps"
-              class="rounded-lg shadow-lg gallery-img"
-            />
+          <div
+            class="p-8 border border-black/10 rounded scale-100 md:scale-110 bg-white shadow-2xl relative overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="relative z-10">
+              <svg
+                class="w-8 h-8 text-gold mb-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"
+                />
+              </svg>
+              <h3
+                class="font-bold uppercase tracking-widest text-xs mb-4 text-black text-left"
+              >
+                Total Integration
+              </h3>
+              <p class="text-black/80 text-base text-left leading-relaxed">
+                Seamless <strong>smart lighting control</strong> via
+                <strong>Lutron, Control4, and Crestron</strong> systems.
+              </p>
+            </div>
           </div>
-          <div data-aos="zoom-in" data-aos-delay="300">
-            <img
-              src="/assets/images/portfolio-enterance.jpg"
-              alt="Grand Entrance Lighting"
-              class="rounded-lg shadow-lg gallery-img"
-            />
-          </div>
-          <div data-aos="zoom-in" data-aos-delay="100">
-            <img
-              src="/assets/images/portfolio-modern-design.jpg"
-              alt="Modern Home Lighting Design"
-              class="rounded-lg shadow-lg gallery-img"
-            />
-          </div>
-          <div data-aos="zoom-in" data-aos-delay="200">
-            <img
-              src="/assets/images/potrfolio-brick-colonial.jpg"
-              alt="Classic Brick Colonial Lighting"
-              class="rounded-lg shadow-lg gallery-img"
-            />
-          </div>
-          <div data-aos="zoom-in" data-aos-delay="300">
-            <img
-              src="/assets/images/portfolio-commercial.jpg"
-              alt="Subtle Landscape Accents"
-              class="rounded-lg shadow-lg gallery-img"
-            />
+          <div
+            class="p-8 border border-black/10 rounded"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <svg
+              class="w-8 h-8 text-gold mb-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66l.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"
+              />
+            </svg>
+            <h3
+              class="font-bold uppercase tracking-widest text-xs mb-4 text-black text-left"
+            >
+              Custom Lighting Scenes
+            </h3>
+            <p class="text-black/80 text-base text-left leading-relaxed">
+              Adjust ambiance from "Summer Social" to "Winter Security" with one
+              tap.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. "Why Choose Us" Section with SVG Animation -->
-    <section id="why-us" class="py-20 px-6">
-      <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div data-aos="draw-house" class="flex items-center justify-center">
-            <svg
-              class="w-full max-w-md"
-              viewBox="0 0 100 100"
+    <!-- 12. SURGICAL INSTALLATION (WHITE SECTION - WAS #12, stays after Smart Hub) -->
+    <section
+      class="py-24 md:py-32 px-6 bg-white text-black overflow-hidden border-t border-black/5"
+    >
+      <div class="container mx-auto max-w-6xl text-left">
+        <div class="grid lg:grid-cols-2 gap-20 items-center text-left">
+          <div data-aos="fade-right" class="text-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+              >Pristine Methodology</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-8 leading-tight text-black text-left"
+            >
+              Respect for Your Landscape.
+            </h2>
+            <p
+              class="text-black/80 text-reading leading-relaxed mb-12 text-left"
+            >
+              We treat your property like a gallery. Our methods allow us to
+              weave illumination into your soil with surgical precision, leaving
+              your lawn pristine by the time we depart.
+            </p>
+            <div class="p-8 border border-black/10 rounded text-left">
+              <p
+                class="text-black/70 text-sm mb-6 uppercase tracking-widest font-bold text-left"
+              >
+                Surgical Installation
+              </p>
+              <a
+                href="contact.html"
+                class="artisan-link font-bold text-gold magnetic-btn"
+                >Request an Install Overview <span>✦</span></a
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-left" data-aos="fade-left">
+            <div
+              class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
+            >
+              <img
+                src="/assets/images/landscape-lighting/optimized/before-installation.png"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
+                alt="Surgical landscape lighting installation methodology"
+                loading="lazy"
+                decoding="async"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors duration-500"
+              >
+                <span
+                  class="text-white/90 font-bold uppercase tracking-widest text-[10px] bg-black/60 px-4 py-2 backdrop-blur-sm rounded-sm"
+                  >Surgical Entry</span
+                >
+              </div>
+            </div>
+            <div
+              class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
+            >
+              <img
+                src="/assets/images/landscape-lighting/optimized/after-installation.png"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
+                alt="Restored lawn after landscape lighting"
+                loading="lazy"
+                decoding="async"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors duration-500"
+              >
+                <span
+                  class="text-white/90 font-bold uppercase tracking-widest text-[10px] bg-black/60 px-4 py-2 backdrop-blur-sm rounded-sm"
+                  >Restored Lawn</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. SERVICE AREA (REGIONAL INTELLIGENCE / RADAR) -->
+    <section
+      id="regions"
+      class="py-24 md:py-32 px-6 bg-[#0c0c0c] border-y border-white/5 relative overflow-hidden"
+    >
+      <div class="container mx-auto max-w-6xl">
+        <div class="grid lg:grid-cols-12 gap-16 items-start">
+          <!-- Left: Tactical Map (Sticky) -->
+          <div
+            class="hidden lg:block lg:col-span-5 lg:sticky lg:top-40 text-left"
+            data-aos="fade-right"
+          >
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-8 block text-left"
+              >Regional Intelligence</span
+            >
+
+            <div
+              class="relative w-full aspect-square border border-white/10 rounded-lg bg-[#0a0a0a] overflow-hidden group"
+            >
+              <!-- Radar Sweep Animation -->
+              <div class="absolute inset-0 z-0">
+                <div
+                  class="w-full h-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(212,175,55,0.1)_60deg,transparent_60deg)] animate-[spin_4s_linear_infinite] opacity-30"
+                ></div>
+              </div>
+
+              <!-- Grid Lines -->
+              <div
+                class="absolute inset-0 z-0"
+                style="
+                  background-image: linear-gradient(
+                      rgba(255, 255, 255, 0.03) 1px,
+                      transparent 1px
+                    ),
+                    linear-gradient(
+                      90deg,
+                      rgba(255, 255, 255, 0.03) 1px,
+                      transparent 1px
+                    );
+                  background-size: 40px 40px;
+                "
+              ></div>
+
+              <svg
+                viewBox="0 0 400 400"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-full h-full relative z-10 p-8"
+              >
+                <!-- Topography Lines (Abstract) -->
+                <path
+                  d="M-50,300 Q100,250 200,350 T450,300"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.05)"
+                  stroke-width="1"
+                />
+                <path
+                  d="M-50,250 Q120,200 220,300 T450,250"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.05)"
+                  stroke-width="1"
+                />
+                <path
+                  d="M-50,200 Q150,150 250,250 T450,200"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.05)"
+                  stroke-width="1"
+                />
+
+                <!-- Potomac River -->
+                <path
+                  d="M280,0 Q300,100 350,150 T400,400"
+                  fill="none"
+                  stroke="rgba(212,175,55,0.2)"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <!-- Map Nodes -->
+                <g
+                  id="node-mclean"
+                  class="map-node transition-all duration-300 opacity-50"
+                >
+                  <circle cx="320" cy="180" r="4" fill="#D4AF37" />
+                  <circle
+                    cx="320"
+                    cy="180"
+                    r="12"
+                    stroke="#D4AF37"
+                    stroke-width="1"
+                    fill="none"
+                    class="animate-ping"
+                    style="animation-duration: 3s"
+                  />
+                  <text
+                    x="335"
+                    y="185"
+                    class="fill-white text-[10px] font-bold uppercase tracking-widest"
+                  >
+                    McLean
+                  </text>
+                </g>
+
+                <g
+                  id="node-great-falls"
+                  class="map-node transition-all duration-300 opacity-50"
+                >
+                  <circle cx="220" cy="140" r="4" fill="#D4AF37" />
+                  <text
+                    x="130"
+                    y="145"
+                    class="fill-white text-[10px] font-bold uppercase tracking-widest text-right"
+                  >
+                    Great Falls
+                  </text>
+                </g>
+
+                <g
+                  id="node-vienna"
+                  class="map-node transition-all duration-300 opacity-50"
+                >
+                  <circle cx="250" cy="240" r="4" fill="#D4AF37" />
+                  <text
+                    x="265"
+                    y="245"
+                    class="fill-white text-[10px] font-bold uppercase tracking-widest"
+                  >
+                    Vienna
+                  </text>
+                </g>
+
+                <g
+                  id="node-reston"
+                  class="map-node transition-all duration-300 opacity-50"
+                >
+                  <circle cx="150" cy="220" r="4" fill="#D4AF37" />
+                  <text
+                    x="90"
+                    y="225"
+                    class="fill-white text-[10px] font-bold uppercase tracking-widest text-right"
+                  >
+                    Reston
+                  </text>
+                </g>
+              </svg>
+
+              <!-- Data Cards (Absolute Positioned Over Map) -->
+              <!-- McLean Data -->
+              <div
+                id="data-mclean"
+                class="data-card absolute bottom-4 left-4 right-4 bg-black/90 border border-gold/30 p-4 rounded backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 pointer-events-none"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-serif-display text-lg">
+                    McLean Sector
+                  </h4>
+                  <span class="text-gold text-[10px] border border-gold/30 px-1"
+                    >Zone 01</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-2 text-[10px] font-mono text-white/60"
+                >
+                  <div>SOIL: <span class="text-white">Clay/Loam Mix</span></div>
+                  <div>
+                    STYLE: <span class="text-white">Georgian/Federal</span>
+                  </div>
+                  <div>LOT: <span class="text-white">1-2 Acres</span></div>
+                  <div>
+                    CHALLENGE: <span class="text-white">Facade Height</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Great Falls Data -->
+              <div
+                id="data-great-falls"
+                class="data-card absolute bottom-4 left-4 right-4 bg-black/90 border border-gold/30 p-4 rounded backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 pointer-events-none"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-serif-display text-lg">
+                    Great Falls Sector
+                  </h4>
+                  <span class="text-gold text-[10px] border border-gold/30 px-1"
+                    >Zone 02</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-2 text-[10px] font-mono text-white/60"
+                >
+                  <div>SOIL: <span class="text-white">Rocky/Forest</span></div>
+                  <div>
+                    STYLE: <span class="text-white">Custom Estate</span>
+                  </div>
+                  <div>LOT: <span class="text-white">2-5+ Acres</span></div>
+                  <div>
+                    CHALLENGE: <span class="text-white">Perimeter Depth</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vienna Data -->
+              <div
+                id="data-vienna"
+                class="data-card absolute bottom-4 left-4 right-4 bg-black/90 border border-gold/30 p-4 rounded backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 pointer-events-none"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-serif-display text-lg">
+                    Vienna Sector
+                  </h4>
+                  <span class="text-gold text-[10px] border border-gold/30 px-1"
+                    >Zone 03</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-2 text-[10px] font-mono text-white/60"
+                >
+                  <div>SOIL: <span class="text-white">Dense Loam</span></div>
+                  <div>
+                    STYLE: <span class="text-white">Craftsman/Modern</span>
+                  </div>
+                  <div>LOT: <span class="text-white">0.5-1 Acre</span></div>
+                  <div>
+                    CHALLENGE: <span class="text-white">Privacy Screening</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reston Data -->
+              <div
+                id="data-reston"
+                class="data-card absolute bottom-4 left-4 right-4 bg-black/90 border border-gold/30 p-4 rounded backdrop-blur-md opacity-0 translate-y-4 transition-all duration-300 pointer-events-none"
+              >
+                <div class="flex justify-between items-start mb-2">
+                  <h4 class="text-white font-serif-display text-lg">
+                    Reston Sector
+                  </h4>
+                  <span class="text-gold text-[10px] border border-gold/30 px-1"
+                    >Zone 04</span
+                  >
+                </div>
+                <div
+                  class="grid grid-cols-2 gap-2 text-[10px] font-mono text-white/60"
+                >
+                  <div>
+                    SOIL: <span class="text-white">Lakefront/Silt</span>
+                  </div>
+                  <div>STYLE: <span class="text-white">Mid-Century</span></div>
+                  <div>LOT: <span class="text-white">Cluster/Wooded</span></div>
+                  <div>
+                    CHALLENGE: <span class="text-white">DRB Compliance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 text-left" data-aos="fade-left">
+            <span
+              class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
+              >Registry of Estates</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-serif-display mb-12 text-white"
+            >
+              Service Area
+            </h2>
+            <div class="space-y-4">
+              <div class="ledger-item active group" data-target="mclean">
+                <div class="flex flex-col w-full">
+                  <span
+                    class="flex items-center justify-between gap-4 text-white ledger-city"
+                    >McLean
+                    <span class="status-tag">2 Commissions Active</span></span
+                  >
+                  <span
+                    class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
+                    >Federal Symmetry & Facade Reveal</span
+                  >
+                </div>
+              </div>
+              <div class="ledger-item group" data-target="great-falls">
+                <div class="flex flex-col w-full">
+                  <span
+                    class="flex items-center justify-between gap-4 text-white ledger-city"
+                    >Great Falls
+                    <span class="status-tag">Spring 2026</span></span
+                  >
+                  <span
+                    class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
+                    >Equestrian Estates & Sylvan Moonlighting</span
+                  >
+                </div>
+              </div>
+              <div class="ledger-item group" data-target="vienna">
+                <div class="flex flex-col w-full">
+                  <span
+                    class="flex items-center justify-between gap-4 text-white ledger-city"
+                    >Vienna & Oakton
+                    <span class="status-tag">1 Slot Remains</span></span
+                  >
+                  <span
+                    class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
+                    >Private Sanctuaries & Courtyard Retreats</span
+                  >
+                </div>
+              </div>
+              <div class="ledger-item group" data-target="reston">
+                <div class="flex flex-col w-full">
+                  <span
+                    class="flex items-center justify-between gap-4 text-white ledger-city"
+                    >Reston
+                    <span class="status-tag border-white/10 text-white/40"
+                      >Active Zone</span
+                    ></span
+                  >
+                  <span
+                    class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
+                    >Modern Forest & Lakefront Accents</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Width Expansion -->
+        <div
+          class="mt-20 p-8 md:p-10 bg-white/5 border border-white/10 rounded text-left w-full"
+          data-aos="fade-up"
+        >
+          <h4 class="text-white font-serif-display text-2xl mb-4 italic">
+            Beyond the Primary Corridor?
+          </h4>
+          <p class="text-white/80 text-lg leading-relaxed mb-8">
+            While we prioritize
+            <strong
+              >landscape lighting projects in Great Falls, McLean, Vienna, and
+              Reston</strong
+            >
+            , we accept select commissions within 20 miles, specifically
+            serving:
+          </p>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-4 text-sm text-white/70 font-light mb-10 tracking-wide"
+          >
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Oakton
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Wolf Trap
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Fairfax Station
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Clifton
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>North Arlington
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Falls Church
+              City
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Ashburn
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Creighton Farms
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Leesburg
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Beacon Hill
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Aldie
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Middleburg
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>The Plains
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Oak Hill
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Lowes Island
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Potomac Falls
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Lansdowne
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Brambleton
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>South Riding
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Stone Ridge
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1 h-1 bg-gold rounded-full"></span>Tysons
+            </div>
+          </div>
+
+          <a
+            href="contact.html"
+            class="artisan-link font-bold text-gold magnetic-btn"
+            ><svg
+              class="w-3 h-3 mr-2 inline-block fill-current"
+              viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                class="house-outline"
-                d="M10 90 H90 V45 L50 15 L10 45 V90 Z M40 90 V60 H60 V90"
-                fill="none"
-                stroke="#1a1a1a"
-                stroke-width="0.75"
-              />
-              <path
-                class="light-path"
-                d="M10 45 L50 15 L90 45"
-                fill="none"
-                stroke="#D4AF37"
-                stroke-width="1.5"
-                stroke-linecap="round"
+                d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2h-8zM4 6h12v10H4V6zm3-2h2v2H7V4zm4 0h2v2h-2V4z"
               />
             </svg>
+            Request a Concierge Assessment <span>✦</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. LOCAL ACCLAIM -->
+    <section class="py-24 md:py-32 px-6 bg-[#0c0c0c] text-center">
+      <div class="container mx-auto max-w-4xl">
+        <span
+          class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-12 block text-center"
+          >Artisan Acclaim</span
+        >
+        <blockquote
+          class="text-2xl md:text-3xl font-serif-display leading-relaxed mb-8 italic text-white text-center"
+        >
+          "The transformation was breathtaking. They created an entire
+          resort-like environment right here in Great Falls."
+        </blockquote>
+        <cite class="font-bold uppercase tracking-widest text-xs text-white/80"
+          >— The Sterling Family, Great Falls</cite
+        >
+      </div>
+    </section>
+
+    <!-- 15. FAQ SECTION -->
+    <section class="py-24 px-6 bg-[#0c0c0c] border-t border-white/5">
+      <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-20" data-aos="fade-up">
+          <span
+            class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
+            >Concierge FAQ</span
+          >
+          <h2 class="text-4xl md:text-5xl font-serif-display text-white">
+            Common Inquiries
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-16 gap-y-4">
+          <!-- Left Column -->
+          <div class="space-y-4">
+            <div class="faq-item border-b border-white/10" data-aos="fade-up">
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Do you service historical estates in Great Falls and McLean?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Yes. We specialize in heritage properties and use
+                    non-invasive installation methods specifically designed to
+                    protect mature root systems, historic masonry, and delicate
+                    hardscapes in Northern Virginia's most established
+                    neighborhoods.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  What is the typical investment for a custom lighting
+                  commission?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Most comprehensive estate commissions range between
+                    <strong>$15,000 and $50,000</strong>, depending on the
+                    acreage and architectural complexity. We also offer focused
+                    front-facade packages starting at $5,000. Our proposal
+                    provides transparent, line-item pricing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Will the installation damage my existing landscaping?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Absolutely not. We utilize a surgical "slit-trenching"
+                    method that carefully lifts sod and weaves wiring beneath
+                    the soil without digging large trenches. Your lawn is
+                    restored to its pristine condition immediately, often
+                    leaving no trace we were there.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  How does architectural lighting improve home security?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    We eliminate dark corners and perimeter blind spots using
+                    soft, strategic illumination rather than harsh floodlights.
+                    This improves visibility for security cameras and creates a
+                    "lived-in" look that naturally deters intrusion without
+                    ruining your curb appeal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Do you handle HOA approvals for exterior lighting?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Yes. We are familiar with the strict covenants of HOA
+                    communities in Great Falls, Vienna, and McLean. We provide
+                    detailed spec sheets and ensure all designs are "Dark-Sky
+                    Compliant" to prevent light trespass and satisfy review
+                    boards.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Left Column Questions -->
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  I’m not tech-savvy. Is the system hard to control?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Not at all. We program the system with "Astronomical
+                    Timing," meaning it knows exactly when sunset is in your zip
+                    code and adjusts automatically every day. You literally
+                    never have to touch it unless you want to.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Can I adjust the lighting for parties?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Yes. We can install smart-home compatible dimmers
+                    (Lutron/Caséta). With one tap on your phone, you can dim the
+                    lights for an intimate dinner party or brighten them for
+                    cleanup.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Do you work with my existing Landscape Architect?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Absolutely. We view ourselves as partners in your estate's
+                    design. We frequently collaborate with architects to ensure
+                    our lighting plan enhances their planting and hardscape
+                    vision perfectly.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div data-aos="fade-left">
-            <h2 class="text-4xl font-serif-display mb-4">
-              The Glow Artisans Difference in Holiday Lighting
-            </h2>
-            <div class="w-24 h-1 bg-gold mb-8"></div>
-            <ul class="space-y-6">
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-gold mr-4 flex-shrink-0 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+
+          <!-- Right Column -->
+          <div class="space-y-4">
+            <!-- Original 5 -->
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                  ></path>
-                </svg>
-                <div>
-                  <h4 class="font-bold text-lg">Artisan Quality</h4>
-                  <p class="text-gray-600">
-                    Meticulous attention to detail for flawless, perfectly
-                    symmetrical results.
+                  Why do you exclusively use 2700K LED technology?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Standard LEDs often emit a cold, clinical blue light
+                    (3000K-5000K). We use
+                    <strong>2700K warm-white fixtures</strong> because they
+                    mimic the inviting, luxurious glow of halogen or
+                    candlelight, which complements red brick, stone, and natural
+                    foliage perfectly.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  What happens if a light burns out or a fixture is damaged?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Our <strong>GlowCare Stewardship</strong> program covers
+                    proactive maintenance. If a bulb fails or a mower damages a
+                    fixture, simply text our concierge line, and we will
+                    dispatch a technician to repair it, often within 48 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Can you integrate outdoor audio without visible speakers?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Yes. We design hidden landscape audio systems using
+                    satellite speakers and buried subwoofers that blend
+                    seamlessly into garden beds. The result is immersive,
+                    high-fidelity sound that is heard but not seen.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  What warranty do you offer on your systems?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    We install solid brass and copper fixtures that carry a
+                    <strong>Lifetime Manufacturer Warranty</strong> against
+                    corrosion. Our labor and workmanship are guaranteed,
+                    ensuring your investment is protected for the long term.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  How quickly can you start a project?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    We limit our active projects to ensure quality. Typically,
+                    we can schedule your design consultation within 5 days, with
+                    installation commencing 2-3 weeks after design approval,
+                    depending on the season.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- New Right Column Questions -->
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  What if my landscapers accidentally cut a wire?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    It happens. Just send us a text. Our team will locate the
+                    break and splice it using waterproof, marine-grade
+                    connections to restore the system quickly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  How long will the installation crew be on my property?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    We respect your privacy. Most estate installations are
+                    completed in 1-3 days. Our uniformed crew arrives on time,
+                    keeps the site tidy daily, and performs a final magnetic
+                    sweep for any debris before leaving.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Is the wiring safe for my dogs and children?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    Yes. We use a 12-volt low-voltage system which is completely
+                    safe to the touch, even if a wire is exposed. We also bury
+                    lines 6-8 inches deep to keep them well out of reach of pets
+                    and play.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="faq-item border-b border-white/10"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
+              <button
+                class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
+              >
+                <h3
+                  class="text-lg font-serif-display text-white group-hover:text-gold transition-colors pr-8"
+                >
+                  Will the brass fixtures turn green or ugly?
+                </h3>
+                <span
+                  class="text-gold text-2xl leading-none transition-transform duration-300 icon-plus"
+                  >+</span
+                >
+              </button>
+              <div
+                class="faq-answer grid grid-rows-[0fr] transition-all duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p class="text-white/60 text-sm leading-relaxed pb-6">
+                    No. Unlike cheap plated metal that peels, our solid brass
+                    fixtures develop a beautiful, dark bronze "living finish"
+                    (patina) over time that blends naturally into your mulch and
+                    gardens.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 md:py-40 bg-black text-center px-6">
+      <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+        <h2
+          class="text-5xl md:text-6xl font-serif-display mb-8 text-gold text-center"
+        >
+          Illuminate Your Legacy.
+        </h2>
+        <p
+          class="text-white/90 uppercase tracking-[0.4em] text-xs mb-12 text-center"
+        >
+          Limited Commissions Available for Spring 2026.
+        </p>
+        <div class="flex justify-center">
+          <div class="invitational-card max-w-xl text-left">
+            <a
+              href="contact.html"
+              class="btn btn-gold btn-luminescent px-14 py-6 text-sm text-center w-full magnetic-btn"
+              >Inquire for Spring 2026 Commission</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white/60 py-20 px-6 border-t border-white/5">
+      <div class="container mx-auto max-w-7xl">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 text-left"
+        >
+          <!-- Column 1: Identity & Ethos -->
+          <div class="flex flex-col items-start">
+            <span
+              class="text-2xl font-serif-display text-gold mb-6 uppercase tracking-widest"
+            >
+              GLOW ARTISANS
+            </span>
+            <p class="text-xs leading-relaxed max-w-xs text-white/70">
+              Curating evening sanctuaries for Northern Virginia's most
+              discerning estates. We transform darkness into architectural art.
+            </p>
+            <div class="mt-8 flex space-x-6">
+              <a
+                href="https://www.instagram.com/glowartsianslighting/"
+                class="hover:text-gold transition"
+                aria-label="Instagram"
+                ><svg
+                  class="w-5 h-5 fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.facebook.com/glowartisanslighting"
+                class="hover:text-gold transition"
+                aria-label="Facebook"
+                ><svg
+                  class="w-5 h-5 fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+
+          <!-- Column 2: The Experience (Navigation) -->
+          <div class="flex flex-col items-start">
+            <h4
+              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
+            >
+              The Experience
+            </h4>
+            <ul class="space-y-4 text-xs tracking-wide text-white/80">
+              <li>
+                <a href="#archetypes" class="hover:text-gold transition"
+                  >Design</a
+                >
               </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-gold mr-4 flex-shrink-0 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <li>
+                <a href="#spotlight" class="hover:text-gold transition"
+                  >Portfolio</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  ></path>
-                </svg>
-                <div>
-                  <h4 class="font-bold text-lg">Unmatched Reliability</h4>
-                  <p class="text-gray-600">
-                    We use only premium, commercial-grade LED lights that shine
-                    brighter and last longer.
-                  </p>
-                </div>
               </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-gold mr-4 flex-shrink-0 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
+              <li>
+                <a href="#glow-path" class="hover:text-gold transition"
+                  >Our Process</a
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
-                <div>
-                  <h4 class="font-bold text-lg">Complete Peace of Mind</h4>
-                  <p class="text-gray-600">
-                    Our all-inclusive service means you don't have to worry
-                    about a single thing. We are fully licensed and insured.
-                  </p>
-                </div>
+              </li>
+              <li>
+                <a href="#regions" class="hover:text-gold transition"
+                  >Service Areas</a
+                >
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- 6. "Our Artisan Promise" Section -->
-    <section id="artisan-promise" class="py-20 px-6 bg-white">
-      <div class="container mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-4xl font-serif-display mb-4">Our Artisan Promise</h2>
-        <p class="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-          The Four Pillars of Our Holiday Lighting Commitment
-        </p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-          <div data-aos="fade-up" data-aos-delay="100">
-            <div class="flex justify-center mb-4">
-              <div class="bg-gold/10 p-4 rounded-full">
-                <svg
-                  class="w-10 h-10 text-gold"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="font-bold text-xl mb-2">Property Protection</h3>
-            <p class="text-gray-600">
-              We pledge to treat your home with the utmost respect, using
-              non-damaging methods to ensure your property remains pristine.
-            </p>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="200">
-            <div class="flex justify-center mb-4">
-              <div class="bg-gold/10 p-4 rounded-full">
-                <svg
-                  class="w-10 h-10 text-gold"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="font-bold text-xl mb-2">Season-Long Reliability</h3>
-            <p class="text-gray-600">
-              We guarantee a brilliant, uninterrupted display all season, with
-              complimentary and prompt maintenance if ever needed.
-            </p>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="300">
-            <div class="flex justify-center mb-4">
-              <div class="bg-gold/10 p-4 rounded-full">
-                <svg
-                  class="w-10 h-10 text-gold"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="font-bold text-xl mb-2">White-Glove Professionalism</h3>
-            <p class="text-gray-600">
-              You will receive a truly professional experience from our
-              courteous, insured teams, defined by clear communication and a
-              seamless process.
-            </p>
-          </div>
-          <div data-aos="fade-up" data-aos-delay="400">
-            <div class="flex justify-center mb-4">
-              <div class="bg-gold/10 p-4 rounded-full">
-                <svg
-                  class="w-10 h-10 text-gold"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="font-bold text-xl mb-2">Your Complete Satisfaction</h3>
-            <p class="text-gray-600">
-              We are not finished until you are absolutely thrilled. Your
-              satisfaction is the ultimate measure of our artisan success.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. "Client Acclaim" Section -->
-    <section id="client-acclaim" class="py-20 px-6">
-      <div class="container mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-4xl font-serif-display mb-2">Client Acclaim</h2>
-        <p class="text-lg text-gray-600 mb-12">
-          What Our Northern Virginia Clients Are Saying About Their Holiday
-          Lighting
-        </p>
-        <div class="grid md:grid-cols-3 gap-8 text-left">
-          <div
-            class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <img
-              src="/assets/images/testemonial-images/testemonial-image-mclean.png"
-              alt="Beautifully lit home in McLean"
-              class="rounded-lg mb-6"
-            />
-            <blockquote class="text-gray-600 italic mb-4 flex-grow">
-              "Working with Glow Artisans was an absolute dream... They
-              transformed our home into something truly magical."
-            </blockquote>
-            <cite
-              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
-              >Sarah K.<br /><span class="text-sm text-gray-500 font-normal"
-                >McLean, VA</span
-              ></cite
+          <!-- Column 3: Client Stewardship -->
+          <div class="flex flex-col items-start">
+            <h4
+              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
             >
+              Client Stewardship
+            </h4>
+            <ul class="space-y-4 text-xs tracking-wide text-white/80">
+              <li>
+                <a href="contact.html" class="hover:text-gold transition"
+                  >GlowCare Support</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-gold transition"
+                  >Request Service</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-gold transition"
+                  >Client Billing</a
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <img
-              src="/assets/images/testemonial-images/testemonial-image-great-falls.png"
-              alt="Beautifully lit estate in Great Falls"
-              class="rounded-lg mb-6"
-            />
-            <blockquote class="text-gray-600 italic mb-4 flex-grow">
-              "The quality and attention to detail are simply unmatched... the
-              compliments from our neighbors haven't stopped."
-            </blockquote>
-            <cite
-              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
-              >David L.<br /><span class="text-sm text-gray-500 font-normal"
-                >Great Falls, VA</span
-              ></cite
+
+          <!-- Column 4: Contact & Trust -->
+          <div class="flex flex-col items-start">
+            <h4
+              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
             >
-          </div>
-          <div
-            class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <img
-              src="/assets/images/testemonial-images/testemonial-image-vienna.png"
-              alt="Beautifully lit residence in Vienna"
-              class="rounded-lg mb-6"
-            />
-            <blockquote class="text-gray-600 italic mb-4 flex-grow">
-              "I can't overstate the peace of mind that comes with their
-              white-glove service. Knowing everything is handled safely and
-              professionally is priceless."
-            </blockquote>
-            <cite
-              class="font-bold not-italic text-right border-t border-gray-200 pt-4 mt-4"
-              >Jennifer R.<br /><span class="text-sm text-gray-500 font-normal"
-                >Vienna, VA</span
-              ></cite
+              Contact & Trust
+            </h4>
+            <a
+              href="tel:5717412444"
+              class="text-white font-serif-display text-2xl hover:text-gold transition mb-4"
+              >(571) 741-2444</a
             >
-          </div>
-        </div>
-      </div>
-    </section>
+            <a
+              href="mailto:design@m.glowartisans.com"
+              class="text-xs hover:text-gold transition mb-8 text-white/60"
+              >design@m.glowartisans.com</a
+            >
 
-    <!-- 8. FAQ Section -->
-    <section id="faq" class="py-20 px-6 bg-white">
-      <div class="container mx-auto max-w-5xl" data-aos="fade-up">
-        <h2 class="text-4xl font-serif-display text-center mb-4">
-          Your Holiday Lighting Questions, Answered
-        </h2>
-        <div class="w-24 h-1 bg-gold mx-auto mb-12"></div>
-        <div class="grid md:grid-cols-2 gap-x-12 gap-y-10 text-left">
-          <div class="space-y-8">
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Are you fully licensed and insured?
-              </h4>
-              <p class="text-gray-600">
-                Absolutely. Glow Artisans is a fully licensed business in
-                Virginia and carries comprehensive general liability insurance
-                to protect your property and our team, ensuring complete peace
-                of mind.
+            <div
+              class="space-y-3 text-[10px] uppercase tracking-widest text-white/40"
+            >
+              <p class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Uniformed
+                & Background-Checked
               </p>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                What kind of lights do you use?
-              </h4>
-              <p class="text-gray-600">
-                We exclusively use premium, commercial-grade LED lights. Unlike
-                store-bought lights, our products are more durable, shine
-                brighter, and are far more energy-efficient and reliable for a
-                flawless <strong>holiday lighting</strong> display.
-              </p>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                What happens if a bulb burns out?
-              </h4>
-              <p class="text-gray-600">
-                Our white-glove service includes proactive maintenance. If any
-                issue arises, we will promptly send a technician to make repairs
-                at no additional cost.
-              </p>
-            </div>
-          </div>
-          <div class="space-y-8">
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Can I see a mock-up on my home first?
-              </h4>
-              <p class="text-gray-600">
-                Yes. Our design process includes a digital rendering of our
-                proposed design on a photo of your home so you can visualize and
-                approve the final look before we begin.
-              </p>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Will your methods cause any damage?
-              </h4>
-              <p class="text-gray-600">
-                No. Protecting your home is our top priority. We use
-                industry-best, non-damaging clips and attachment methods
-                specifically chosen for your home's surfaces, never using
-                staples or nails.
-              </p>
-            </div>
-            <div>
-              <h4 class="font-bold text-lg mb-2">
-                Do you handle takedown and storage?
-              </h4>
-              <p class="text-gray-600">
-                Yes, our all-inclusive service includes complete post-season
-                takedown. We carefully label, check, and store all materials in
-                our secure facility for next year.
+              <p class="flex items-center gap-3">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Licensed
+                & Insured
               </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- 9. "Your Design Consultation" Section -->
-    <section id="consultation-process" class="py-20 px-6">
-      <div class="container mx-auto max-w-5xl">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="pr-8" data-aos="fade-right">
-            <h2 class="text-4xl font-serif-display mb-4">
-              Your Complimentary Design Consultation
-            </h2>
-            <p class="text-lg text-gray-600 mb-8">
-              What to expect when we partner together. Our process is designed
-              to be clear, collaborative, and professional, giving you complete
-              confidence before we begin.
-            </p>
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div
-                  class="flex-shrink-0 w-12 h-12 rounded-full bg-gold text-charcoal flex items-center justify-center mr-4"
-                >
-                  <span class="font-serif-display text-2xl">1</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg">The Vision Call</h4>
-                  <p class="text-gray-600">
-                    We begin with a brief, respectful conversation to understand
-                    your vision and aesthetic preferences. This is a
-                    collaborative discussion, not a sales call.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="flex-shrink-0 w-12 h-12 rounded-full bg-gold text-charcoal flex items-center justify-center mr-4"
-                >
-                  <span class="font-serif-display text-2xl">2</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg">The Digital Rendering</h4>
-                  <p class="text-gray-600">
-                    Using a photo of your home, our designers create a bespoke
-                    digital mock-up of your new lightscape, allowing you to
-                    visualize the magic before we begin.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <div
-                  class="flex-shrink-0 w-12 h-12 rounded-full bg-gold text-charcoal flex items-center justify-center mr-4"
-                >
-                  <span class="font-serif-display text-2xl">3</span>
-                </div>
-                <div>
-                  <h4 class="font-bold text-lg">The Transparent Proposal</h4>
-                  <p class="text-gray-600">
-                    We provide a detailed, all-inclusive proposal with clear
-                    pricing and no hidden fees, so you can make a confident,
-                    unhurried decision.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="rounded-lg shadow-xl overflow-hidden"
-            data-aos="fade-left"
-          >
-            <img
-              src="/assets/images/designer-photo.png"
-              alt="Tablet showing a digital mock-up of a home lighting design"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. Final CTA Section -->
-    <section id="contact" class="bg-charcoal text-white py-20 px-6">
-      <div class="container mx-auto text-center max-w-3xl">
-        <h2 class="text-4xl font-serif-display mb-4">
-          Schedule Your Holiday Lighting Design Today
-        </h2>
-        <p class="text-lg text-gray-300 mb-8">
-          The holiday season is approaching quickly. Contact us today to
-          schedule your complimentary design consultation and reserve your place
-          on our installation calendar.
-        </p>
-        <iframe
-          src="https://api.leadconnectorhq.com/widget/form/B57or7c2v4bJpQB5Cfvq"
-          style="width: 100%; height: 100%; border: none; border-radius: 3px"
-          id="inline-B57or7c2v4bJpQB5Cfvq"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="Glow Arisans Contact Form"
-          data-height="1408"
-          data-layout-iframe-id="inline-B57or7c2v4bJpQB5Cfvq"
-          data-form-id="B57or7c2v4bJpQB5Cfvq"
-          title="Glow Arisans Contact Form"
+        <!-- Bottom Bar -->
+        <div
+          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest opacity-40"
         >
-        </iframe>
-        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
-      </div>
-    </section>
-
-    <!-- 11. Footer -->
-    <footer class="bg-black text-gray-400 py-12 px-6">
-      <div class="container mx-auto text-center">
-        <p class="text-2xl font-serif-display text-gold mb-4">Glow Artisans</p>
-        <p class="mb-2">
-          Northern Virginia's Premier Holiday Lighting Specialists
-        </p>
-        <p class="mb-4">
-          <a href="tel:571-741-2444" class="hover:text-gold">(571) 741-2444</a>
-          |
-          <a href="mailto:design@m.glowartisans.com" class="hover:text-gold"
-            >design@m.glowartisans.com</a
-          >
-        </p>
-        <div class="flex justify-center space-x-4 mb-8">
-          <a
-            href="https://www.facebook.com/glowartisanslighting"
-            aria-label="Facebook"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
+          <p>&copy; 2026 Glow Artisans LLC</p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="privacy-policy.html" class="hover:text-white transition"
+              >Privacy Policy</a
             >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              /></svg
-          ></a>
-          <a
-            href="https://www.instagram.com/glowartsianslighting"
-            aria-label="Instagram"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.728.058-1.033.048-1.63.2-2.113.385a3.27 3.27 0 00-1.18.812 3.27 3.27 0 00-.812 1.18c-.185.483-.337 1.08-.385 2.113-.048.98-.058 1.325-.058 3.728s.01 2.748.058 3.728c.048 1.033.2 1.63.385 2.113a3.27 3.27 0 00.812 1.18 3.27 3.27 0 001.18.812c.483.185 1.08.337 2.113.385.98.048 1.325.058 3.728.058s2.748-.01 3.728-.058c1.033-.048 1.63-.2 2.113-.385a3.27 3.27 0 001.18-.812 3.27 3.27 0 00.812-1.18c.185-.483-.337-1.08-.385-2.113.048-.98.058-1.325-.058-3.728s-.01-2.748-.058-3.728c-.048-1.033-.2-1.63-.385-2.113a3.27 3.27 0 00-.812-1.18 3.27 3.27 0 00-1.18-.812c-.483-.185-1.08-.337-2.113-.385-.98-.048-1.325-.058-3.728-.058z"
-                clip-rule="evenodd"
-              />
-              <path
-                d="M12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 1.62a3.515 3.515 0 110 7.03 3.515 3.515 0 010-7.03z"
-              />
-              <path
-                d="M16.965 6.57a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"
-              /></svg
-          ></a>
+            <span>|</span>
+            <a href="#" class="hover:text-white transition">Terms</a>
+          </div>
         </div>
-        <p class="text-sm">
-          &copy; 2025 Glow Artisans LLC |
-          <a href="privacy-policy.html" class="hover:text-gold"
-            >Privacy Policy</a
-          >
-          | Licensed & Insured | Northern Virginia
-        </p>
       </div>
     </footer>
 
-    <!-- AOS (Animate on Scroll) Library JS -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // --- Mobile menu toggle ---
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      // --- Gentle Parallax Snowfall & Sparkle Logic ---
       document.addEventListener("DOMContentLoaded", () => {
-        const snowContainer = document.getElementById("snow-container");
-        if (snowContainer) {
-          // ... snow logic ...
+        AOS.init({
+          duration: 800,
+          once: true,
+          disable: "mobile",
+        });
+
+        // Header Scroll
+        window.addEventListener(
+          "scroll",
+          () => {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) header.classList.add("scrolled");
+            else header.classList.remove("scrolled");
+          },
+          { passive: true }
+        );
+
+        // Magnetic Button Effect (Desktop Only) - OPTIMIZED for Layout Thrashing
+        if (window.matchMedia("(pointer: fine)").matches) {
+          const magneticBtns = document.querySelectorAll(".magnetic-btn");
+          magneticBtns.forEach((btn) => {
+            let rect = btn.getBoundingClientRect();
+
+            // Recalculate on hover entry (avoids layout thrashing during move)
+            btn.addEventListener("mouseenter", () => {
+              rect = btn.getBoundingClientRect();
+            });
+
+            // Handle window resize
+            window.addEventListener(
+              "resize",
+              () => {
+                rect = btn.getBoundingClientRect();
+              },
+              { passive: true }
+            );
+
+            btn.addEventListener(
+              "mousemove",
+              (e) => {
+                // Use cached rect
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+
+                // Subtle movement
+                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+              },
+              { passive: true }
+            );
+
+            btn.addEventListener(
+              "mouseleave",
+              () => {
+                btn.style.transform = "translate(0px, 0px)";
+              },
+              { passive: true }
+            );
+          });
         }
-      });
 
-      // --- Initialize AOS ---
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
+        // Glow Path Line Scroll Animation
+        const pathLine = document.getElementById("active-path-line");
+        const pathSection = document.getElementById("glow-path");
 
-      // --- Guiding Star Logic ---
-      const guidingStar = document.getElementById("guiding-star");
+        if (pathLine && pathSection) {
+          // Initialize path length for cross-browser consistency if pathLength="1" fails,
+          // but since we rely on CSS stroke-dasharray: 1, let's assume pathLength works or fix it via JS.
+          // The safer "fix" for visual glitches is just the property access.
 
-      window.addEventListener("scroll", () => {
-        if (!guidingStar) return;
-        const scrollTotal =
-          document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 50) {
-          guidingStar.style.opacity = "1";
-          const starY =
-            (scrollPosition / scrollTotal) * (window.innerHeight + 50);
-          guidingStar.style.transform = `translateY(${starY}px) rotate(${
-            scrollPosition / 10
-          }deg)`;
-        } else {
-          guidingStar.style.opacity = "0";
+          window.addEventListener(
+            "scroll",
+            () => {
+              const rect = pathSection.getBoundingClientRect();
+              const windowHeight = window.innerHeight;
+
+              if (rect.top < windowHeight && rect.bottom > 0) {
+                const scrollStart = windowHeight * 0.8;
+                const scrollEnd = -rect.height * 0.5;
+                let progress =
+                  (scrollStart - rect.top) / (scrollStart - scrollEnd);
+                progress = Math.max(0, Math.min(1, progress));
+
+                // FIXED: Use style.strokeDashoffset instead of direct property
+                pathLine.style.strokeDashoffset = 1 - progress;
+              }
+            },
+            { passive: true }
+          );
+        }
+
+        // Nav Overlay Logic (Shared by Desktop & Mobile)
+        const headerMenuTrigger = document.getElementById(
+          "header-menu-trigger"
+        );
+        const navOverlay = document.getElementById("nav-overlay");
+        const menuIcon = document.getElementById("menu-icon");
+
+        const toggleMenu = () => {
+          const isActive = navOverlay.classList.toggle("active");
+
+          if (menuIcon) {
+            if (isActive) {
+              menuIcon.innerHTML =
+                '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>';
+            } else {
+              menuIcon.innerHTML =
+                '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
+            }
+          }
+
+          navOverlay.setAttribute("aria-hidden", !isActive);
+          document.body.style.overflow = isActive ? "hidden" : "";
+        };
+
+        if (headerMenuTrigger)
+          headerMenuTrigger.addEventListener("click", toggleMenu);
+
+        // Close menu when a link is clicked
+        const overlayLinks = document.querySelectorAll(".overlay-link");
+        overlayLinks.forEach((link) => {
+          link.addEventListener("click", toggleMenu);
+        });
+
+        // Artisan Aura (Desktop Only)
+        const aura = document.getElementById("artisan-aura");
+        if (window.matchMedia("(pointer: fine)").matches) {
+          document.addEventListener(
+            "mousemove",
+            (e) => {
+              requestAnimationFrame(() => {
+                aura.style.opacity = "1";
+                aura.style.left = e.clientX + "px";
+                aura.style.top = e.clientY + "px";
+              });
+            },
+            { passive: true }
+          );
+        }
+
+        // Hero Reveal Treatment
+        const hero = document.getElementById("hero-canvas");
+        const revealLight = document.getElementById("hero-reveal-light");
+        const shimmerText = document.getElementById("shimmer-text");
+
+        if (hero && window.matchMedia("(pointer: fine)").matches) {
+          hero.addEventListener(
+            "mousemove",
+            (e) => {
+              requestAnimationFrame(() => {
+                const rect = hero.getBoundingClientRect();
+                revealLight.style.left = e.clientX - rect.left + "px";
+                revealLight.style.top = e.clientY - rect.top + "px";
+                revealLight.style.opacity = "1";
+                const moveX = (e.clientX / window.innerWidth) * 100;
+                shimmerText.style.backgroundPosition = `${moveX}% 50%`;
+                shimmerText.style.color = `rgba(255, 255, 255, ${
+                  0.15 + Math.random() * 0.15
+                })`;
+              });
+            },
+            { passive: true }
+          );
+
+          hero.addEventListener("mouseleave", () => {
+            revealLight.style.opacity = "0";
+            shimmerText.style.color = `rgba(255, 255, 255, 0.15)`;
+          });
+        }
+
+        /* --- OPTIMIZED PARTICLE CANVAS --- */
+        const canvas = document.getElementById("particle-canvas");
+        if (canvas) {
+          const ctx = canvas.getContext("2d", { alpha: true });
+          let particles = [];
+          let isAnimating = true;
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              isAnimating = entry.isIntersecting;
+              if (isAnimating) animate();
+            });
+          });
+          observer.observe(canvas);
+
+          function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+          }
+          window.addEventListener("resize", resize);
+          resize();
+
+          class Particle {
+            constructor() {
+              this.reset();
+            }
+            reset() {
+              this.x = Math.random() * canvas.width;
+              this.y = Math.random() * canvas.height;
+              this.size = Math.random() * 2 + 0.5;
+              this.speedX = Math.random() * 0.5 - 0.25;
+              this.speedY = Math.random() * 0.5 - 0.25;
+              this.life = Math.random() * 1;
+              this.opacity = Math.random() * 0.5;
+            }
+            update() {
+              this.x += this.speedX;
+              this.y += this.speedY;
+              this.life -= 0.002;
+              if (
+                this.life <= 0 ||
+                this.x < 0 ||
+                this.x > canvas.width ||
+                this.y < 0 ||
+                this.y > canvas.height
+              ) {
+                this.reset();
+              }
+            }
+            draw() {
+              ctx.fillStyle = `rgba(212, 175, 55, ${this.opacity * this.life})`;
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+
+          const particleCount = window.innerWidth < 768 ? 30 : 60;
+          for (let i = 0; i < particleCount; i++)
+            particles.push(new Particle());
+
+          function animate() {
+            if (!isAnimating) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p) => {
+              p.update();
+              p.draw();
+            });
+            requestAnimationFrame(animate);
+          }
+          animate();
+        }
+
+        // Robust Slider Logic with Interaction Overlay
+        const sliderRoot = document.getElementById("slider-root");
+        const sliderOverlay = document.getElementById("slider-overlay");
+        const sliderInnerImg = document.getElementById("slider-inner-img");
+        const sliderHandle = document.getElementById("slider-handle");
+        const sliderCTA = document.getElementById("slider-cta");
+        const sliderSuccessCTA = document.getElementById("slider-success-cta");
+
+        if (sliderRoot) {
+          let isDragging = false;
+          let hasInteracted = false;
+
+          const syncImageWidth = () => {
+            if (sliderInnerImg && sliderRoot) {
+              sliderInnerImg.style.width = `${sliderRoot.offsetWidth}px`;
+            }
+          };
+
+          window.addEventListener("resize", syncImageWidth);
+          syncImageWidth();
+
+          const revealSuccessCTA = () => {
+            if (!hasInteracted) {
+              hasInteracted = true;
+              if (sliderCTA) sliderCTA.style.opacity = "0";
+              if (sliderSuccessCTA) {
+                sliderSuccessCTA.style.opacity = "1";
+                sliderSuccessCTA.style.pointerEvents = "auto";
+                sliderSuccessCTA.style.bottom = "-80px";
+              }
+            }
+          };
+
+          const updateSlider = (clientX) => {
+            const rect = sliderRoot.getBoundingClientRect();
+            const x = clientX - rect.left;
+            let percent = (x / rect.width) * 100;
+            if (percent < 0) percent = 0;
+            if (percent > 100) percent = 100;
+
+            sliderOverlay.style.width = percent + "%";
+            sliderHandle.style.left = percent + "%";
+          };
+
+          const startDrag = (e) => {
+            isDragging = true;
+            revealSuccessCTA();
+            updateSlider(e.clientX || e.touches[0].clientX);
+          };
+
+          const stopDrag = () => {
+            isDragging = false;
+          };
+
+          const moveDrag = (e) => {
+            if (!isDragging) return;
+            updateSlider(e.clientX || e.touches[0].clientX);
+          };
+
+          sliderRoot.addEventListener("mousedown", startDrag);
+          window.addEventListener("mouseup", stopDrag);
+          window.addEventListener("mousemove", moveDrag);
+
+          sliderRoot.addEventListener("touchstart", startDrag, {
+            passive: true,
+          });
+          window.addEventListener("touchend", stopDrag);
+          window.addEventListener("touchmove", moveDrag, { passive: true });
+        }
+
+        // Territory Interaction
+        const selectors = document.querySelectorAll(".ledger-item");
+        selectors.forEach((item) => {
+          const activateItem = () => {
+            const target = item.getAttribute("data-target");
+            selectors.forEach((s) => s.classList.remove("active"));
+
+            // Reset Map Nodes
+            document.querySelectorAll(".map-node").forEach((el) => {
+              el.classList.remove("opacity-100");
+              el.classList.add("opacity-50");
+            });
+
+            // Reset Data Cards
+            document.querySelectorAll(".data-card").forEach((card) => {
+              card.classList.remove("opacity-100", "translate-y-0");
+              card.classList.add("opacity-0", "translate-y-4");
+            });
+
+            // Activate Selection
+            item.classList.add("active");
+
+            // Activate Specific Node
+            const node = document.getElementById(`node-${target}`);
+            if (node) {
+              node.classList.remove("opacity-50");
+              node.classList.add("opacity-100");
+            }
+
+            // Activate Specific Data Card
+            const card = document.getElementById(`data-${target}`);
+            if (card) {
+              card.classList.remove("opacity-0", "translate-y-4");
+              card.classList.add("opacity-100", "translate-y-0");
+            }
+          };
+
+          item.addEventListener("mouseenter", activateItem);
+          item.addEventListener("click", activateItem);
+        });
+
+        // --- PHASE TOGGLE LOGIC ---
+        const phaseTabs = document.querySelectorAll(".phase-tab");
+        const phaseContents = document.querySelectorAll(".phase-content");
+
+        if (phaseTabs.length > 0) {
+          phaseTabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+              const targetId = tab.getAttribute("data-target");
+
+              // Reset Tabs
+              phaseTabs.forEach((t) => {
+                t.classList.remove("active", "bg-white/10");
+                t.querySelector(".text-gold").classList.remove("scale-110"); // Reset scale if using that class
+              });
+
+              // Activate Clicked Tab
+              tab.classList.add("active", "bg-white/10");
+
+              // Reset Content
+              phaseContents.forEach((content) => {
+                content.classList.remove("opacity-100", "z-10");
+                content.classList.add(
+                  "opacity-0",
+                  "pointer-events-none",
+                  "z-0"
+                );
+              });
+
+              // Activate Target Content
+              const targetContent = document.getElementById(targetId);
+              if (targetContent) {
+                targetContent.classList.remove(
+                  "opacity-0",
+                  "pointer-events-none",
+                  "z-0"
+                );
+                targetContent.classList.add("opacity-100", "z-10");
+              }
+            });
+          });
+        }
+
+        // --- FAQ COLLAPSIBLE LOGIC ---
+        const faqItems = document.querySelectorAll(".faq-item");
+        if (faqItems.length > 0) {
+          faqItems.forEach((item) => {
+            const button = item.querySelector("button");
+            const answer = item.querySelector(".faq-answer");
+            const icon = item.querySelector(".icon-plus");
+            const title = item.querySelector("h3");
+
+            button.addEventListener("click", () => {
+              const isOpen = answer.classList.contains("grid-rows-[1fr]");
+
+              // Close all other items (Accordion behavior)
+              faqItems.forEach((otherItem) => {
+                if (otherItem !== item) {
+                  const otherAnswer = otherItem.querySelector(".faq-answer");
+                  const otherIcon = otherItem.querySelector(".icon-plus");
+                  const otherTitle = otherItem.querySelector("h3");
+
+                  otherAnswer.classList.remove("grid-rows-[1fr]");
+                  otherAnswer.classList.add("grid-rows-[0fr]");
+                  if (otherIcon) otherIcon.style.transform = "rotate(0deg)";
+                  if (otherTitle) otherTitle.classList.remove("text-gold");
+                }
+              });
+
+              // Toggle current item
+              if (!isOpen) {
+                answer.classList.remove("grid-rows-[0fr]");
+                answer.classList.add("grid-rows-[1fr]");
+                if (icon) icon.style.transform = "rotate(45deg)";
+                if (title) title.classList.add("text-gold");
+              } else {
+                answer.classList.remove("grid-rows-[1fr]");
+                answer.classList.add("grid-rows-[0fr]");
+                if (icon) icon.style.transform = "rotate(0deg)";
+                if (title) title.classList.remove("text-gold");
+              }
+            });
+          });
         }
       });
     </script>

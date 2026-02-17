@@ -3,406 +3,388 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Story - Glow Artisans</title>
-    <!-- NEW: Website Favicon -->
+    <meta name="theme-color" content="#0c0c0c" />
+    <title>The Artisan Standard | Glow Artisans</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23D4AF37' d='M50,0 L60,40 L100,50 L60,60 L50,100 L40,60 L0,50 L40,40 Z' /></svg>"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NZZ28DDL");
-    </script>
-    <!-- End Google Tag Manager -->
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <style>
-      /* Brand Palette */
-      html {
-        scroll-behavior: smooth;
-      }
       body {
         font-family: "Lato", sans-serif;
-        background-color: #f5f5f5;
-        color: #1a1a1a;
+        background-color: #0c0c0c;
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
       }
       .font-serif-display {
         font-family: "Playfair Display", serif;
       }
-      .bg-charcoal {
-        background-color: #1a1a1a;
+      .text-gold {
+        color: #d4af37;
       }
       .bg-gold {
         background-color: #d4af37;
       }
-      .text-gold {
-        color: #d4af37;
+      .border-gold {
+        border-color: #d4af37;
       }
+
+      /* Signature Line */
+      .signature {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 2rem;
+        color: #d4af37;
+        opacity: 0.8;
+      }
+
+      /* Divider */
+      .divider-line {
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(212, 175, 55, 0.3),
+          transparent
+        );
+        margin: 4rem 0;
+      }
+
+      /* Button Styles (Imported from Index for Consistency) */
       .btn {
+        position: relative;
         display: inline-block;
-        padding: 0.75rem 2rem;
-        font-weight: 700;
+        padding: 1.2rem 2.5rem;
+        font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 0.5rem;
-        transition: all 0.3s ease;
+        letter-spacing: 0.2em;
+        border-radius: 0.25rem;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         text-align: center;
+        font-size: 0.8rem;
+        pointer-events: auto;
+        overflow: hidden;
+        cursor: pointer;
       }
       .btn-gold {
         background-color: #d4af37;
-        color: #1a1a1a;
+        color: #0c0c0c;
         border: 2px solid #d4af37;
+        animation: permanent-pulse 3s infinite ease-in-out;
       }
       .btn-gold:hover {
-        background-color: transparent;
-        color: #d4af37;
+        background-color: #c49f32;
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
+      }
+      .btn-luminescent::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        transform: skewX(-20deg);
+        animation: sheen-sweep 4.5s infinite linear;
+        pointer-events: none;
       }
       .btn-outline {
-        background-color: transparent;
-        color: #f5f5f5;
-        border: 2px solid #d4af37;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
       }
       .btn-outline:hover {
-        background-color: #d4af37;
-        color: #1a1a1a;
+        border-color: #d4af37;
+        background: rgba(212, 175, 55, 0.1);
+        color: #d4af37;
+      }
+
+      @keyframes permanent-pulse {
+        0% {
+          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+      }
+      @keyframes sheen-sweep {
+        0% {
+          left: -150%;
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        20% {
+          left: 150%;
+          opacity: 0;
+        }
+        100% {
+          left: 150%;
+          opacity: 0;
+        }
       }
     </style>
   </head>
-  <body class="antialiased">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ28DDL"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Header Navigation -->
+  <body>
+    <!-- Header / Nav (Minimalist Return) -->
     <header
-      class="bg-charcoal text-white py-4 px-6 md:px-12 fixed w-full z-30 shadow-lg"
+      class="fixed w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center mix-blend-difference"
     >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-serif-display text-gold"
-          >Glow Artisans</a
-        >
-        <nav class="hidden md:flex space-x-6 items-center">
-          <a href="index.html#process" class="hover:text-gold transition"
-            >Our Process</a
-          >
-          <a href="index.html#portfolio" class="hover:text-gold transition"
-            >Portfolio</a
-          >
-          <a href="our-story.html" class="text-white font-bold">Our Story</a>
-          <a
-            href="index.html#artisan-promise"
-            class="hover:text-gold transition"
-            >Our Promise</a
-          >
-          <a href="index.html#client-acclaim" class="hover:text-gold transition"
-            >Client Acclaim</a
-          >
-          <a href="index.html#faq" class="hover:text-gold transition">FAQ</a>
-          <a href="index.html#contact" class="btn btn-outline text-sm"
-            >Request Holiday Design</a
-          >
-          <a
-            href="tel:571-741-2444"
-            class="hover:text-gold transition"
-            aria-label="Call Glow Artisans"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              ></path>
-            </svg>
-          </a>
-        </nav>
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4">
-        <a href="index.html#process" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Process</a
-        >
-        <a href="index.html#portfolio" class="block py-2 px-4 hover:bg-gray-700"
-          >Portfolio</a
-        >
-        <a href="our-story.html" class="block py-2 px-4 bg-gray-700 text-white"
-          >Our Story</a
-        >
-        <a
-          href="index.html#artisan-promise"
-          class="block py-2 px-4 hover:bg-gray-700"
-          >Our Promise</a
-        >
-        <a
-          href="index.html#client-acclaim"
-          class="block py-2 px-4 hover:bg-gray-700"
-          >Client Acclaim</a
-        >
-        <a href="index.html#faq" class="block py-2 px-4 hover:bg-gray-700"
-          >FAQ</a
-        >
-        <a
-          href="index.html#contact"
-          class="block py-2 px-4 mt-2 btn btn-gold w-full"
-          >Request Holiday Design</a
-        >
-        <a
-          href="tel:571-741-2444"
-          class="block text-center py-3 px-4 text-gold mt-2 font-bold"
-          >Call (571) 741-2444</a
-        >
-      </div>
+      <a
+        href="index.html"
+        class="text-xs font-bold uppercase tracking-[0.2em] text-white hover:text-gold transition-colors"
+      >
+        &larr; Return to Home Page
+      </a>
+      <span
+        class="text-xl font-serif-display text-white tracking-widest hidden md:block"
+        >GLOW ARTISANS</span
+      >
     </header>
 
-    <!-- Main Content for Our Story -->
-    <main class="pt-32">
-      <section class="py-20 px-6">
-        <div class="container mx-auto max-w-4xl">
-          <div class="text-center">
-            <h1 class="text-5xl font-serif-display mb-4">
-              Our Passion for the Perfect Glow
-            </h1>
-            <p class="text-xl text-gray-600">
-              We believe holiday lighting is more than a service—it's an art
-              form.
+    <!-- 1. The Manifesto Hook -->
+    <section
+      class="min-h-[80vh] flex items-center justify-center relative px-6"
+    >
+      <!-- Background Texture -->
+      <div class="absolute inset-0 z-0 opacity-30">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1920"
+          class="w-full h-full object-cover"
+          alt="Artisan Texture - Luxury Lighting Design Northern Virginia"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#0c0c0c] via-[#0c0c0c]/80 to-[#0c0c0c]"
+        ></div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-4xl text-center"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <span
+          class="text-gold text-[10px] uppercase tracking-[0.4em] font-bold mb-6 block"
+          >The Philosophy</span
+        >
+        <h1
+          class="text-4xl md:text-6xl lg:text-7xl font-serif-display leading-tight mb-8"
+        >
+          We don't light houses.<br />
+          <span class="italic font-light text-white/80"
+            >We curate sanctuaries.</span
+          >
+        </h1>
+        <p
+          class="text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl mx-auto mb-10"
+        >
+          Whether you're in Great Falls or along the Potomac, the moment you
+          pull into your driveway shouldn't be met with darkness. It should be a
+          sigh of relief. A visual signal that your world is in order, elegant,
+          and secure.
+        </p>
+
+        <!-- CTA 1: Emotional Hook -->
+        <a href="contact.html" class="btn btn-gold btn-luminescent">
+          Start Your Curation
+        </a>
+      </div>
+    </section>
+
+    <!-- 2. The "White Glove" Safety Promise -->
+    <section class="py-20 px-6 bg-[#0a0a0a]">
+      <div class="container mx-auto max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right">
+            <span
+              class="text-gold text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block"
+              >The Standard</span
+            >
+            <h2 class="text-3xl md:text-4xl font-serif-display mb-6">
+              Who is on your property?
+            </h2>
+            <p class="text-white/70 text-base leading-relaxed mb-6">
+              We understand that inviting contractors to your home in Northern
+              Virginia's most discerning neighborhoods, like Fairfax County and
+              Arlington, requires trust. That is why we do not use day laborers
+              or unknown subcontractors.
+            </p>
+            <ul class="space-y-4 text-sm text-white/90 tracking-wide mb-10">
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                Strictly Uniformed Professionals
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                Comprehensive Background Checks
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                Branded, Clean Vehicles
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                Zero-Tolerance Noise & Smoking Policy
+              </li>
+            </ul>
+
+            <!-- CTA 2: Trust/Safety Hook -->
+            <a
+              href="contact.html"
+              class="inline-flex items-center gap-3 text-gold text-xs uppercase tracking-widest hover:text-white transition-colors group"
+            >
+              Meet Your Design Team
+              <svg
+                class="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="relative h-[500px] border border-white/5 rounded-sm overflow-hidden"
+            data-aos="fade-left"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&q=80&w=800"
+              class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
+              alt="Uniformed Professional Landscape Lighting Technician"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Materials (Validation) -->
+    <section class="py-24 px-6 relative">
+      <div class="divider-line max-w-6xl mx-auto"></div>
+
+      <div class="container mx-auto max-w-4xl text-center" data-aos="fade-up">
+        <span
+          class="text-gold text-[10px] uppercase tracking-[0.4em] font-bold mb-4 block"
+          >Heirloom Quality</span
+        >
+        <h2 class="text-3xl md:text-5xl font-serif-display mb-10">
+          Why We Reject Plastic.
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12 text-left mb-16">
+          <div
+            class="bg-white/5 p-8 rounded border border-white/5 hover:border-gold/30 transition-colors duration-500"
+          >
+            <h3 class="text-xl font-serif-display text-white mb-4">
+              Solid Brass
+            </h3>
+            <p class="text-white/60 text-sm leading-relaxed">
+              Cheap aluminum peels. Plastic cracks. We exclusively install solid
+              brass fixtures that naturally patina over time, aging beautifully
+              like a fine bronze statue to blend with your landscape.
             </p>
           </div>
-
-          <div class="grid md:grid-cols-3 gap-12 items-center my-16">
-            <div class="md:col-span-1">
-              <img
-                src="/assets/images/GA-PORTRAITS-Shoot-1-AMMAR-A-A-ROUGH-v1 (1).jpg"
-                alt="Ammar Alasadi, Founder of Glow Artisans"
-                class="rounded-full shadow-xl mx-auto"
-              />
-            </div>
-            <div class="md:col-span-2">
-              <h2 class="text-3xl font-serif-display mb-4">
-                A Message from Our Founder
-              </h2>
-              <p class="text-gray-700 mb-4">
-                My name is Ammar Alasadi. As a local business owner with years
-                of experience serving the homeowners of Northern Virginia, I've
-                always been driven by a simple principle: to provide
-                unparalleled quality and service. I started Glow Artisans
-                because I saw a need for a holiday lighting company that treats
-                this work not as a task, but as a craft.
-              </p>
-              <p class="text-gray-700">
-                For us, being an "artisan" means taking your unique vision for
-                the perfect holiday display and bringing it to life with
-                meticulous care and an artist's eye. It’s about creating that
-                magical feeling you remember from childhood and sharing it with
-                your family and neighbors. We are honored to bring that glow to
-                your home.
-              </p>
-              <p class="font-serif-display text-2xl text-gold mt-4">
-                - Ammar Alasadi
-              </p>
-            </div>
-          </div>
-
-          <!-- The Artisan's Toolkit Section -->
           <div
-            class="grid md:grid-cols-2 gap-12 items-center my-16 pt-16 border-t border-gray-200"
+            class="bg-white/5 p-8 rounded border border-white/5 hover:border-gold/30 transition-colors duration-500"
           >
-            <div class="md:col-span-1">
-              <img
-                src="/assets/images/tool-kit.jpg"
-                alt="Professional-grade holiday lighting components"
-                class="rounded-lg shadow-xl mx-auto"
-              />
-            </div>
-            <div class="md:col-span-1">
-              <h2 class="text-3xl font-serif-display mb-4">
-                The Artisan's Toolkit
-              </h2>
-              <p class="text-gray-700 mb-4">
-                A flawless holiday display is only possible with
-                professional-grade materials. We have meticulously selected
-                every component for its superior durability, brilliance, and
-                safety.
-              </p>
-              <ul class="space-y-3 text-gray-600">
-                <li class="flex items-start">
-                  <span class="text-gold mr-2">&#10003;</span>
-                  <strong>Brilliant Commercial-Grade LEDs:</strong> Brighter,
-                  more vibrant, and more reliable than any store-bought
-                  alternative.
-                </li>
-                <li class="flex items-start">
-                  <span class="text-gold mr-2">&#10003;</span>
-                  <strong>Custom-Fit Wiring:</strong> Cut to the exact
-                  dimensions of your home for a clean, tailored aesthetic with
-                  no messy excess wires.
-                </li>
-                <li class="flex items-start">
-                  <span class="text-gold mr-2">&#10003;</span>
-                  <strong>Property-Safe Attachments:</strong> Non-damaging clips
-                  and fasteners that protect your gutters, shingles, and trim.
-                </li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-serif-display text-white mb-4">
+              The "Warmth" Metric
+            </h3>
+            <p class="text-white/60 text-sm leading-relaxed">
+              We reject the cold, blue "hospital" light of standard LEDs. We
+              calibrate our systems to 2700K—a specific color temperature that
+              mimics the inviting glow of candlelight or a hearth.
+            </p>
           </div>
+        </div>
 
-          <div class="text-center border-t border-gray-200 pt-16">
-            <h2 class="text-3xl font-serif-display mb-8">Our Artisan Ethos</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-              <div>
-                <h3 class="font-bold text-xl mb-2">
-                  Craftsmanship Over Commerce
-                </h3>
-                <p class="text-gray-600">
-                  We treat every home as a unique canvas. Our success isn't
-                  measured in the number of houses we complete, but in the
-                  meticulous quality of each design we create.
-                </p>
-              </div>
-              <div>
-                <h3 class="font-bold text-xl mb-2">
-                  Partnership Over Transaction
-                </h3>
-                <p class="text-gray-600">
-                  You are our client, not just a customer. We're dedicated to
-                  providing a seamless, white-glove experience year after year.
-                </p>
-              </div>
-              <div>
-                <h3 class="font-bold text-xl mb-2">Safety & Respect</h3>
-                <p class="text-gray-600">
-                  Your peace of mind is our priority. We are fully insured, use
-                  only non-damaging methods, and treat your property with the
-                  utmost respect.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bg-charcoal text-white py-20 px-6 text-center">
-        <div class="container mx-auto max-w-3xl">
-          <h2 class="text-4xl font-serif-display mb-4">
-            Ready to Begin Your Design?
-          </h2>
-          <p class="text-lg text-gray-300 mb-8">
-            I would be honored to bring my team's passion and expertise to your
-            home this holiday season.
-          </p>
-          <a href="index.html#contact" class="btn btn-gold text-lg"
-            >Request a Design Consultation</a
-          >
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-12 px-6">
-      <div class="container mx-auto text-center">
-        <p class="text-2xl font-serif-display text-gold mb-4">Glow Artisans</p>
-        <p class="mb-2">
-          Northern Virginia's Premier Holiday Lighting Specialists
-        </p>
-        <p class="mb-4">
-          <a href="tel:571-741-2444" class="hover:text-gold">(571) 741-2444</a>
-          |
-          <a href="mailto:design@m.glowartisans.com" class="hover:text-gold"
-            >design@m.glowartisans.com</a
-          >
-        </p>
-        <div class="flex justify-center space-x-4 mb-8">
-          <a
-            href="https://www.facebook.com/glowartisanslighting"
-            aria-label="Facebook"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              /></svg
-          ></a>
-          <a
-            href="https://www.instagram.com/glowartsianslighting"
-            aria-label="Instagram"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.728.058-1.033.048-1.63.2-2.113.385a3.27 3.27 0 00-1.18.812 3.27 3.27 0 00-.812 1.18c-.185.483-.337 1.08-.385 2.113-.048.98-.058 1.325-.058 3.728s.01 2.748.058 3.728c.048 1.033.2 1.63.385 2.113a3.27 3.27 0 00.812 1.18 3.27 3.27 0 001.18.812c.483.185 1.08.337 2.113.385.98.048 1.325.058 3.728.058s2.748-.01 3.728-.058c1.033-.048 1.63-.2 2.113-.385a3.27 3.27 0 001.18-.812 3.27 3.27 0 00.812-1.18c.185-.483-.337-1.08-.385-2.113.048-.98.058-1.325-.058-3.728s-.01-2.748-.058-3.728c-.048-1.033-.2-1.63-.385-2.113a3.27 3.27 0 00-.812-1.18 3.27 3.27 0 00-1.18-.812c-.483-.185-1.08-.337-2.113-.385-.98-.048-1.325-.058-3.728-.058z"
-                clip-rule="evenodd"
-              />
-              <path
-                d="M12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 1.62a3.515 3.515 0 110 7.03 3.515 3.515 0 010-7.03z"
-              />
-              <path
-                d="M16.965 6.57a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"
-              /></svg
-          ></a>
-        </div>
-        <p class="text-sm">
-          &copy; 2025 Glow Artisans LLC |
-          <a href="privacy-policy.html" class="hover:text-gold"
-            >Privacy Policy</a
-          >
-          | Licensed & Insured | Northern Virginia
-        </p>
+        <!-- CTA 3: Quality Validation -->
+        <a
+          href="contact.html"
+          class="btn btn-outline px-10 py-4 text-xs tracking-[0.2em] inline-block"
+        >
+          Request Material Sample
+        </a>
       </div>
+    </section>
+
+    <!-- 4. Founder's Pledge -->
+    <section class="py-24 px-6 bg-black text-center">
+      <div
+        class="container mx-auto max-w-3xl border border-gold/20 p-12 relative"
+      >
+        <!-- Decorative quote marks -->
+        <div
+          class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black px-4"
+        >
+          <span class="text-4xl text-gold font-serif-display">"</span>
+        </div>
+
+        <p
+          class="text-lg md:text-xl text-white/90 leading-relaxed font-light mb-10"
+        >
+          I don't just want you to like the lights. I want you to love the
+          feeling of arriving home. My personal guarantee is that we will treat
+          your estate with the same reverence we treat our own. If you ever feel
+          we haven't met that standard, you call me directly.
+        </p>
+
+        <div class="flex flex-col items-center">
+          <div class="signature mb-2">[Founder Name]</div>
+          <!-- SEO TODO: Replace with Founder Name -->
+          <p class="text-[10px] uppercase tracking-widest text-white/40">
+            Principal Designer, Glow Artisans
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Simplified) -->
+    <footer class="py-20 text-center border-t border-white/5 bg-[#0c0c0c]">
+      <a
+        href="contact.html"
+        class="btn btn-gold btn-luminescent px-12 py-5 text-xs tracking-[0.2em] inline-block mb-12"
+      >
+        Schedule Private Consultation
+      </a>
+      <p class="text-[10px] text-white/30 uppercase tracking-widest">
+        &copy; 2026 Glow Artisans LLC
+      </p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // --- Mobile menu toggle ---
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      }
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
     </script>
   </body>
 </html>

@@ -3,405 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Glow Artisans</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path fill='%23D4AF37' d='M50,0 L60,40 L100,50 L60,60 L50,100 L40,60 L0,50 L40,40 Z' /></svg>"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#0c0c0c" />
+    <title>Privacy Policy | Glow Artisans</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-NZZ28DDL");
-    </script>
-    <!-- End Google Tag Manager -->
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-      /* Brand Palette */
-      html {
-        scroll-behavior: smooth;
-      }
       body {
         font-family: "Lato", sans-serif;
-        background-color: #f5f5f5;
-        color: #1a1a1a;
+        background-color: #0c0c0c;
+        color: #e5e5e5;
+        -webkit-font-smoothing: antialiased;
       }
       .font-serif-display {
         font-family: "Playfair Display", serif;
       }
-      .bg-charcoal {
-        background-color: #1a1a1a;
-      }
-      .bg-gold {
-        background-color: #d4af37;
-      }
       .text-gold {
         color: #d4af37;
       }
-      .btn-outline {
-        background-color: transparent;
-        color: #f5f5f5;
-        border: 2px solid #d4af37;
-        padding: 0.5rem 1.5rem;
-        transition: all 0.3s ease;
-        border-radius: 0.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      .btn-outline:hover {
-        background-color: #d4af37;
-        color: #1a1a1a;
-      }
-      .policy-content h2 {
+      h2 {
         font-family: "Playfair Display", serif;
-        font-size: 1.875rem; /* text-3xl */
-        margin-top: 2rem;
+        color: #ffffff;
+        font-size: 1.5rem;
         margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid #e0e0e0;
+        margin-top: 3rem;
       }
-      .policy-content p,
-      .policy-content li {
+      p,
+      li {
         margin-bottom: 1rem;
-        line-height: 1.75;
-        color: #4a5568; /* text-gray-700 */
+        line-height: 1.8;
+        color: rgba(255, 255, 255, 0.7);
       }
-      .policy-content ul {
-        list-style-position: inside;
+      ul {
         list-style-type: disc;
-        padding-left: 1rem;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
       }
-      .policy-content a {
+      strong {
+        color: #ffffff;
+      }
+      a {
+        transition: color 0.3s ease;
+      }
+      a:hover {
         color: #d4af37;
-        text-decoration: underline;
       }
     </style>
   </head>
-  <body class="antialiased">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-NZZ28DDL"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Header Navigation -->
-    <header
-      class="bg-charcoal text-white py-4 px-6 md:px-12 fixed w-full z-30 shadow-lg"
-    >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="text-2xl font-serif-display text-gold"
-          >Glow Artisans</a
-        >
-        <nav class="hidden md:flex space-x-6 items-center">
-          <a href="index.html#process" class="hover:text-gold transition"
-            >Our Process</a
+  <body class="min-h-screen p-6 md:p-12 lg:p-20">
+    <div class="max-w-3xl mx-auto">
+      <!-- Header -->
+      <header class="text-center mb-20">
+        <a href="index.html" class="inline-block mb-6 group">
+          <span
+            class="text-xs font-bold text-gold uppercase tracking-[0.4em] opacity-80 group-hover:opacity-100 transition-opacity"
+            >Glow Artisans</span
           >
-          <a href="index.html#portfolio" class="hover:text-gold transition"
-            >Portfolio</a
+        </a>
+        <h1 class="text-4xl md:text-5xl font-serif-display text-white mb-4">
+          Privacy Policy
+        </h1>
+        <p class="text-xs uppercase tracking-widest text-white/40">
+          Last Updated: February 6, 2026
+        </p>
+      </header>
+
+      <!-- Legal Content -->
+      <article class="border-t border-white/10 pt-10">
+        <p class="text-lg text-white/90 italic mb-10">
+          At Glow Artisans, we understand that privacy is the ultimate luxury.
+          We are committed to protecting the personal information of our
+          discerning clientele with the same rigor and precision we apply to our
+          design commissions.
+        </p>
+
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy outlines how Glow Artisans LLC ("we," "us," or
+          "our") collects, uses, maintains, and discloses information collected
+          from users (each, a "User") of the https://glowartisans.com website
+          ("Site"). This policy applies to the Site and all products and
+          services offered by Glow Artisans LLC.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>
+          We may collect personal identification information from Users in a
+          variety of ways, including, but not limited to, when Users visit our
+          site, fill out a form, and in connection with other activities,
+          services, features, or resources we make available on our Site. Users
+          may be asked for, as appropriate:
+        </p>
+        <ul>
+          <li><strong>Identity Data:</strong> Name, title.</li>
+          <li>
+            <strong>Contact Data:</strong> Mailing address, property address
+            (for satellite assessment), email address, telephone numbers.
+          </li>
+          <li>
+            <strong>Technical Data:</strong> Internet protocol (IP) address,
+            browser type and version, time zone setting and location, browser
+            plug-in types and versions, operating system and platform.
+          </li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>
+          Glow Artisans LLC collects and uses Users' personal information for
+          the following specific purposes:
+        </p>
+        <ul>
+          <li>
+            <strong>To Personalize the Concierge Experience:</strong> We use
+            property addresses to review satellite imagery prior to
+            consultations, ensuring a prepared and efficient design discussion.
+          </li>
+          <li>
+            <strong>To Improve Customer Service:</strong> Information you
+            provide helps us respond to your customer service requests and
+            support needs more efficiently.
+          </li>
+          <li>
+            <strong>To Send Periodic Emails:</strong> We may use the email
+            address to respond to inquiries, questions, and/or other requests.
+            If User decides to opt-in to our mailing list, they will receive
+            emails that may include company news, updates, related product or
+            service information, etc.
+          </li>
+        </ul>
+
+        <h2>4. Data Protection & Security</h2>
+        <p>
+          We adopt appropriate data collection, storage, and processing
+          practices and security measures to protect against unauthorized
+          access, alteration, disclosure, or destruction of your personal
+          information, username, password, transaction information, and data
+          stored on our Site. We treat your data as a critical asset that must
+          be protected against loss and unauthorized access.
+        </p>
+
+        <h2>5. Sharing Your Personal Information</h2>
+        <p>
+          <strong
+            >We do not sell, trade, or rent Users' personal identification
+            information to others.</strong
           >
-          <a href="our-story.html" class="hover:text-gold transition"
-            >Our Story</a
-          >
-          <a href="index.html#faq" class="hover:text-gold transition">FAQ</a>
-          <a href="index.html#contact" class="btn btn-outline text-sm"
-            >Request Holiday Design</a
-          >
+          We may share generic aggregated demographic information not linked to
+          any personal identification information regarding visitors and users
+          with our business partners, trusted affiliates, and advertisers for
+          the purposes outlined above.
+        </p>
+        <p>
+          We may use third-party service providers (such as payment processors
+          or scheduling software) to help us operate our business and the Site
+          or administer activities on our behalf. We may share your information
+          with these third parties for those limited purposes provided that you
+          have given us your permission.
+        </p>
+
+        <h2>6. Third-Party Websites</h2>
+        <p>
+          Users may find content on our Site that links to the sites and
+          services of our partners, suppliers, advertisers, sponsors, licensors,
+          and other third parties. We do not control the content or links that
+          appear on these sites and are not responsible for the practices
+          employed by websites linked to or from our Site.
+        </p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>
+          Glow Artisans LLC has the discretion to update this privacy policy at
+          any time. When we do, we will revise the updated date at the top of
+          this page. We encourage Users to frequently check this page for any
+          changes to stay informed about how we are helping to protect the
+          personal information we collect.
+        </p>
+
+        <h2>8. Contacting Us</h2>
+        <p>
+          If you have any questions about this Privacy Policy, the practices of
+          this site, or your dealings with this site, please contact our legal
+          compliance team at:
+        </p>
+        <p class="mt-6">
+          <strong class="block text-white mb-1">Glow Artisans LLC</strong>
+          <span class="block mb-4">Centreville, VA 20121</span>
           <a
-            href="tel:571-741-2444"
-            class="hover:text-gold transition"
-            aria-label="Call Glow Artisans"
+            href="mailto:legal@glowartisans.com"
+            class="text-gold border-b border-gold/30 pb-0.5 hover:text-white transition"
+            >legal@glowartisans.com</a
           >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              ></path>
-            </svg>
-          </a>
-        </nav>
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-white focus:outline-none">
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4">
-        <a href="index.html#process" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Process</a
-        >
-        <a href="index.html#portfolio" class="block py-2 px-4 hover:bg-gray-700"
-          >Portfolio</a
-        >
-        <a href="our-story.html" class="block py-2 px-4 hover:bg-gray-700"
-          >Our Story</a
-        >
-        <a href="index.html#faq" class="block py-2 px-4 hover:bg-gray-700"
-          >FAQ</a
-        >
+        </p>
+      </article>
+
+      <!-- Footer / Return -->
+      <div class="mt-20 pt-10 border-t border-white/10 text-center">
         <a
-          href="index.html#contact"
-          class="block py-2 px-4 mt-2 btn btn-gold w-full"
-          >Request Holiday Design</a
+          href="index.html"
+          class="text-xs text-white/40 hover:text-gold uppercase tracking-[0.2em] transition-colors inline-flex items-center gap-2"
         >
-        <a
-          href="tel:571-741-2444"
-          class="block text-center py-3 px-4 text-gold mt-2 font-bold"
-          >Call (571) 741-2444</a
-        >
+          <span>&larr;</span> Return to Home Page
+        </a>
       </div>
-    </header>
-
-    <!-- Main Content for Privacy Policy -->
-    <main class="pt-32 bg-white">
-      <section class="py-20 px-6">
-        <div class="container mx-auto max-w-4xl">
-          <div class="text-center mb-12">
-            <h1 class="text-5xl font-serif-display mb-4">Privacy Policy</h1>
-            <p class="text-lg text-gray-600">Your trust is important to us.</p>
-          </div>
-
-          <div class="policy-content">
-            <p><strong>Last Updated:</strong> September 18, 2025</p>
-
-            <h2>Introduction</h2>
-            <p>
-              Welcome to Glow Artisans LLC ("we," "our," or "us"). We are
-              committed to protecting your personal information and your right
-              to privacy. This Privacy Policy explains what information we
-              collect, how we use it, and what rights you have in relation to
-              it. This policy applies to all information collected through our
-              website (GlowArtisansLighting.com) and any related services,
-              sales, marketing, or events.
-            </p>
-
-            <h2>Information We Collect</h2>
-            <p>
-              We collect personal information that you voluntarily provide to us
-              when you express an interest in obtaining information about us or
-              our services, such as when you fill out a "Request a Consultation"
-              form.
-            </p>
-            <p>
-              The personal information we collect may include the following:
-            </p>
-            <ul>
-              <li>
-                <strong>Contact Information:</strong> Name, email address, phone
-                number, and service address.
-              </li>
-            </ul>
-            <p>
-              We do not collect any payment information through our website. All
-              payments are handled separately and securely.
-            </p>
-
-            <h2>How We Use Your Information</h2>
-            <p>
-              We use the information we collect for various business purposes,
-              including:
-            </p>
-            <ul>
-              <li>
-                <strong>To provide our services:</strong> To contact you
-                regarding your design consultation, schedule your installation,
-                and communicate with you about your project.
-              </li>
-              <li>
-                <strong>To respond to inquiries:</strong> To answer your
-                questions and provide support.
-              </li>
-              <li>
-                <strong>For business purposes:</strong> For data analysis,
-                identifying usage trends, and improving our website and
-                services.
-              </li>
-              <li>
-                <strong>To send marketing communications:</strong> We may send
-                you emails about new services or special offers. You may opt out
-                of our marketing emails at any time.
-              </li>
-            </ul>
-
-            <h2>Sharing and Disclosure of Your Information</h2>
-            <p>
-              <strong
-                >We do not sell, rent, or trade your personal information with
-                any third parties for their promotional purposes.</strong
-              >
-            </p>
-            <p>
-              We may only share your information in the following situations:
-            </p>
-            <ul>
-              <li>
-                <strong>With your consent:</strong> We may disclose your
-                personal information for any other purpose with your consent.
-              </li>
-              <li>
-                <strong>Compliance with Laws:</strong> We may disclose your
-                information where we are legally required to do so in order to
-                comply with applicable law, governmental requests, a judicial
-                proceeding, court order, or legal process.
-              </li>
-            </ul>
-
-            <h2>Data Security</h2>
-            <p>
-              We have implemented appropriate technical and organizational
-              security measures designed to protect the security of any personal
-              information we process. However, please also remember that we
-              cannot guarantee that the internet itself is 100% secure. Although
-              we will do our best to protect your personal information,
-              transmission of personal information to and from our website is at
-              your own risk.
-            </p>
-
-            <h2>Data Retention</h2>
-            <p>
-              We will only keep your personal information for as long as it is
-              necessary for the purposes set out in this privacy policy, unless
-              a longer retention period is required or permitted by law (such as
-              tax, accounting, or other legal requirements).
-            </p>
-
-            <h2>Children's Privacy</h2>
-            <p>
-              Our services are not intended for use by children under the age of
-              13. We do not knowingly collect personal information from children
-              under 13. If we learn that we have collected personal information
-              from a child under 13, we will take steps to delete such
-              information from our files as soon as possible.
-            </p>
-
-            <h2>Changes to This Privacy Policy</h2>
-            <p>
-              We may update this privacy policy from time to time. The updated
-              version will be indicated by a revised "Last Updated" date and the
-              updated version will be effective as soon as it is accessible. We
-              encourage you to review this privacy policy frequently to be
-              informed of how we are protecting your information.
-            </p>
-
-            <h2>Contact Us</h2>
-            <p>
-              If you have questions or comments about this policy, you may email
-              us at
-              <a href="mailto:design@m.glowartisans.com"
-                >design@m.glowartisans.com</a
-              >
-              or by phone at <a href="tel:571-741-2444">(571) 741-2444</a>.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-black text-gray-400 py-12 px-6">
-      <div class="container mx-auto text-center">
-        <p class="text-2xl font-serif-display text-gold mb-4">Glow Artisans</p>
-        <p class="mb-2">
-          Northern Virginia's Premier Holiday Lighting Specialists
-        </p>
-        <p class="mb-4">
-          <a href="tel:571-741-2444" class="hover:text-gold">(571) 741-2444</a>
-          |
-          <a href="mailto:design@m.glowartisans.com" class="hover:text-gold"
-            >design@m.glowartisans.com</a
-          >
-        </p>
-        <div class="flex justify-center space-x-4 mb-8">
-          <a
-            href="https://www.facebook.com/glowartisanslighting"
-            aria-label="Facebook"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              /></svg
-          ></a>
-          <a
-            href="https://www.instagram.com/glowartsianslighting"
-            aria-label="Instagram"
-            ><svg
-              class="w-6 h-6 text-white hover:text-gold"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218 1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.343 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm0 1.62c-2.403 0-2.748.01-3.728.058-1.033.048-1.63.2-2.113.385a3.27 3.27 0 00-1.18.812 3.27 3.27 0 00-.812 1.18c-.185.483-.337 1.08-.385 2.113-.048.98-.058 1.325-.058 3.728s.01 2.748.058 3.728c.048 1.033.2 1.63.385 2.113a3.27 3.27 0 00.812 1.18 3.27 3.27 0 001.18.812c.483.185 1.08.337 2.113.385.98.048 1.325.058 3.728.058s2.748-.01 3.728-.058c1.033-.048 1.63-.2 2.113-.385a3.27 3.27 0 001.18-.812 3.27 3.27 0 00.812-1.18c.185-.483-.337-1.08-.385-2.113.048-.98.058-1.325-.058-3.728s-.01-2.748-.058-3.728c-.048-1.033-.2-1.63-.385-2.113a3.27 3.27 0 00-.812-1.18 3.27 3.27 0 00-1.18-.812c-.483-.185-1.08-.337-2.113-.385-.98-.048-1.325-.058-3.728-.058z"
-                clip-rule="evenodd"
-              />
-              <path
-                d="M12 6.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 1.62a3.515 3.515 0 110 7.03 3.515 3.515 0 010-7.03z"
-              />
-              <path
-                d="M16.965 6.57a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z"
-              /></svg
-          ></a>
-        </div>
-        <p class="text-sm">
-          &copy; 2025 Glow Artisans LLC |
-          <a href="privacy-policy.html" class="hover:text-gold"
-            >Privacy Policy</a
-          >
-          | Licensed & Insured | Northern Virginia
-        </p>
-      </div>
-    </footer>
-    <script>
-      // --- Mobile menu toggle ---
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      }
-    </script>
+    </div>
   </body>
 </html>
