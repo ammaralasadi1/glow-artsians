@@ -599,3 +599,125 @@
         stroke-dashoffset: 0;
       }
       .btn-luminescent::after { display: none; }
+
+/* Homepage editorial rhythm. Scoped to preserve every interior page. */
+.site-page-index .hero-canvas-section {
+  height: auto;
+  min-height: 100svh;
+  padding: 136px 24px 56px;
+}
+.site-page-index .hero-content {
+  width: 100%;
+  max-width: 1080px;
+  padding-top: 0;
+}
+.site-page-index .brand-h1 {
+  font-size: clamp(2.75rem, 6.4vw, 5.75rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+.site-page-index #shimmer-sub {
+  max-width: 62ch;
+  margin: 28px auto 0;
+  font-size: clamp(1rem, 1.35vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: .015em;
+  text-wrap: pretty;
+}
+.site-page-index .hero-content > .pointer-events-auto { margin-top: 32px; }
+.site-page-index .hero-content > .pointer-events-auto > .flex { gap: 16px; }
+.site-page-index .hero-content > .pointer-events-auto > p {
+  font-size: .8125rem;
+  line-height: 1.6;
+  letter-spacing: .04em;
+}
+.site-page-index .hero-content > .pointer-events-auto > p:last-child {
+  text-transform: none;
+  font-size: .9375rem;
+}
+.site-page-index .hero-content > div:last-child { margin-top: 36px; }
+.site-page-index .hero-holiday-link { margin-top: 24px; line-height: 1.7; }
+.site-page-index .hero-content a[href^="tel:"] { white-space: nowrap; }
+.site-page-index .page-main > section:not(.hero-canvas-section):not(:nth-of-type(2)) {
+  padding-block: clamp(64px, 7.5vw, 104px);
+}
+.site-page-index .page-main h2.font-serif-display,
+.site-page-index .holiday-intro h2 {
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height: 1.16;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+.site-page-index .page-main h3 { text-wrap: balance; line-height: 1.35; }
+.site-page-index .text-reading {
+  max-width: 60ch;
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  line-height: 1.8;
+  text-wrap: pretty;
+}
+.site-page-index .page-main p { text-wrap: pretty; }
+.site-page-index .btn,
+.site-page-index .site-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 16px 26px;
+  font-size: .8125rem;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: .075em;
+  white-space: normal;
+}
+.site-page-index .btn:hover { transform: none; box-shadow: none; }
+.site-page-index .artisan-link {
+  min-height: 44px;
+  font-size: .8125rem;
+  line-height: 1.6;
+  letter-spacing: .1em;
+}
+.site-page-index .artisan-link:hover { transform: none; }
+.site-page-index .page-main a:focus-visible,
+.site-page-index .page-main button:focus-visible,
+.site-page-index #slider-root:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 5px;
+}
+.site-page-index #slider-success-cta {
+  position: static;
+  opacity: 1;
+  pointer-events: auto;
+  margin-top: 24px;
+}
+.site-page-index #slider-root {
+  height: auto;
+  aspect-ratio: 3 / 2;
+  max-height: 680px;
+}
+.site-page-index .holiday-intro-inner { gap: clamp(28px, 4vw, 56px); }
+.site-page-index .holiday-intro p { font-size: 1.0625rem; line-height: 1.8; }
+.site-page-index .holiday-intro .eyebrow { font-size: .75rem; line-height: 1.5; }
+.site-page-index .holiday-intro a:not(.site-cta) { min-height: 44px; line-height: 1.7; }
+.site-page-index .faq-item button { min-height: 64px; gap: 16px; padding-block: 22px; }
+.site-page-index .faq-item h3 { font-size: 1.125rem; line-height: 1.5; padding-right: 0; }
+.site-page-index .faq-item .icon-plus { flex-shrink: 0; }
+.site-page-index .faq-answer p { font-size: 1rem; line-height: 1.75; }
+
+@media (max-width: 767px) {
+  .site-page-index .hero-canvas-section { padding: 112px 24px 40px; }
+  .site-page-index .hero-content > .pointer-events-auto { padding-inline: 0; margin-top: 28px; }
+  .site-page-index .hero-content > .pointer-events-auto > .flex { gap: 12px; }
+  .site-page-index .brand-h1 { font-size: clamp(2.5rem, 9.5vw, 4rem); }
+  .site-page-index #shimmer-sub { margin-top: 24px; }
+  .site-page-index .btn { width: 100%; padding-inline: 18px; }
+  .site-page-index .holiday-intro a.site-cta { width: 100%; margin-right: 0; }
+  .site-page-index .holiday-intro a:not(.site-cta) { margin-top: 16px; }
+  .site-page-index .page-main .gap-16 { gap: 36px; }
+  .site-page-index .page-main .mb-16 { margin-bottom: 36px; }
+  .site-page-index .page-main .mb-20 { margin-bottom: 40px; }
+  .site-page-index .invitational-card { padding: 24px; }
+  .site-page-index .archetype-card { padding: 28px 24px; }
+  .site-page-index .process-card { padding: 24px; }
+}

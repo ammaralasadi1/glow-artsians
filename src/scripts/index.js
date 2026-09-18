@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const sliderInnerImg = document.getElementById("slider-inner-img");
         const sliderHandle = document.getElementById("slider-handle");
         const sliderCTA = document.getElementById("slider-cta");
-        const sliderSuccessCTA = document.getElementById("slider-success-cta");
 
         if (sliderRoot) {
           let isDragging = false;
@@ -25,11 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!hasInteracted) {
               hasInteracted = true;
               if (sliderCTA) sliderCTA.style.opacity = "0";
-              if (sliderSuccessCTA) {
-                sliderSuccessCTA.style.opacity = "1";
-                sliderSuccessCTA.style.pointerEvents = "auto";
-                sliderSuccessCTA.style.bottom = "-80px";
-              }
             }
           };
 
@@ -156,11 +150,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // --- FAQ COLLAPSIBLE LOGIC ---
         const faqItems = document.querySelectorAll(".faq-item");
         if (faqItems.length > 0) {
-          faqItems.forEach((item) => {
+          faqItems.forEach((item, index) => {
             const button = item.querySelector("button");
             const answer = item.querySelector(".faq-answer");
             const icon = item.querySelector(".icon-plus");
             const title = item.querySelector("h3");
+            answer.id = `homepage-faq-answer-${index + 1}`;
+            button.setAttribute("aria-controls", answer.id);
+            button.setAttribute("aria-expanded", "false");
 
             button.addEventListener("click", () => {
               const isOpen = answer.classList.contains("grid-rows-[1fr]");
@@ -171,6 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   const otherAnswer = otherItem.querySelector(".faq-answer");
                   const otherIcon = otherItem.querySelector(".icon-plus");
                   const otherTitle = otherItem.querySelector("h3");
+                  otherItem.querySelector("button").setAttribute("aria-expanded", "false");
 
                   otherAnswer.classList.remove("grid-rows-[1fr]");
                   otherAnswer.classList.add("grid-rows-[0fr]");
@@ -180,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
               });
 
               // Toggle current item
+              button.setAttribute("aria-expanded", String(!isOpen));
               if (!isOpen) {
                 answer.classList.remove("grid-rows-[0fr]");
                 answer.classList.add("grid-rows-[1fr]");
