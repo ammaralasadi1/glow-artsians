@@ -2,3 +2,9 @@
 # Netlify's Pretty URLs post-processing adding a trailing slash.
 [build.processing.html]
   pretty_urls = false
+[build]
+  command = "pnpm build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

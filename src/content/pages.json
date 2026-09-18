@@ -1,0 +1,42 @@
+[
+  {
+    "name": "contact",
+    "source": "contact/landscape-lighting.html",
+    "output": "contact.html"
+  },
+  {
+    "name": "great-falls",
+    "source": "great-falls.html",
+    "output": "great-falls.html"
+  },
+  {
+    "name": "holiday-contact",
+    "source": "contact/holiday-lighting.html",
+    "output": "holiday-contact.html"
+  },
+  {
+    "name": "holiday",
+    "source": "holiday/index.html",
+    "output": "holiday.html"
+  },
+  {
+    "name": "index",
+    "source": "index.html",
+    "output": "index.html"
+  },
+  {
+    "name": "our-story",
+    "source": "our-story.html",
+    "output": "our-story.html"
+  },
+  {
+    "name": "privacy-policy",
+    "source": "privacy-policy.html",
+    "output": "privacy-policy.html"
+  },
+  {
+    "name": "thank-you",
+    "source": "thank-you.html",
+    "output": "thank-you.html"
+  }
+]
