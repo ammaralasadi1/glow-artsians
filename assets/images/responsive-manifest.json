@@ -1,0 +1,857 @@
+{
+  "/assets/images/holiday-roof-detail-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2722660,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-160.webp",
+        "bytes": 4970
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-320.webp",
+        "bytes": 17462
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-480.webp",
+        "bytes": 35664
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-768.webp",
+        "bytes": 78440
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-1200.webp",
+        "bytes": 152050
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/9f3fb30cbbf7-1536.webp",
+        "bytes": 212938
+      }
+    ]
+  },
+  "/assets/images/holiday-garden-path-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3234005,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/f6bc6d35184c-160.webp",
+        "bytes": 5714
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/f6bc6d35184c-320.webp",
+        "bytes": 21392
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/f6bc6d35184c-480.webp",
+        "bytes": 46044
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/f6bc6d35184c-768.webp",
+        "bytes": 108694
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/f6bc6d35184c-1200.webp",
+        "bytes": 237720
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/f6bc6d35184c-1536.webp",
+        "bytes": 354886
+      }
+    ]
+  },
+  "/assets/images/holiday-garland-detail-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2440019,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/1127b23d7a5d-160.webp",
+        "bytes": 5198
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/1127b23d7a5d-320.webp",
+        "bytes": 16604
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/1127b23d7a5d-480.webp",
+        "bytes": 32096
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/1127b23d7a5d-768.webp",
+        "bytes": 65900
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/1127b23d7a5d-1200.webp",
+        "bytes": 123806
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/1127b23d7a5d-1536.webp",
+        "bytes": 170944
+      }
+    ]
+  },
+  "/assets/images/holiday-home-approach-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2912009,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/825d08574e62-160.webp",
+        "bytes": 4456
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/825d08574e62-320.webp",
+        "bytes": 15718
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/825d08574e62-480.webp",
+        "bytes": 32840
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/825d08574e62-768.webp",
+        "bytes": 80988
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/825d08574e62-1200.webp",
+        "bytes": 174590
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/825d08574e62-1536.webp",
+        "bytes": 259708
+      }
+    ]
+  },
+  "/assets/images/holiday-architectural-residence.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3134253,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/243d56c1abb4-160.webp",
+        "bytes": 4364
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/243d56c1abb4-320.webp",
+        "bytes": 15754
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/243d56c1abb4-480.webp",
+        "bytes": 35462
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/243d56c1abb4-768.webp",
+        "bytes": 88622
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/243d56c1abb4-1200.webp",
+        "bytes": 199552
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/243d56c1abb4-1536.webp",
+        "bytes": 299598
+      }
+    ]
+  },
+  "/assets/images/holiday-architectural-garden.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3724275,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/d964df9442d7-160.webp",
+        "bytes": 5992
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/d964df9442d7-320.webp",
+        "bytes": 23038
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/d964df9442d7-480.webp",
+        "bytes": 51894
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/d964df9442d7-768.webp",
+        "bytes": 126998
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/d964df9442d7-1200.webp",
+        "bytes": 282402
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/d964df9442d7-1536.webp",
+        "bytes": 441510
+      }
+    ]
+  },
+  "/assets/images/holiday-architectural-entrance.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2945493,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-160.webp",
+        "bytes": 4468
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-320.webp",
+        "bytes": 15044
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-480.webp",
+        "bytes": 31616
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-768.webp",
+        "bytes": 75876
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-1200.webp",
+        "bytes": 164964
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/6bef9a8e5ec4-1536.webp",
+        "bytes": 252282
+      }
+    ]
+  },
+  "/assets/images/holiday-inspiration-roofline-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3137853,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/d254671a48b1-160.webp",
+        "bytes": 4486
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/d254671a48b1-320.webp",
+        "bytes": 15538
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/d254671a48b1-480.webp",
+        "bytes": 33802
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/d254671a48b1-768.webp",
+        "bytes": 86258
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/d254671a48b1-1200.webp",
+        "bytes": 186884
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/d254671a48b1-1536.webp",
+        "bytes": 283184
+      }
+    ]
+  },
+  "/assets/images/holiday-inspiration-trees-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3684546,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/c46cff9afcde-160.webp",
+        "bytes": 6348
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/c46cff9afcde-320.webp",
+        "bytes": 23698
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/c46cff9afcde-480.webp",
+        "bytes": 52922
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/c46cff9afcde-768.webp",
+        "bytes": 132208
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/c46cff9afcde-1200.webp",
+        "bytes": 286508
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/c46cff9afcde-1536.webp",
+        "bytes": 434452
+      }
+    ]
+  },
+  "/assets/images/holiday-inspiration-wreaths-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2816749,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/91c8bc77a87d-160.webp",
+        "bytes": 4712
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/91c8bc77a87d-320.webp",
+        "bytes": 16714
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/91c8bc77a87d-480.webp",
+        "bytes": 35132
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/91c8bc77a87d-768.webp",
+        "bytes": 80290
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/91c8bc77a87d-1200.webp",
+        "bytes": 165040
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/91c8bc77a87d-1536.webp",
+        "bytes": 238158
+      }
+    ]
+  },
+  "/assets/images/holiday-inspiration-complete-home-v2.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3297367,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/19c91a749b22-160.webp",
+        "bytes": 4102
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/19c91a749b22-320.webp",
+        "bytes": 15458
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/19c91a749b22-480.webp",
+        "bytes": 35236
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/19c91a749b22-768.webp",
+        "bytes": 92636
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/19c91a749b22-1200.webp",
+        "bytes": 214178
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/19c91a749b22-1536.webp",
+        "bytes": 329622
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/project-spotlight.webp": {
+    "width": 1080,
+    "height": 1080,
+    "originalBytes": 198936,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/dbed3966e706-160.webp",
+        "bytes": 6372
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/dbed3966e706-320.webp",
+        "bytes": 20820
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/dbed3966e706-480.webp",
+        "bytes": 41182
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/dbed3966e706-768.webp",
+        "bytes": 87098
+      },
+      {
+        "width": 1080,
+        "src": "/assets/images/responsive/dbed3966e706-1080.webp",
+        "bytes": 194138
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/hero-image-1.webp": {
+    "width": 1920,
+    "height": 1080,
+    "originalBytes": 430476,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/eca546791c36-160.webp",
+        "bytes": 3684
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/eca546791c36-320.webp",
+        "bytes": 12240
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/eca546791c36-480.webp",
+        "bytes": 25606
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/eca546791c36-768.webp",
+        "bytes": 57042
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/eca546791c36-1200.webp",
+        "bytes": 123922
+      },
+      {
+        "width": 1920,
+        "src": "/assets/images/responsive/eca546791c36-1920.webp",
+        "bytes": 421458
+      }
+    ]
+  },
+  "/assets/images/landscape-slider-before-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2727264,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/f12ae7293d9a-160.webp",
+        "bytes": 4036
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/f12ae7293d9a-320.webp",
+        "bytes": 14320
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/f12ae7293d9a-480.webp",
+        "bytes": 31048
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/f12ae7293d9a-768.webp",
+        "bytes": 75020
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/f12ae7293d9a-1200.webp",
+        "bytes": 160780
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/f12ae7293d9a-1536.webp",
+        "bytes": 227706
+      }
+    ]
+  },
+  "/assets/images/landscape-slider-after-blue-hour.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 2771778,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/c45038b36a4a-160.webp",
+        "bytes": 4326
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/c45038b36a4a-320.webp",
+        "bytes": 15460
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/c45038b36a4a-480.webp",
+        "bytes": 33844
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/c45038b36a4a-768.webp",
+        "bytes": 81642
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/c45038b36a4a-1200.webp",
+        "bytes": 181324
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/c45038b36a4a-1536.webp",
+        "bytes": 266208
+      }
+    ]
+  },
+  "/assets/images/holiday-craftsmanship-natural-hardscape.png": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 3377768,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/30aadd2c3de1-160.webp",
+        "bytes": 7016
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/30aadd2c3de1-320.webp",
+        "bytes": 26248
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/30aadd2c3de1-480.webp",
+        "bytes": 56380
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/30aadd2c3de1-768.webp",
+        "bytes": 135924
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/30aadd2c3de1-1200.webp",
+        "bytes": 277024
+      },
+      {
+        "width": 1536,
+        "src": "/assets/images/responsive/30aadd2c3de1-1536.webp",
+        "bytes": 396200
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/security-focused lighting.webp": {
+    "width": 900,
+    "height": 1200,
+    "originalBytes": 228736,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/1294a5c586c9-160.webp",
+        "bytes": 9540
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/1294a5c586c9-320.webp",
+        "bytes": 32384
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/1294a5c586c9-480.webp",
+        "bytes": 63184
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/1294a5c586c9-768.webp",
+        "bytes": 135218
+      },
+      {
+        "width": 900,
+        "src": "/assets/images/responsive/1294a5c586c9-900.webp",
+        "bytes": 226802
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/services-backgroud-texture.webp": {
+    "width": 1920,
+    "height": 1080,
+    "originalBytes": 238874,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/3b264f8d46e6-160.webp",
+        "bytes": 2576
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/3b264f8d46e6-320.webp",
+        "bytes": 9314
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/3b264f8d46e6-480.webp",
+        "bytes": 19790
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/3b264f8d46e6-768.webp",
+        "bytes": 42558
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/3b264f8d46e6-1200.webp",
+        "bytes": 84946
+      },
+      {
+        "width": 1920,
+        "src": "/assets/images/responsive/3b264f8d46e6-1920.webp",
+        "bytes": 234150
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/maintinance program.webp": {
+    "width": 900,
+    "height": 1200,
+    "originalBytes": 121898,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/e3cdc385c888-160.webp",
+        "bytes": 7724
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/e3cdc385c888-320.webp",
+        "bytes": 20538
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/e3cdc385c888-480.webp",
+        "bytes": 34424
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/e3cdc385c888-768.webp",
+        "bytes": 63900
+      },
+      {
+        "width": 900,
+        "src": "/assets/images/responsive/e3cdc385c888-900.webp",
+        "bytes": 112316
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/warmth-glow-over-glare.webp": {
+    "width": 900,
+    "height": 1200,
+    "originalBytes": 164422,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/a5dc4b8871a3-160.webp",
+        "bytes": 8082
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/a5dc4b8871a3-320.webp",
+        "bytes": 25604
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/a5dc4b8871a3-480.webp",
+        "bytes": 48530
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/a5dc4b8871a3-768.webp",
+        "bytes": 95626
+      },
+      {
+        "width": 900,
+        "src": "/assets/images/responsive/a5dc4b8871a3-900.webp",
+        "bytes": 158798
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/Quality material and standards.webp": {
+    "width": 900,
+    "height": 1200,
+    "originalBytes": 109162,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/1665b79f839f-160.webp",
+        "bytes": 7894
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/1665b79f839f-320.webp",
+        "bytes": 22258
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/1665b79f839f-480.webp",
+        "bytes": 39538
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/1665b79f839f-768.webp",
+        "bytes": 72614
+      },
+      {
+        "width": 900,
+        "src": "/assets/images/responsive/1665b79f839f-900.webp",
+        "bytes": 101018
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/before-installation.webp": {
+    "width": 300,
+    "height": 300,
+    "originalBytes": 22314,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/688a4655d2b5-160.webp",
+        "bytes": 7066
+      },
+      {
+        "width": 300,
+        "src": "/assets/images/responsive/688a4655d2b5-300.webp",
+        "bytes": 22326
+      }
+    ]
+  },
+  "/assets/images/landscape-lighting/optimized/after-installation.webp": {
+    "width": 300,
+    "height": 300,
+    "originalBytes": 42720,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/f80525d22940-160.webp",
+        "bytes": 10476
+      },
+      {
+        "width": 300,
+        "src": "/assets/images/responsive/f80525d22940-300.webp",
+        "bytes": 42400
+      }
+    ]
+  },
+  "/assets/images/GA-PORTRAITS-Shoot-1-AMMAR-A-A-ROUGH-v1 (1).webp": {
+    "width": 864,
+    "height": 1080,
+    "originalBytes": 97712,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/ad7d0e269f27-160.webp",
+        "bytes": 3450
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/ad7d0e269f27-320.webp",
+        "bytes": 13584
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/ad7d0e269f27-480.webp",
+        "bytes": 31288
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/ad7d0e269f27-768.webp",
+        "bytes": 65956
+      },
+      {
+        "width": 864,
+        "src": "/assets/images/responsive/ad7d0e269f27-864.webp",
+        "bytes": 97262
+      }
+    ]
+  },
+  "/assets/images/portfolio-roof-line.webp": {
+    "width": 1600,
+    "height": 896,
+    "originalBytes": 148300,
+    "variants": [
+      {
+        "width": 160,
+        "src": "/assets/images/responsive/a66c6789bf32-160.webp",
+        "bytes": 3542
+      },
+      {
+        "width": 320,
+        "src": "/assets/images/responsive/a66c6789bf32-320.webp",
+        "bytes": 10818
+      },
+      {
+        "width": 480,
+        "src": "/assets/images/responsive/a66c6789bf32-480.webp",
+        "bytes": 21250
+      },
+      {
+        "width": 768,
+        "src": "/assets/images/responsive/a66c6789bf32-768.webp",
+        "bytes": 44168
+      },
+      {
+        "width": 1200,
+        "src": "/assets/images/responsive/a66c6789bf32-1200.webp",
+        "bytes": 85802
+      },
+      {
+        "width": 1600,
+        "src": "/assets/images/responsive/a66c6789bf32-1600.webp",
+        "bytes": 144586
+      }
+    ]
+  }
+}

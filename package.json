@@ -1,0 +1,17 @@
+{
+  "name": "glow-artisans-site",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "test": "node scripts/check.mjs && node --test scripts/serve.test.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17",
+    "lightningcss": "1.29.2",
+    "terser": "5.39.0",
+    "sharp": "0.34.5"
+  }
+}

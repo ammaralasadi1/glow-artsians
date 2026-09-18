@@ -1,0 +1,10 @@
+/* Hub-specific details; the layout and palette live in holiday-shared.css. */
+.holiday-hero-film { position: relative; }
+.holiday-hero-film video { display: block; width: 100%; aspect-ratio: 1.14; object-fit: cover; border-radius: 110px 2px 2px 2px; background: #101815; }
+#holiday-video-toggle { position: absolute; right: 16px; bottom: 16px; padding: 10px 16px; background: #17221ef2; color: #f5f2ea; border: 1px solid #dec28a; font: 700 12px 'Lato', sans-serif; cursor: pointer; }
+#holiday-video-toggle:focus-visible { outline: 3px solid #dec28a; outline-offset: 4px; }
+.holiday-areas ul { list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+.holiday-areas li { border-bottom: 1px solid #b6c1b0; padding: 10px 0; }
+.holiday-areas a { text-decoration: underline; text-underline-offset: 4px; font-weight: 700; }
+@media (max-width: 959px) { .holiday-hero-film video { aspect-ratio: 1.8; border-top-left-radius: 70px; } }
+@media (max-width: 699px) { .holiday-hero-film video { aspect-ratio: 1.5; border-top-left-radius: 50px; } }

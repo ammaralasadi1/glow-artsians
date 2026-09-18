@@ -1,0 +1,82 @@
+/* Shared, static site navigation. No animation or runtime layout framework. */
+html { scroll-padding-top: 96px; }
+section[id], [id="landscape-consultation"] { scroll-margin-top: 96px; }
+.site-header {
+  position: fixed; inset: 0 0 auto; z-index: 1100; width: 100%;
+  background: #0c0c0c; color: #fff; border-bottom: 1px solid #ffffff18;
+  transform: none; backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+.site-header-inner {
+  max-width: 1440px; min-height: 80px; padding: 16px 40px; margin: auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 32px;
+}
+.site-logo { font: 700 24px/1.1 "Playfair Display", serif; color: #d4af37; white-space: nowrap; }
+.site-desktop-nav { display: flex; align-items: center; gap: 26px; }
+.site-desktop-nav a { font: 700 12px/1.5 "Lato", sans-serif; color: #f5f5f5; }
+.site-header a:hover, .site-header a[aria-current="page"], .site-footer a:hover { color: #d4af37; }
+.site-header a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+.site-header .site-contact-link { border: 1px solid #d4af37; padding: 10px 18px; color: #111; background: #d4af37; white-space: nowrap; }
+.site-header .site-contact-link:hover { color: #111; background: #e8ca69; }
+.site-header .site-contact-link[aria-current] { color: #111; }
+.site-cta { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 14px 22px; border: 1px solid #d4af37; background: #d4af37; color: #111; font: 700 14px/1.5 "Lato",sans-serif; text-align: center; text-decoration: none; }
+.site-cta-secondary { color: #e6c76b; background: transparent; }
+.site-cta:hover { color: #111; background: #e8ca69; }
+.site-cta:focus-visible { outline: 3px solid #d4af37; outline-offset: 5px; }
+.site-footer-ctas { max-width: 1360px; margin: 0 auto 40px; padding-bottom: 40px; border-bottom: 1px solid #ffffff25; display: flex; flex-wrap: wrap; gap: 16px; }
+.site-footer .site-cta:hover { color: #111; }
+.holiday-intro a.site-cta { display: inline-flex; margin-right: 20px; padding: 14px 22px; color: #111; border: 1px solid #d4af37; }
+@media (max-width: 767px) { .site-footer-ctas .site-cta { width: 100%; } }
+.site-header a:focus-visible, .site-header summary:focus-visible, .site-footer a:focus-visible,
+.holiday-intro a:focus-visible, .hero-holiday-link:focus-visible, .service-choice a:focus-visible {
+  outline: 2px solid #d4af37; outline-offset: 5px;
+}
+.site-menu { display: none; }
+.site-menu summary { cursor: pointer; list-style: none; align-items: center; gap: 12px; padding: 8px; color: #d4af37; }
+.site-menu summary::-webkit-details-marker { display: none; }
+.site-menu-label { font: 700 12px/1 "Lato", sans-serif; text-transform: uppercase; letter-spacing: .1em; }
+.site-menu-icon { font-size: 24px; line-height: 1; }
+.site-mobile-nav {
+  position: absolute; top: 100%; left: 0; right: 0; background: #0c0c0c;
+  padding: 24px; border-bottom: 1px solid #d4af3760;
+  max-height: calc(100dvh - 80px); overflow-y: auto;
+}
+.site-mobile-nav a { display: block; padding: 14px 0; font: 700 18px/1.4 "Lato", sans-serif; color: #f5f5f5; }
+.site-mobile-nav .site-contact-link { margin-top: 12px; text-align: center; }
+.site-mobile-nav .site-menu-phone { margin-top: 12px; color: #c4c4c4; font-size: 14px; }
+.site-page-interior > .page-main { padding-top: 112px; }
+.hero-holiday-link { display: inline-block; margin-top: 20px; font: 400 14px/1.6 "Lato", sans-serif; color: #dedede; }
+.hero-holiday-link span { color: #d4af37; text-decoration: underline; text-underline-offset: 4px; }
+.holiday-intro { background: #101315; padding: 64px 24px; border-block: 1px solid #ffffff12; color: #fff; }
+.holiday-intro-inner { max-width: 1152px; margin: auto; display: grid; grid-template-columns: 1fr 1.15fr; gap: 56px; align-items: center; }
+.holiday-intro img { width: 100%; height: 320px; object-fit: cover; border-radius: 3px; }
+.holiday-intro .eyebrow { font: 700 11px/1.5 "Lato",sans-serif; text-transform: uppercase; letter-spacing: .18em; color: #d4af37; margin-bottom: 16px; }
+.holiday-intro h2 { font: 400 clamp(28px,3vw,40px)/1.2 "Playfair Display",serif; margin-bottom: 20px; }
+.holiday-intro p { color: #d5d5d5; font: 400 16px/1.75 "Lato",sans-serif; max-width: 520px; }
+.holiday-intro a { display: inline-block; margin-top: 24px; padding-bottom: 6px; border-bottom: 1px solid #d4af37; color: #d4af37; font-weight: 700; }
+.service-choice { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; }
+.service-choice a { border: 1px solid #ffffff40; padding: 12px 16px; color: #fff; font-size: 13px; }
+.service-choice a[aria-current] { border-color: #d4af37; color: #d4af37; }
+.site-footer { background: #0c0c0c; color: #c4c4c4; padding: 64px 40px 24px; border-top: 1px solid #ffffff18; font: 400 14px/1.7 "Lato",sans-serif; }
+.site-footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; max-width: 1360px; margin: auto; }
+.site-footer-brand p { margin-top: 20px; max-width: 320px; }
+.site-footer h2 { font: 700 11px/1.5 "Lato",sans-serif; text-transform: uppercase; letter-spacing: .14em; color: #d4af37; margin-bottom: 18px; }
+.site-footer nav a, .site-footer-contact > a { display: block; margin: 10px 0; }
+.site-footer-contact > a { overflow-wrap: anywhere; }
+.site-social-links { display: flex; gap: 18px; margin-top: 20px; }
+.site-footer-bottom { display: flex; justify-content: space-between; gap: 24px; max-width: 1360px; margin: 48px auto 0; border-top: 1px solid #ffffff18; padding-top: 24px; font-size: 12px; }
+@media (max-width: 1099px) {
+  .site-header-inner { padding: 12px 24px; min-height: 72px; }
+  .site-desktop-nav { display: none; }
+  .site-menu { display: block; }
+  .site-menu summary { display: flex; }
+  .site-footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 767px) {
+  .site-logo { font-size: 20px; }
+  .site-header-inner { gap: 12px; }
+  .holiday-intro-inner { grid-template-columns: 1fr; gap: 28px; }
+  .holiday-intro img { height: 240px; }
+  .site-footer { padding: 48px 24px 24px; }
+  .site-footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .site-footer-bottom { flex-direction: column; gap: 12px; }
+}

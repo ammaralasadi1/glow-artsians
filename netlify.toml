@@ -1,0 +1,4 @@
+# Explicit routes in _redirects keep canonical URLs extensionless without
+# Netlify's Pretty URLs post-processing adding a trailing slash.
+[build.processing.html]
+  pretty_urls = false

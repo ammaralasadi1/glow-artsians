@@ -1,0 +1,3 @@
+# Sharp uses its prebuilt optional platform packages; no install script is needed.
+allowBuilds:
+  sharp: false

@@ -137,641 +137,44 @@
     />
 
     <!-- Preconnect to critical domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://images.unsplash.com" />
 
     <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
 
     <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!-- Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <style>
-      /* ... (Styles remain unchanged) ... */
-      html {
-        scroll-behavior: smooth;
-      }
-      /* 1. MIDNIGHT NOIR BACKGROUND */
-      body {
-        font-family: "Lato", sans-serif;
-        background-color: #0c0c0c;
-        color: #ffffff;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-        font-weight: 400;
-      }
-
-      .font-serif-display {
-        font-family: "Playfair Display", serif;
-      }
-
-      /* 2. ARTISAN GOLD ACCENTS */
-      .text-gold {
-        color: #d4af37;
-      }
-      .bg-gold {
-        background-color: #d4af37;
-      }
-      .border-gold {
-        border-color: #d4af37;
-      }
-
-      /* 3. GALLERY WHITE ELEMENTS */
-      .bg-white {
-        background-color: #ffffff;
-      }
-      .text-black {
-        color: #0c0c0c;
-      }
-
-      /* Artisan Aura Cursor */
-      @media (pointer: fine) {
-        #artisan-aura {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 400px;
-          height: 400px;
-          background: radial-gradient(
-            circle,
-            rgba(212, 175, 55, 0.08) 0%,
-            transparent 70%
-          );
-          pointer-events: none;
-          z-index: 9999;
-          transform: translate(-50%, -50%);
-          transition: opacity 0.3s ease;
-          opacity: 0;
-          mix-blend-mode: screen;
-          will-change: transform, opacity;
-        }
-      }
-      @media (pointer: coarse) {
-        #artisan-aura {
-          display: none;
-        }
-      }
-
-      /* --- NAVIGATION --- */
-      header {
-        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        background: transparent;
-      }
-      header.scrolled {
-        background: rgba(12, 12, 12, 0.8);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      }
-      .nav-link {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        color: #ffffff;
-        opacity: 0.9;
-        transition: color 0.4s ease, opacity 0.4s ease;
-        position: relative;
-        padding: 10px 0;
-      }
-      .nav-link:hover,
-      .nav-link.active {
-        opacity: 1;
-        color: #d4af37;
-      }
-      .nav-link::before {
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 1px;
-        background-color: #d4af37;
-        box-shadow: 0 0 8px rgba(212, 175, 55, 0.8);
-        transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-        opacity: 0.8;
-      }
-      .nav-link:hover::before {
-        width: 100%;
-      }
-      .nav-link.active::after {
-        content: "✦";
-        position: absolute;
-        bottom: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 8px;
-        color: #d4af37;
-      }
-
-      /* Navigation Overlay */
-      #nav-overlay {
-        position: fixed;
-        inset: 0;
-        background: radial-gradient(
-          circle at bottom right,
-          rgba(12, 12, 12, 0.95) 0%,
-          rgba(0, 0, 0, 0.98) 100%
-        );
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        backdrop-filter: blur(40px);
-        -webkit-backdrop-filter: blur(40px);
-      }
-      #nav-overlay.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .overlay-link {
-        font-size: clamp(1.8rem, 5vw, 4rem);
-        font-family: "Playfair Display", serif;
-        color: rgba(255, 255, 255, 0.4);
-        transition: color 0.4s ease;
-        display: inline-block;
-        margin-bottom: 1rem;
-        position: relative;
-      }
-      .overlay-link:hover {
-        color: #d4af37;
-      }
-      .overlay-link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 2px;
-        background-color: #d4af37;
-        box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
-        transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-      }
-      .overlay-link:hover::after {
-        width: 100%;
-      }
-
-      /* Invitational Cards (Minimalist Noir) */
-      .invitational-card {
-        background: rgba(20, 20, 20, 0.7);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(212, 175, 55, 0.2);
-        padding: 2.5rem;
-        border-radius: 4px;
-        transition: all 0.5s ease;
-        position: relative;
-        overflow: hidden;
-      }
-      .invitational-card:hover {
-        border-color: #d4af37;
-        background: rgba(25, 25, 25, 0.8);
-        transform: translateY(-5px);
-      }
-
-      /* Hero Calibration */
-      .hero-canvas-section {
-        position: relative;
-        height: 100vh;
-        height: 100dvh;
-        min-height: 600px;
-        width: 100%;
-        background: radial-gradient(circle at center, #0c0c0c 0%, #000000 100%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-      }
-      #hero-reveal-light {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 800px;
-        height: 800px;
-        background: radial-gradient(
-          circle,
-          rgba(212, 175, 55, 0.15) 0%,
-          rgba(212, 175, 55, 0.05) 40%,
-          transparent 70%
-        );
-        pointer-events: none;
-        z-index: 2;
-        transform: translate(-50%, -50%);
-        mix-blend-mode: screen;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        will-change: left, top;
-      }
-      .brand-h1 {
-        font-size: clamp(2.5rem, 7vw, 6rem);
-        font-family: "Playfair Display", serif;
-        color: rgba(255, 255, 255, 0.15);
-        line-height: 1.1;
-        letter-spacing: -0.03em;
-        background: linear-gradient(90deg, #333, #fff, #333);
-        background-size: 200% 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: color 0.5s;
-        pointer-events: none;
-      }
-
-      /* Buttons */
-      .btn {
-        position: relative;
-        display: inline-block;
-        padding: 1.2rem 2.5rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        border-radius: 0.25rem;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        text-align: center;
-        font-size: 0.8rem;
-        pointer-events: auto;
-        overflow: hidden;
-      }
-
-      /* Option 1: Luminescent Style */
-      .btn-gold {
-        background-color: #d4af37;
-        color: #0c0c0c;
-        border: 2px solid #d4af37;
-        /* Permanent Pulse Animation */
-        animation: permanent-pulse 3s infinite ease-in-out;
-      }
-
-      .btn-gold:hover {
-        background-color: #c49f32;
-        color: #000;
-        transform: translateY(-2px);
-        /* Intensify pulse on hover */
-        box-shadow: 0 0 40px rgba(212, 175, 55, 0.8);
-      }
-
-      /* The "Sheen" Sweep Animation */
-      .btn-luminescent::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -150%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          to right,
-          transparent,
-          rgba(255, 255, 255, 0.8),
-          transparent
-        );
-        transform: skewX(-20deg);
-        /* Sweeps across every 4.5 seconds */
-        animation: sheen-sweep 4.5s infinite linear;
-        pointer-events: none;
-      }
-
-      @keyframes permanent-pulse {
-        0% {
-          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-        }
-        50% {
-          box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
-        }
-        100% {
-          box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-        }
-      }
-
-      @keyframes sheen-sweep {
-        0% {
-          left: -150%;
-          opacity: 0;
-        }
-        10% {
-          opacity: 1;
-        }
-        20% {
-          left: 150%;
-          opacity: 0;
-        }
-        100% {
-          left: 150%;
-          opacity: 0;
-        }
-      }
-
-      /* Secondary Button (No Pulse, for contrast) */
-      .btn-outline {
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        color: #fff;
-      }
-      .btn-outline:hover {
-        border-color: #d4af37;
-        background: rgba(212, 175, 55, 0.1);
-      }
-
-      /* Mobile adjustment for buttons */
-      @media (max-width: 640px) {
-        .btn {
-          width: 100%;
-          padding: 1rem;
-        }
-      }
-
-      /* REFINED SERVICES STYLING */
-      .archetype-card {
-        position: relative;
-        background: rgba(255, 255, 255, 0.02);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        padding: 3rem 2rem;
-        border-radius: 4px;
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        overflow: hidden;
-        z-index: 1;
-      }
-      .archetype-card:hover {
-        transform: translateY(-10px);
-        border-color: rgba(212, 175, 55, 0.4);
-        background: rgba(255, 255, 255, 0.04);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),
-          0 0 20px rgba(212, 175, 55, 0.05);
-      }
-      .archetype-card::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(
-          circle at top right,
-          rgba(212, 175, 55, 0.1),
-          transparent 70%
-        );
-        opacity: 0;
-        transition: opacity 0.6s ease;
-      }
-      .archetype-card:hover::before {
-        opacity: 1;
-      }
-      .archetype-num {
-        font-family: "Playfair Display", serif;
-        font-size: 1rem;
-        line-height: 1;
-        opacity: 0.3;
-        color: #d4af37;
-        margin-bottom: 1.5rem;
-        display: block;
-        letter-spacing: 0.2em;
-      }
-      .archetype-icon {
-        width: 48px;
-        height: 48px;
-        color: #d4af37;
-        margin-bottom: 2rem;
-        transition: transform 0.6s ease;
-      }
-      .archetype-card:hover .archetype-icon {
-        transform: scale(1.1) rotate(-5deg);
-      }
-
-      .comparison-container {
-        position: relative;
-        width: 100%;
-        height: 60vh;
-        overflow: hidden;
-        cursor: ew-resize;
-        background: #000;
-        touch-action: none;
-        user-select: none;
-      }
-      .comparison-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .comparison-overlay {
-        width: 50%;
-        z-index: 10;
-        border-right: 2px solid #d4af37;
-      }
-      .slider-handle {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        width: 2px;
-        background: #d4af37;
-        z-index: 20;
-        transform: translateX(-50%);
-        pointer-events: none;
-      }
-      .slider-circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40px;
-        height: 40px;
-        background: #d4af37;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-      }
-
-      /* Slider CTA Overlay */
-      .slider-instruction {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 30;
-        pointer-events: none;
-        text-align: center;
-        transition: opacity 0.5s ease;
-      }
-      .slider-instruction span {
-        background: rgba(12, 12, 12, 0.8);
-        backdrop-filter: blur(4px);
-        color: #d4af37;
-        padding: 10px 20px;
-        border-radius: 4px;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        font-weight: 700;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-      }
-
-      /* Service Ledger Styles */
-      .ledger-item {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        padding: 1.5rem 0;
-        cursor: pointer;
-        transition: all 0.4s ease;
-        display: flex;
-        align-items: center;
-      }
-      .ledger-item:hover,
-      .ledger-item.active {
-        border-bottom-color: #d4af37;
-      }
-      .ledger-item.active .ledger-city {
-        color: #d4af37;
-        transform: translateX(10px);
-      }
-      .ledger-city {
-        font-family: "Playfair Display", serif;
-        font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.4);
-        transition: all 0.4s ease;
-      }
-
-      .artisan-link {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.3em;
-        color: #d4af37;
-        transition: all 0.4s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
-      .artisan-link:hover {
-        opacity: 0.8;
-        transform: translateX(10px);
-      }
-
-      /* REFINED PROCESS PATH STYLING */
-      #path-glow-container {
-        position: absolute;
-        top: 35%;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        pointer-events: none;
-        z-index: 0;
-      }
-      .glow-line {
-        stroke-dasharray: 1;
-        stroke-dashoffset: 1;
-        transition: stroke-dashoffset 0.1s linear;
-      }
-      .process-card {
-        opacity: 0.3;
-        transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        padding: 2rem;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0);
-      }
-      .process-card.active {
-        opacity: 1;
-        background: rgba(255, 255, 255, 0.02);
-        border-color: rgba(212, 175, 55, 0.2);
-        transform: translateY(-10px);
-      }
-      .process-icon-wrap {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 1.5rem;
-        color: #d4af37;
-        transition: transform 0.5s ease;
-      }
-      .process-card.active .process-icon-wrap {
-        transform: scale(1.1);
-        filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
-      }
-
-      /* Territory Specifics */
-      .status-tag {
-        font-size: 8px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        padding: 3px 8px;
-        border: 1px solid rgba(212, 175, 55, 0.3);
-        border-radius: 2px;
-        color: #d4af37;
-        margin-left: auto;
-        white-space: nowrap;
-      }
-      .clean-map-node {
-        fill: rgba(255, 255, 255, 0.1);
-        stroke: rgba(212, 175, 55, 0.2);
-        stroke-width: 1;
-        transition: all 0.4s ease;
-      }
-      .clean-map-node.active {
-        fill: #d4af37;
-        filter: drop-shadow(0 0 10px #d4af37);
-      }
-      .clean-map-label {
-        font-size: 8px;
-        fill: rgba(255, 255, 255, 0.2);
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        pointer-events: none;
-        transition: all 0.4s ease;
-      }
-      .clean-map-label.active {
-        fill: #d4af37;
-        opacity: 1;
-        font-weight: 700;
-      }
-
-      /* Utility for Text Sizing Mobile - IMPROVED READABILITY */
-      .text-reading {
-        font-size: 1.1rem;
-        line-height: 1.75;
-        font-weight: 400;
-      }
-      @media (min-width: 768px) {
-        .text-reading {
-          font-size: 1.25rem;
-        }
-      }
-
-      /* FAQ Accordion Styles */
-      .faq-answer {
-        /* Removed conflicting max-height styles to allow Grid animation to work */
-        opacity: 0.8;
-      }
-      .faq-icon {
-        transition: transform 0.4s ease;
-        font-family: "Courier New", monospace;
-        font-weight: 200;
-        font-size: 1.5rem;
-      }
-      .faq-item.active .faq-icon {
-        transform: rotate(45deg);
-      }
-      .faq-item.active .faq-answer {
-        padding-bottom: 1.5rem;
-      }
-    </style>
+    <link data-build="page-css" href="/assets/generated/index.9cc799286e3c.css" rel="stylesheet" />
+    <link data-build="utilities" href="/assets/generated/utilities.cb73d7492914.css" rel="stylesheet" />
   </head>
-  <body class="antialiased">
+  <body class="site-page-index">
+    <!-- site-header:start -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="/" class="site-logo" aria-label="Glow Artisans home">GLOW ARTISANS</a>
+    <nav class="site-desktop-nav" aria-label="Main navigation">
+      <a href="/" aria-current="page">Landscape Lighting</a>
+      <a href="/holiday" >Christmas &amp; Holiday Lighting</a>
+      <a href="/#spotlight">Our Work</a>
+      <a href="/our-story" >About</a>
+      <a href="/contact/landscape-lighting" class="site-contact-link" aria-label="Design Consultation — Landscape Consultation" >Design Consultation</a>
+    </nav>
+    <details class="site-menu">
+      <summary aria-label="Open navigation"><span class="site-menu-label">Menu</span><span aria-hidden="true" class="site-menu-icon">☰</span></summary>
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="/" aria-current="page">Landscape Lighting</a>
+        <a href="/holiday" >Christmas &amp; Holiday Lighting</a>
+        <a href="/#spotlight">Our Work</a>
+        <a href="/our-story" >About</a>
+        <a href="/contact/landscape-lighting" class="site-contact-link" aria-label="Design Consultation — Landscape Consultation" >Design Consultation</a>
+        <a href="tel:5717412444" class="site-menu-phone">Call (571) 741-2444</a>
+      </nav>
+    </details>
+  </div>
+</header>
+<!-- site-header:end -->
+    <main class="page-main antialiased">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -782,197 +185,16 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="artisan-aura"></div>
 
-    <!-- Artistic Navigation Overlay (Unified Content) -->
-    <nav id="nav-overlay" aria-hidden="true">
-      <div
-        class="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-8 lg:gap-20 max-h-screen overflow-y-auto pt-24 pb-10 lg:py-10"
-      >
-        <!-- Left Side: Nav Links -->
-        <div class="flex flex-col justify-start lg:justify-center">
-          <span
-            class="text-gold uppercase tracking-[0.5em] text-[10px] font-bold mb-4 lg:mb-12 block opacity-50"
-            >The Vision</span
-          >
-          <div class="flex flex-col items-start space-y-4 lg:space-y-4">
-            <a href="services.html" class="overlay-link">Services</a>
-            <a href="#spotlight" class="overlay-link">Portfolio</a>
-            <a href="#glow-path" class="overlay-link">Our Process</a>
-            <a href="#regions" class="overlay-link">Service Areas</a>
-          </div>
-        </div>
 
-        <!-- Right Side: Branding & Direct CTA (Unified for Mobile) -->
-        <div
-          class="flex flex-col lg:border-l lg:border-white/10 lg:pl-20 justify-between gap-8 lg:gap-0 border-t-0 lg:border-t-0 pt-0 lg:pt-10"
-        >
-          <!-- Branding (Hidden on Mobile to save space/reduce redundancy with Sticky Header) -->
-          <div class="hidden lg:block">
-            <span
-              class="text-3xl font-serif-display text-gold leading-none tracking-tighter block mb-2"
-              >GLOW ARTISANS</span
-            >
-            <span
-              class="text-[10px] uppercase tracking-[0.5em] text-white/40 font-bold"
-              >Centreville, Virginia</span
-            >
-          </div>
 
-          <!-- CTA (Prioritized on Mobile: Order 1) -->
-          <div class="pt-0 lg:pt-10 order-1 lg:order-3">
-            <a
-              href="contact.html"
-              class="btn btn-gold btn-luminescent w-full py-5 text-xs tracking-[0.2em]"
-              >Schedule Design Consultation</a
-            >
-          </div>
-
-          <!-- Phone & Socials (Secondary on Mobile: Order 2) -->
-          <div class="space-y-8 lg:space-y-12 order-2 lg:order-2">
-            <div>
-              <span
-                class="text-gold uppercase tracking-[0.5em] text-[9px] font-bold mb-2 lg:mb-4 block opacity-50"
-                >Direct Consultation</span
-              >
-              <a
-                href="tel:5717412444"
-                class="text-white font-serif-display text-xl lg:text-4xl hover:text-gold transition"
-                >(571) 741-2444</a
-              >
-            </div>
-
-            <div>
-              <span
-                class="text-gold uppercase tracking-[0.5em] text-[9px] font-bold mb-4 block opacity-50"
-                >Social Registry</span
-              >
-              <div class="flex items-center space-x-8 text-white/40">
-                <a
-                  href="https://www.instagram.com/glowartsianslighting/"
-                  class="hover:text-gold transition"
-                  aria-label="Instagram"
-                  ><svg
-                    class="w-8 h-8 fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    /></svg
-                ></a>
-                <a
-                  href="https://www.facebook.com/glowartisanslighting"
-                  class="hover:text-gold transition"
-                  aria-label="Facebook"
-                  ><svg
-                    class="w-6 h-6 fill-current"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
-                    /></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header Navigation with Classic Hamburger -->
-    <header
-      class="py-4 md:py-6 px-6 md:px-12 fixed w-full z-[1001] pointer-events-none transition-all duration-300"
-    >
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="index.html" class="group pointer-events-auto z-50">
-          <span
-            class="text-xl md:text-2xl font-serif-display text-gold leading-none tracking-tighter"
-            >GLOW ARTISANS</span
-          >
-        </a>
-
-        <!-- Desktop Nav -->
-        <nav class="hidden lg:flex space-x-6 items-center pointer-events-auto">
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="#spotlight" class="nav-link">Portfolio</a>
-          <a href="#glow-path" class="nav-link">Our Process</a>
-          <a href="#regions" class="nav-link">Service Areas</a>
-          <div
-            class="flex items-center space-x-4 border-l border-white/10 pl-6 ml-2"
-          >
-            <a
-              href="https://www.instagram.com/glowartsianslighting/"
-              class="text-white/40 hover:text-gold transition"
-              aria-label="Instagram"
-              ><svg
-                class="w-4 h-4 fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                /></svg
-            ></a>
-            <a
-              href="https://www.facebook.com/glowartisanslighting"
-              class="text-white/40 hover:text-gold transition"
-              aria-label="Facebook"
-              ><svg
-                class="w-6 h-6 fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
-                /></svg
-            ></a>
-          </div>
-          <a
-            href="tel:5717412444"
-            class="text-[11px] font-bold text-white hover:text-gold transition tracking-widest ml-4"
-            >(571) 741-2444</a
-          >
-          <!-- Primary CTA with Luminescent Effect -->
-          <a
-            href="contact.html"
-            class="btn btn-gold btn-luminescent text-xs py-3 px-8 ml-2"
-            >Schedule Design Consultation</a
-          >
-        </nav>
-
-        <!-- Mobile Hamburger Menu Button -->
-        <button
-          id="header-menu-trigger"
-          class="lg:hidden text-gold text-2xl focus:outline-none pointer-events-auto transition-transform duration-300"
-          aria-label="Toggle Navigation"
-        >
-          <div id="menu-icon">
-            <svg
-              class="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </div>
-        </button>
-      </div>
-    </header>
 
     <!-- 1. HERO CANVAS -->
     <section class="hero-canvas-section" id="hero-canvas">
       <!-- Hero Background Image -->
       <div class="absolute inset-0 z-0">
-        <img
-          src="/assets/images/landscape-lighting/optimized/hero-image-1.webp"
+        <img srcset="/assets/images/responsive/eca546791c36-160.webp 160w, /assets/images/responsive/eca546791c36-320.webp 320w, /assets/images/responsive/eca546791c36-480.webp 480w, /assets/images/responsive/eca546791c36-768.webp 768w, /assets/images/responsive/eca546791c36-1200.webp 1200w, /assets/images/responsive/eca546791c36-1920.webp 1920w" sizes="(max-aspect-ratio: 16/9) 177.78vh, 100vw" decoding="async"
+          src="/assets/images/responsive/eca546791c36-1920.webp" data-original-src="/assets/images/landscape-lighting/optimized/hero-image-1.webp"
           class="w-full h-full object-cover opacity-60"
           alt="Luxury estate landscape lighting in McLean VA"
           fetchpriority="high"
@@ -986,15 +208,10 @@
         ></div>
       </div>
 
-      <div id="hero-reveal-light"></div>
-      <canvas
-        id="particle-canvas"
-        class="absolute inset-0 pointer-events-none opacity-100 z-10"
-      ></canvas>
+
+
       <div
         class="hero-content relative z-20 text-center pt-40 max-w-5xl mx-auto"
-        data-aos="fade-up"
-        data-aos-duration="2000"
       >
         <!-- Keyword-optimized H1 -->
         <h1 class="brand-h1" id="shimmer-text">
@@ -1020,15 +237,15 @@
           >
             <!-- Primary Hero CTA -->
             <a
-              href="contact.html"
+              href="/contact/landscape-lighting"
               class="btn btn-gold btn-luminescent text-sm px-10 py-5 magnetic-btn"
-              >Reveal Your Estate at Night</a
+              >Request a Landscape Consultation</a
             >
             <!-- Secondary CTA (Outline) -->
             <a
-              href="services.html"
+              href="/#services"
               class="btn btn-outline text-white hover:bg-white/10 text-sm uppercase tracking-widest font-bold px-10 py-5 transition-all magnetic-btn"
-              >Explore Services</a
+              >Explore Landscape Lighting</a
             >
           </div>
           <p
@@ -1046,7 +263,9 @@
           </p>
         </div>
 
-        <div class="mt-20 md:mt-24 opacity-40 animate-bounce text-white">
+        <a href="/holiday" class="hero-holiday-link">Looking for Christmas lighting? <span>Explore our holiday services →</span></a>
+
+        <div class="mt-20 md:mt-24 opacity-40  text-white">
           <svg
             class="w-6 h-6 mx-auto"
             fill="none"
@@ -1097,7 +316,7 @@
     <!-- 3. THE NIGHTLY REVEAL (Slider - WAS #6) -->
     <section class="py-24 md:py-32 px-6 bg-black text-center">
       <div class="container mx-auto max-w-6xl">
-        <div class="mb-16" data-aos="fade-up">
+        <div class="mb-16">
           <span
             class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
             >A Study in Contrast</span
@@ -1117,29 +336,29 @@
               <span>Slide to Illuminate</span>
             </div>
             <!-- Base Image (Dark - Right side initially) -->
-            <img
-              src="/assets/images/landscape-lighting/optimized/slider-after.webp"
+            <img srcset="/assets/images/responsive/f12ae7293d9a-160.webp 160w, /assets/images/responsive/f12ae7293d9a-320.webp 320w, /assets/images/responsive/f12ae7293d9a-480.webp 480w, /assets/images/responsive/f12ae7293d9a-768.webp 768w, /assets/images/responsive/f12ae7293d9a-1200.webp 1200w, /assets/images/responsive/f12ae7293d9a-1536.webp 1536w" sizes="(min-width: 1024px) 50vw, 100vw"
+              src="/assets/images/responsive/f12ae7293d9a-1536.webp" data-original-src="/assets/images/landscape-slider-before-blue-hour.png"
               class="comparison-img"
-              alt="Before and after landscape lighting installation Northern Virginia - Dark"
+              alt="AI design visualization: home at blue hour before landscape lighting, with only interior lights and porch lanterns"
               loading="lazy"
               decoding="async"
-              width="1600"
-              height="900"
+              width="1536"
+              height="1024"
             />
             <!-- Overlay Image (Light - Left side, revealing as you slide right) -->
             <div
               class="comparison-img comparison-overlay overflow-hidden"
               id="slider-overlay"
             >
-              <img
+              <img srcset="/assets/images/responsive/c45038b36a4a-160.webp 160w, /assets/images/responsive/c45038b36a4a-320.webp 320w, /assets/images/responsive/c45038b36a4a-480.webp 480w, /assets/images/responsive/c45038b36a4a-768.webp 768w, /assets/images/responsive/c45038b36a4a-1200.webp 1200w, /assets/images/responsive/c45038b36a4a-1536.webp 1536w" sizes="(min-width: 1024px) 50vw, 100vw"
                 id="slider-inner-img"
-                src="/assets/images/landscape-lighting/optimized/slider-before.webp"
+                src="/assets/images/responsive/c45038b36a4a-1536.webp" data-original-src="/assets/images/landscape-slider-after-blue-hour.png"
                 class="absolute top-0 left-0 h-full max-w-none object-cover"
-                alt="Before and after landscape lighting installation Northern Virginia - Light"
+                alt="AI design visualization: the same home with warm architectural uplighting, illuminated trees and softly lit paths"
                 loading="lazy"
                 decoding="async"
-                width="1600"
-                height="900"
+                width="1536"
+                height="1024"
               />
             </div>
             <div class="slider-handle" id="slider-handle">
@@ -1160,13 +379,14 @@
             </div>
           </div>
 
+          <p class="text-xs text-white/60 text-center mt-4">AI-generated lighting design visualization—not a completed project. Drag right to reveal the landscape lighting.</p>
           <!-- Hidden CTA that appears after interaction -->
           <div
             id="slider-success-cta"
             class="absolute bottom-[-80px] left-0 right-0 flex justify-center opacity-0 transition-opacity duration-700 pointer-events-none"
           >
             <a
-              href="contact.html"
+              href="/contact/landscape-lighting"
               class="btn btn-gold btn-glow text-xs magnetic-btn pointer-events-auto"
               >See This On Your Home</a
             >
@@ -1175,11 +395,29 @@
       </div>
     </section>
 
+    <!-- Permanent holiday service introduction -->
+    <section class="holiday-intro" id="holiday-introduction" aria-labelledby="holiday-intro-title">
+      <div class="holiday-intro-inner">
+        <img src="/assets/images/responsive/30aadd2c3de1-1536.webp" data-original-src="/assets/images/holiday-craftsmanship-natural-hardscape.png"
+          srcset="/assets/images/responsive/30aadd2c3de1-160.webp 160w, /assets/images/responsive/30aadd2c3de1-320.webp 320w, /assets/images/responsive/30aadd2c3de1-480.webp 480w, /assets/images/responsive/30aadd2c3de1-768.webp 768w, /assets/images/responsive/30aadd2c3de1-1200.webp 1200w, /assets/images/responsive/30aadd2c3de1-1536.webp 1536w"
+          sizes="(min-width: 1200px) 500px, (min-width: 768px) 45vw, 100vw"
+          width="1536" height="1024" loading="lazy" decoding="async"
+          alt="AI-generated holiday design inspiration: warm roofline lights, doorway garland and an illuminated tree beside a snow-dusted home with a simple garden path" />
+        <div>
+          <p class="eyebrow">Christmas &amp; Holiday Lighting</p>
+          <h2 id="holiday-intro-title">The same craftsmanship.<br>A different kind of glow.</h2>
+          <p>Bring your holiday traditions to life with Christmas lighting designed and installed by Glow Artisans. From the first lights to takedown and storage, we take care of the details.</p>
+          <a href="/contact/holiday-lighting" class="site-cta">Plan your holiday display</a>
+          <a href="/holiday">Explore Holiday Lighting <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
     <!-- 4. SAFETY THROUGH ARTISTRY (WHITE SECTION - WAS #8) -->
     <section class="py-24 md:py-32 px-6 bg-white text-black">
       <div class="container mx-auto max-w-6xl text-left">
         <div class="grid md:grid-cols-2 gap-16 items-center">
-          <div data-aos="fade-right" class="text-left">
+          <div class="text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
               >Peace of Mind</span
@@ -1209,15 +447,15 @@
                 liabilities with a private artisan audit.
               </p>
               <a
-                href="contact.html"
+                href="/contact/landscape-lighting"
                 class="btn btn-gold btn-glow text-[10px] w-full text-center magnetic-btn"
                 >Secure Your Perimeter</a
               >
             </div>
           </div>
-          <div class="relative" data-aos="fade-left">
-            <img
-              src="/assets/images/landscape-lighting/optimized/security-focused lighting.webp"
+          <div class="relative">
+            <img srcset="/assets/images/responsive/1294a5c586c9-160.webp 160w, /assets/images/responsive/1294a5c586c9-320.webp 320w, /assets/images/responsive/1294a5c586c9-480.webp 480w, /assets/images/responsive/1294a5c586c9-768.webp 768w, /assets/images/responsive/1294a5c586c9-900.webp 900w" sizes="(min-width: 1024px) 50vw, 100vw"
+              src="/assets/images/responsive/1294a5c586c9-900.webp" data-original-src="/assets/images/landscape-lighting/optimized/security-focused lighting.webp"
               class="rounded border border-black/5 w-full h-auto shadow"
               alt="Security perimeter lighting for estates in Oakton"
               width="800"
@@ -1237,7 +475,7 @@
           <div
             class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center text-left"
           >
-            <div data-aos="fade-right" class="text-left">
+            <div class="text-left">
               <span
                 class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
                 >Project Spotlight</span
@@ -1264,15 +502,15 @@
                   environment that feels like a resort."
                 </p>
                 <a
-                  href="contact.html"
+                  href="/contact/landscape-lighting"
                   class="btn btn-gold btn-glow text-[10px] px-10 magnetic-btn"
                   >Start Your Transformation</a
                 >
               </div>
             </div>
-            <div class="relative" data-aos="zoom-in">
-              <img
-                src="/assets/images/landscape-lighting/optimized/project-spotlight.webp"
+            <div class="relative">
+              <img srcset="/assets/images/responsive/dbed3966e706-160.webp 160w, /assets/images/responsive/dbed3966e706-320.webp 320w, /assets/images/responsive/dbed3966e706-480.webp 480w, /assets/images/responsive/dbed3966e706-768.webp 768w, /assets/images/responsive/dbed3966e706-1080.webp 1080w" sizes="(min-width: 1024px) 50vw, 100vw"
+                src="/assets/images/responsive/dbed3966e706-1080.webp" data-original-src="/assets/images/landscape-lighting/optimized/project-spotlight.webp"
                 class="rounded opacity-90 w-full h-auto"
                 alt="Georgian estate outdoor lighting McLean 22101"
                 width="800"
@@ -1292,7 +530,7 @@
       id="glow-path"
     >
       <div class="container mx-auto max-w-7xl">
-        <div class="text-center mb-16" data-aos="fade-up">
+        <div class="text-center mb-16">
           <span
             class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block italic"
             >Concierge Experience</span
@@ -1306,8 +544,6 @@
           <!-- Step 01 -->
           <div
             class="process-pillar group"
-            data-aos="fade-up"
-            data-aos-delay="0"
           >
             <div class="pillar-icon">
               <svg
@@ -1340,8 +576,6 @@
           <!-- Step 02 -->
           <div
             class="process-pillar group"
-            data-aos="fade-up"
-            data-aos-delay="100"
           >
             <div class="pillar-icon">
               <svg
@@ -1374,8 +608,6 @@
           <!-- Step 03 -->
           <div
             class="process-pillar group"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             <div class="pillar-icon">
               <svg
@@ -1410,8 +642,6 @@
           <!-- Step 04 -->
           <div
             class="process-pillar group"
-            data-aos="fade-up"
-            data-aos-delay="300"
           >
             <div class="pillar-icon">
               <svg
@@ -1442,9 +672,9 @@
           </div>
         </div>
 
-        <div class="flex justify-center mt-16" data-aos="fade-up">
+        <div class="flex justify-center mt-16">
           <a
-            href="contact.html"
+            href="/contact/landscape-lighting"
             class="btn btn-gold btn-luminescent text-[10px] px-10 magnetic-btn"
           >
             Begin Your Experience
@@ -1460,8 +690,8 @@
     >
       <!-- Background Texture -->
       <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
-        <img
-          src="/assets/images/landscape-lighting/optimized/services-backgroud-texture.webp"
+        <img srcset="/assets/images/responsive/3b264f8d46e6-160.webp 160w, /assets/images/responsive/3b264f8d46e6-320.webp 320w, /assets/images/responsive/3b264f8d46e6-480.webp 480w, /assets/images/responsive/3b264f8d46e6-768.webp 768w, /assets/images/responsive/3b264f8d46e6-1200.webp 1200w, /assets/images/responsive/3b264f8d46e6-1920.webp 1920w" sizes="100vw"
+          src="/assets/images/responsive/3b264f8d46e6-1920.webp" data-original-src="/assets/images/landscape-lighting/optimized/services-backgroud-texture.webp"
           class="w-full h-full object-cover"
           alt="Architectural lighting design Great Falls VA"
           loading="lazy"
@@ -1471,7 +701,7 @@
         />
       </div>
       <div class="container mx-auto max-w-7xl relative z-10">
-        <div class="mb-16 md:mb-24" data-aos="fade-up">
+        <div class="mb-16 md:mb-24">
           <span
             class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block italic"
             >Signature Services</span
@@ -1486,8 +716,6 @@
           <!-- I: Custom Landscape Design -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="100"
           >
             <span class="archetype-num">I</span>
             <div class="archetype-icon">
@@ -1520,8 +748,6 @@
           <!-- II: Home Façade Lighting -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             <span class="archetype-num">II</span>
             <div class="archetype-icon">
@@ -1558,8 +784,6 @@
           <!-- III: Outdoor Living Spaces -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="300"
           >
             <span class="archetype-num">III</span>
             <div class="archetype-icon">
@@ -1591,8 +815,6 @@
           <!-- IV: Tree & Garden Illumination -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="100"
           >
             <span class="archetype-num">IV</span>
             <div class="archetype-icon">
@@ -1632,8 +854,6 @@
           <!-- V: Hidden Outdoor Audio -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             <span class="archetype-num">V</span>
             <div class="archetype-icon">
@@ -1665,8 +885,6 @@
           <!-- VI: Commercial Outdoor Lighting -->
           <div
             class="archetype-card group"
-            data-aos="fade-up"
-            data-aos-delay="300"
           >
             <span class="archetype-num">VI</span>
             <div class="archetype-icon">
@@ -1695,65 +913,16 @@
             </p>
           </div>
 
-          <!-- VII: The Tradition Card (Holiday Division) -->
-          <div
-            class="archetype-card group md:col-span-2 lg:col-span-3 relative overflow-hidden !p-0 !bg-transparent !border-gold/30 hover:!border-gold transition-colors duration-500"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <!-- Background Image -->
-            <img
-              src="/assets/images/portfolio-modern-design.webp"
-              class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000 grayscale group-hover:grayscale-0"
-              alt="Wrapped Heritage Oak Tree - Holiday Lighting"
-            />
-            <!-- Dark Gradient Overlay -->
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"
-            ></div>
 
-            <!-- Content -->
-            <div
-              class="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between h-full gap-6"
-            >
-              <div class="max-w-2xl text-left">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="bg-gold text-black text-[9px] uppercase tracking-[0.2em] font-bold px-3 py-1 rounded-sm"
-                    >Seasonal Exclusive</span
-                  >
-                </div>
-                <h3
-                  class="text-3xl md:text-4xl font-serif-display text-white mb-3"
-                >
-                  The Holiday Division
-                </h3>
-                <p class="text-white/80 text-base leading-relaxed">
-                  Architectural Christmas lighting for the discerning estate. We
-                  accept a limited number of bespoke commissions to keep your
-                  family's tradition bright.
-                </p>
-              </div>
-
-              <div class="flex-shrink-0">
-                <a
-                  href="holiday.html"
-                  class="btn btn-outline text-xs px-8 py-4 border-gold text-gold hover:bg-gold transition-all"
-                >
-                  View Holiday Portfolio
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="flex justify-center" data-aos="fade-up">
+        <div class="flex justify-center">
           <div class="invitational-card max-w-xl text-left w-full">
             <p class="text-white/90 text-base mb-6">
               How would these compositions translate to your specific
               architecture?
             </p>
             <a
-              href="contact.html"
+              href="/contact/landscape-lighting"
               class="btn btn-gold btn-luminescent text-[10px] w-full md:w-auto px-12 magnetic-btn"
               >Request a Private Design Demo</a
             >
@@ -1766,9 +935,9 @@
     <section class="py-24 md:py-32 px-6 bg-[#0c0c0c] border-y border-white/5">
       <div class="container mx-auto max-w-6xl">
         <div class="grid lg:grid-cols-2 gap-24 items-center text-left">
-          <div class="relative order-2 lg:order-1" data-aos="fade-right">
-            <img
-              src="/assets/images/landscape-lighting/optimized/maintinance program.webp"
+          <div class="relative order-2 lg:order-1">
+            <img srcset="/assets/images/responsive/e3cdc385c888-160.webp 160w, /assets/images/responsive/e3cdc385c888-320.webp 320w, /assets/images/responsive/e3cdc385c888-480.webp 480w, /assets/images/responsive/e3cdc385c888-768.webp 768w, /assets/images/responsive/e3cdc385c888-900.webp 900w" sizes="(min-width: 1024px) 50vw, 100vw"
+              src="/assets/images/responsive/e3cdc385c888-900.webp" data-original-src="/assets/images/landscape-lighting/optimized/maintinance program.webp"
               class="rounded opacity-70 w-full h-auto"
               alt="Landscape lighting maintenance service Reston"
               width="800"
@@ -1777,7 +946,7 @@
               decoding="async"
             />
           </div>
-          <div class="order-1 lg:order-2 text-left" data-aos="fade-left">
+          <div class="order-1 lg:order-2 text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
               >We Handle The Maintenance</span
@@ -1802,7 +971,7 @@
                 Proactive Care
               </p>
               <a
-                href="contact.html"
+                href="/contact/landscape-lighting"
                 class="btn btn-outline text-[10px] w-full text-center border-white/20 text-white hover:border-gold hover:text-gold magnetic-btn"
                 >Explore Concierge Maintenance</a
               >
@@ -1816,7 +985,7 @@
     <section class="py-24 md:py-32 px-6 bg-white text-black">
       <div class="container mx-auto max-w-5xl">
         <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div data-aos="fade-right" class="text-left">
+          <div class="text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
               >The Art of Atmosphere</span
@@ -1844,15 +1013,15 @@
                 your property at dusk.
               </p>
               <a
-                href="contact.html"
+                href="/contact/landscape-lighting"
                 class="artisan-link font-bold text-black magnetic-btn"
                 >Experience the Warmth Live <span>✦</span></a
               >
             </div>
           </div>
-          <div class="relative" data-aos="fade-left">
-            <img
-              src="/assets/images/landscape-lighting/optimized/warmth-glow-over-glare.webp"
+          <div class="relative">
+            <img srcset="/assets/images/responsive/a5dc4b8871a3-160.webp 160w, /assets/images/responsive/a5dc4b8871a3-320.webp 320w, /assets/images/responsive/a5dc4b8871a3-480.webp 480w, /assets/images/responsive/a5dc4b8871a3-768.webp 768w, /assets/images/responsive/a5dc4b8871a3-900.webp 900w" sizes="(min-width: 1024px) 50vw, 100vw"
+              src="/assets/images/responsive/a5dc4b8871a3-900.webp" data-original-src="/assets/images/landscape-lighting/optimized/warmth-glow-over-glare.webp"
               class="rounded border border-black/5 w-full h-auto"
               alt="Warm 2700K LED landscape lighting Vienna VA"
               width="800"
@@ -1871,9 +1040,9 @@
         <div
           class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center text-left"
         >
-          <div class="relative order-2 md:order-1" data-aos="fade-right">
-            <img
-              src="/assets/images/landscape-lighting/optimized/Quality material and standards.webp"
+          <div class="relative order-2 md:order-1">
+            <img srcset="/assets/images/responsive/1665b79f839f-160.webp 160w, /assets/images/responsive/1665b79f839f-320.webp 320w, /assets/images/responsive/1665b79f839f-480.webp 480w, /assets/images/responsive/1665b79f839f-768.webp 768w, /assets/images/responsive/1665b79f839f-900.webp 900w" sizes="(min-width: 1024px) 50vw, 100vw"
+              src="/assets/images/responsive/1665b79f839f-900.webp" data-original-src="/assets/images/landscape-lighting/optimized/Quality material and standards.webp"
               class="rounded w-full h-auto"
               alt="Solid brass landscape lighting fixtures"
               width="800"
@@ -1882,7 +1051,7 @@
               decoding="async"
             />
           </div>
-          <div class="order-1 md:order-2 text-left" data-aos="fade-left">
+          <div class="order-1 md:order-2 text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
               >Innovation & Durability</span
@@ -1920,7 +1089,7 @@
           Smart Landscape Lighting Control.
         </h2>
         <div class="grid md:grid-cols-3 gap-8 md:gap-12 text-left mb-20">
-          <div class="p-8 border border-black/10 rounded" data-aos="fade-up">
+          <div class="p-8 border border-black/10 rounded">
             <svg
               class="w-8 h-8 text-gold mb-6"
               fill="currentColor"
@@ -1943,8 +1112,6 @@
           </div>
           <div
             class="p-8 border border-black/10 rounded scale-100 md:scale-110 bg-white shadow-2xl relative overflow-hidden group"
-            data-aos="fade-up"
-            data-aos-delay="100"
           >
             <div class="relative z-10">
               <svg
@@ -1970,8 +1137,6 @@
           </div>
           <div
             class="p-8 border border-black/10 rounded"
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
             <svg
               class="w-8 h-8 text-gold mb-6"
@@ -2003,7 +1168,7 @@
     >
       <div class="container mx-auto max-w-6xl text-left">
         <div class="grid lg:grid-cols-2 gap-20 items-center text-left">
-          <div data-aos="fade-right" class="text-left">
+          <div class="text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
               >Pristine Methodology</span
@@ -2027,18 +1192,18 @@
                 Surgical Installation
               </p>
               <a
-                href="contact.html"
+                href="/contact/landscape-lighting"
                 class="artisan-link font-bold text-gold magnetic-btn"
                 >Request an Install Overview <span>✦</span></a
               >
             </div>
           </div>
-          <div class="grid grid-cols-2 gap-4 text-left" data-aos="fade-left">
+          <div class="grid grid-cols-2 gap-4 text-left">
             <div
               class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
             >
-              <img
-                src="/assets/images/landscape-lighting/optimized/before-installation.webp"
+              <img height="300" width="300" srcset="/assets/images/responsive/688a4655d2b5-160.webp 160w, /assets/images/responsive/688a4655d2b5-300.webp 300w" sizes="(min-width: 1024px) 50vw, 100vw"
+                src="/assets/images/responsive/688a4655d2b5-300.webp" data-original-src="/assets/images/landscape-lighting/optimized/before-installation.webp"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
                 alt="Surgical landscape lighting installation methodology"
                 loading="lazy"
@@ -2056,8 +1221,8 @@
             <div
               class="relative h-60 md:h-80 overflow-hidden rounded group bg-black/5"
             >
-              <img
-                src="/assets/images/landscape-lighting/optimized/after-installation.webp"
+              <img height="300" width="300" srcset="/assets/images/responsive/f80525d22940-160.webp 160w, /assets/images/responsive/f80525d22940-300.webp 300w" sizes="(min-width: 1024px) 50vw, 100vw"
+                src="/assets/images/responsive/f80525d22940-300.webp" data-original-src="/assets/images/landscape-lighting/optimized/after-installation.webp"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 hover:grayscale-0"
                 alt="Restored lawn after landscape lighting"
                 loading="lazy"
@@ -2087,7 +1252,6 @@
           <!-- Left: Tactical Map (Sticky) -->
           <div
             class="hidden lg:block lg:col-span-5 lg:sticky lg:top-40 text-left"
-            data-aos="fade-right"
           >
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-8 block text-left"
@@ -2100,7 +1264,7 @@
               <!-- Radar Sweep Animation -->
               <div class="absolute inset-0 z-0">
                 <div
-                  class="w-full h-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(212,175,55,0.1)_60deg,transparent_60deg)] animate-[spin_4s_linear_infinite] opacity-30"
+                  class="w-full h-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(212,175,55,0.1)_60deg,transparent_60deg)]  opacity-30"
                 ></div>
               </div>
 
@@ -2168,7 +1332,7 @@
                     stroke="#D4AF37"
                     stroke-width="1"
                     fill="none"
-                    class="animate-ping"
+                    class=""
                     style="animation-duration: 3s"
                   />
                   <text
@@ -2334,7 +1498,7 @@
             </div>
           </div>
 
-          <div class="lg:col-span-7 text-left" data-aos="fade-left">
+          <div class="lg:col-span-7 text-left">
             <span
               class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block text-left"
               >Registry of Estates</span
@@ -2350,7 +1514,7 @@
                   <span
                     class="flex items-center justify-between gap-4 text-white ledger-city"
                     >McLean
-                    <span class="status-tag">2 Commissions Active</span></span
+                    <span class="status-tag">Landscape Lighting</span></span
                   >
                   <span
                     class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
@@ -2363,7 +1527,7 @@
                   <span
                     class="flex items-center justify-between gap-4 text-white ledger-city"
                     >Great Falls
-                    <span class="status-tag">Spring 2026</span></span
+                    <span class="status-tag">Landscape Lighting</span></span
                   >
                   <span
                     class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
@@ -2376,7 +1540,7 @@
                   <span
                     class="flex items-center justify-between gap-4 text-white ledger-city"
                     >Vienna & Oakton
-                    <span class="status-tag">1 Slot Remains</span></span
+                    <span class="status-tag">Landscape Lighting</span></span
                   >
                   <span
                     class="text-[11px] text-white/60 uppercase tracking-[0.3em] mt-2"
@@ -2406,7 +1570,6 @@
         <!-- Full Width Expansion -->
         <div
           class="mt-20 p-8 md:p-10 bg-white/5 border border-white/10 rounded text-left w-full"
-          data-aos="fade-up"
         >
           <h4 class="text-white font-serif-display text-2xl mb-4 italic">
             Beyond the Primary Corridor?
@@ -2491,7 +1654,7 @@
           </div>
 
           <a
-            href="contact.html"
+            href="/contact/landscape-lighting"
             class="artisan-link font-bold text-gold magnetic-btn"
             ><svg
               class="w-3 h-3 mr-2 inline-block fill-current"
@@ -2530,7 +1693,7 @@
     <!-- 15. FAQ SECTION -->
     <section class="py-24 px-6 bg-[#0c0c0c] border-t border-white/5">
       <div class="container mx-auto max-w-4xl">
-        <div class="text-center mb-20" data-aos="fade-up">
+        <div class="text-center mb-20">
           <span
             class="text-gold uppercase tracking-[0.4em] text-xs font-bold mb-4 block"
             >Concierge FAQ</span
@@ -2543,7 +1706,7 @@
         <div class="grid md:grid-cols-2 gap-x-16 gap-y-4">
           <!-- Left Column -->
           <div class="space-y-4">
-            <div class="faq-item border-b border-white/10" data-aos="fade-up">
+            <div class="faq-item border-b border-white/10">
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
               >
@@ -2574,8 +1737,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="50"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2608,8 +1769,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="100"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2641,8 +1800,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="150"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2674,8 +1831,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="200"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2708,8 +1863,6 @@
             <!-- New Left Column Questions -->
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="250"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2740,8 +1893,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="300"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2772,8 +1923,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="350"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2808,8 +1957,6 @@
             <!-- Original 5 -->
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="50"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2842,8 +1989,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="100"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2874,8 +2019,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="150"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2906,8 +2049,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="200"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2938,8 +2079,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="250"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -2971,8 +2110,6 @@
             <!-- New Right Column Questions -->
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="300"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -3002,8 +2139,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="350"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -3034,8 +2169,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="400"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -3066,8 +2199,6 @@
 
             <div
               class="faq-item border-b border-white/10"
-              data-aos="fade-up"
-              data-aos-delay="450"
             >
               <button
                 class="w-full flex justify-between items-start text-left py-6 focus:outline-none group"
@@ -3102,7 +2233,7 @@
 
     <!-- Final CTA -->
     <section class="py-32 md:py-40 bg-black text-center px-6">
-      <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+      <div class="max-w-3xl mx-auto">
         <h2
           class="text-5xl md:text-6xl font-serif-display mb-8 text-gold text-center"
         >
@@ -3111,14 +2242,14 @@
         <p
           class="text-white/90 uppercase tracking-[0.4em] text-xs mb-12 text-center"
         >
-          Limited Commissions Available for Spring 2026.
+          Thoughtful lighting, designed around your home.
         </p>
         <div class="flex justify-center">
           <div class="invitational-card max-w-xl text-left">
             <a
-              href="contact.html"
+              href="/contact/landscape-lighting"
               class="btn btn-gold btn-luminescent px-14 py-6 text-sm text-center w-full magnetic-btn"
-              >Inquire for Spring 2026 Commission</a
+              >Request a Landscape Design Consultation</a
             >
           </div>
         </div>
@@ -3126,599 +2257,50 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white/60 py-20 px-6 border-t border-white/5">
-      <div class="container mx-auto max-w-7xl">
-        <div
-          class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 text-left"
-        >
-          <!-- Column 1: Identity & Ethos -->
-          <div class="flex flex-col items-start">
-            <span
-              class="text-2xl font-serif-display text-gold mb-6 uppercase tracking-widest"
-            >
-              GLOW ARTISANS
-            </span>
-            <p class="text-xs leading-relaxed max-w-xs text-white/70">
-              Curating evening sanctuaries for Northern Virginia's most
-              discerning estates. We transform darkness into architectural art.
-            </p>
-            <div class="mt-8 flex space-x-6">
-              <a
-                href="https://www.instagram.com/glowartsianslighting/"
-                class="hover:text-gold transition"
-                aria-label="Instagram"
-                ><svg
-                  class="w-5 h-5 fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                  /></svg
-              ></a>
-              <a
-                href="https://www.facebook.com/glowartisanslighting"
-                class="hover:text-gold transition"
-                aria-label="Facebook"
-                ><svg
-                  class="w-5 h-5 fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.603-2.797 2.87v1.101h3.741l-.486 3.667h-3.255v7.98h-5.017z"
-                  /></svg
-              ></a>
-            </div>
-          </div>
 
-          <!-- Column 2: The Experience (Navigation) -->
-          <div class="flex flex-col items-start">
-            <h4
-              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
-            >
-              The Experience
-            </h4>
-            <ul class="space-y-4 text-xs tracking-wide text-white/80">
-              <li>
-                <a href="services.html" class="hover:text-gold transition"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a href="#spotlight" class="hover:text-gold transition"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a href="#glow-path" class="hover:text-gold transition"
-                  >Our Process</a
-                >
-              </li>
-              <li>
-                <a href="#regions" class="hover:text-gold transition"
-                  >Service Areas</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Column 3: Client Stewardship -->
-          <div class="flex flex-col items-start">
-            <h4
-              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
-            >
-              Client Stewardship
-            </h4>
-            <ul class="space-y-4 text-xs tracking-wide text-white/80">
-              <li>
-                <a href="contact.html" class="hover:text-gold transition"
-                  >GlowCare Support</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="hover:text-gold transition"
-                  >Request Service</a
-                >
-              </li>
-              <li>
-                <a href="contact.html" class="hover:text-gold transition"
-                  >Client Billing</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Column 4: Contact & Trust -->
-          <div class="flex flex-col items-start">
-            <h4
-              class="text-gold text-[10px] uppercase tracking-[0.2em] font-bold mb-6"
-            >
-              Contact & Trust
-            </h4>
-            <a
-              href="tel:5717412444"
-              class="text-white font-serif-display text-2xl hover:text-gold transition mb-4"
-              >(571) 741-2444</a
-            >
-            <a
-              href="mailto:design@m.glowartisans.com"
-              class="text-xs hover:text-gold transition mb-8 text-white/60"
-              >design@m.glowartisans.com</a
-            >
-
-            <div
-              class="space-y-3 text-[10px] uppercase tracking-widest text-white/40"
-            >
-              <p class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Uniformed
-                & Background-Checked
-              </p>
-              <p class="flex items-center gap-3">
-                <span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Licensed
-                & Insured
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div
-          class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest opacity-40"
-        >
-          <p>&copy; 2026 Glow Artisans LLC</p>
-          <div class="flex space-x-6 mt-4 md:mt-0">
-            <a href="privacy-policy.html" class="hover:text-white transition"
-              >Privacy Policy</a
-            >
-            <span>|</span>
-            <a href="#" class="hover:text-white transition">Terms</a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        AOS.init({
-          duration: 800,
-          once: true,
-          disable: "mobile",
-        });
+    <script data-build="index" src="/assets/generated/index.0a185de47541.js" defer></script>
 
-        // Header Scroll
-        window.addEventListener(
-          "scroll",
-          () => {
-            const header = document.querySelector("header");
-            if (window.scrollY > 100) header.classList.add("scrolled");
-            else header.classList.remove("scrolled");
-          },
-          { passive: true }
-        );
-
-        // Magnetic Button Effect (Desktop Only) - OPTIMIZED for Layout Thrashing
-        if (window.matchMedia("(pointer: fine)").matches) {
-          const magneticBtns = document.querySelectorAll(".magnetic-btn");
-          magneticBtns.forEach((btn) => {
-            let rect = btn.getBoundingClientRect();
-
-            // Recalculate on hover entry (avoids layout thrashing during move)
-            btn.addEventListener("mouseenter", () => {
-              rect = btn.getBoundingClientRect();
-            });
-
-            // Handle window resize
-            window.addEventListener(
-              "resize",
-              () => {
-                rect = btn.getBoundingClientRect();
-              },
-              { passive: true }
-            );
-
-            btn.addEventListener(
-              "mousemove",
-              (e) => {
-                // Use cached rect
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-
-                // Subtle movement
-                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-              },
-              { passive: true }
-            );
-
-            btn.addEventListener(
-              "mouseleave",
-              () => {
-                btn.style.transform = "translate(0px, 0px)";
-              },
-              { passive: true }
-            );
-          });
-        }
-
-        // Glow Path Line Scroll Animation
-        const pathLine = document.getElementById("active-path-line");
-        const pathSection = document.getElementById("glow-path");
-
-        if (pathLine && pathSection) {
-          // Initialize path length for cross-browser consistency if pathLength="1" fails,
-          // but since we rely on CSS stroke-dasharray: 1, let's assume pathLength works or fix it via JS.
-          // The safer "fix" for visual glitches is just the property access.
-
-          window.addEventListener(
-            "scroll",
-            () => {
-              const rect = pathSection.getBoundingClientRect();
-              const windowHeight = window.innerHeight;
-
-              if (rect.top < windowHeight && rect.bottom > 0) {
-                const scrollStart = windowHeight * 0.8;
-                const scrollEnd = -rect.height * 0.5;
-                let progress =
-                  (scrollStart - rect.top) / (scrollStart - scrollEnd);
-                progress = Math.max(0, Math.min(1, progress));
-
-                // FIXED: Use style.strokeDashoffset instead of direct property
-                pathLine.style.strokeDashoffset = 1 - progress;
-              }
-            },
-            { passive: true }
-          );
-        }
-
-        // Nav Overlay Logic (Shared by Desktop & Mobile)
-        const headerMenuTrigger = document.getElementById(
-          "header-menu-trigger"
-        );
-        const navOverlay = document.getElementById("nav-overlay");
-        const menuIcon = document.getElementById("menu-icon");
-
-        const toggleMenu = () => {
-          const isActive = navOverlay.classList.toggle("active");
-
-          if (menuIcon) {
-            if (isActive) {
-              menuIcon.innerHTML =
-                '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>';
-            } else {
-              menuIcon.innerHTML =
-                '<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>';
-            }
-          }
-
-          navOverlay.setAttribute("aria-hidden", !isActive);
-          document.body.style.overflow = isActive ? "hidden" : "";
-        };
-
-        if (headerMenuTrigger)
-          headerMenuTrigger.addEventListener("click", toggleMenu);
-
-        // Close menu when a link is clicked
-        const overlayLinks = document.querySelectorAll(".overlay-link");
-        overlayLinks.forEach((link) => {
-          link.addEventListener("click", toggleMenu);
-        });
-
-        // Artisan Aura (Desktop Only)
-        const aura = document.getElementById("artisan-aura");
-        if (window.matchMedia("(pointer: fine)").matches) {
-          document.addEventListener(
-            "mousemove",
-            (e) => {
-              requestAnimationFrame(() => {
-                aura.style.opacity = "1";
-                aura.style.left = e.clientX + "px";
-                aura.style.top = e.clientY + "px";
-              });
-            },
-            { passive: true }
-          );
-        }
-
-        // Hero Reveal Treatment
-        const hero = document.getElementById("hero-canvas");
-        const revealLight = document.getElementById("hero-reveal-light");
-        const shimmerText = document.getElementById("shimmer-text");
-
-        if (hero && window.matchMedia("(pointer: fine)").matches) {
-          hero.addEventListener(
-            "mousemove",
-            (e) => {
-              requestAnimationFrame(() => {
-                const rect = hero.getBoundingClientRect();
-                revealLight.style.left = e.clientX - rect.left + "px";
-                revealLight.style.top = e.clientY - rect.top + "px";
-                revealLight.style.opacity = "1";
-                const moveX = (e.clientX / window.innerWidth) * 100;
-                shimmerText.style.backgroundPosition = `${moveX}% 50%`;
-                shimmerText.style.color = `rgba(255, 255, 255, ${
-                  0.15 + Math.random() * 0.15
-                })`;
-              });
-            },
-            { passive: true }
-          );
-
-          hero.addEventListener("mouseleave", () => {
-            revealLight.style.opacity = "0";
-            shimmerText.style.color = `rgba(255, 255, 255, 0.15)`;
-          });
-        }
-
-        /* --- OPTIMIZED PARTICLE CANVAS --- */
-        const canvas = document.getElementById("particle-canvas");
-        if (canvas) {
-          const ctx = canvas.getContext("2d", { alpha: true });
-          let particles = [];
-          let isAnimating = true;
-
-          const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              isAnimating = entry.isIntersecting;
-              if (isAnimating) animate();
-            });
-          });
-          observer.observe(canvas);
-
-          function resize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-          }
-          window.addEventListener("resize", resize);
-          resize();
-
-          class Particle {
-            constructor() {
-              this.reset();
-            }
-            reset() {
-              this.x = Math.random() * canvas.width;
-              this.y = Math.random() * canvas.height;
-              this.size = Math.random() * 2 + 0.5;
-              this.speedX = Math.random() * 0.5 - 0.25;
-              this.speedY = Math.random() * 0.5 - 0.25;
-              this.life = Math.random() * 1;
-              this.opacity = Math.random() * 0.5;
-            }
-            update() {
-              this.x += this.speedX;
-              this.y += this.speedY;
-              this.life -= 0.002;
-              if (
-                this.life <= 0 ||
-                this.x < 0 ||
-                this.x > canvas.width ||
-                this.y < 0 ||
-                this.y > canvas.height
-              ) {
-                this.reset();
-              }
-            }
-            draw() {
-              ctx.fillStyle = `rgba(212, 175, 55, ${this.opacity * this.life})`;
-              ctx.beginPath();
-              ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-              ctx.fill();
-            }
-          }
-
-          const particleCount = window.innerWidth < 768 ? 30 : 60;
-          for (let i = 0; i < particleCount; i++)
-            particles.push(new Particle());
-
-          function animate() {
-            if (!isAnimating) return;
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach((p) => {
-              p.update();
-              p.draw();
-            });
-            requestAnimationFrame(animate);
-          }
-          animate();
-        }
-
-        // Robust Slider Logic with Interaction Overlay
-        const sliderRoot = document.getElementById("slider-root");
-        const sliderOverlay = document.getElementById("slider-overlay");
-        const sliderInnerImg = document.getElementById("slider-inner-img");
-        const sliderHandle = document.getElementById("slider-handle");
-        const sliderCTA = document.getElementById("slider-cta");
-        const sliderSuccessCTA = document.getElementById("slider-success-cta");
-
-        if (sliderRoot) {
-          let isDragging = false;
-          let hasInteracted = false;
-
-          const syncImageWidth = () => {
-            if (sliderInnerImg && sliderRoot) {
-              sliderInnerImg.style.width = `${sliderRoot.offsetWidth}px`;
-            }
-          };
-
-          window.addEventListener("resize", syncImageWidth);
-          syncImageWidth();
-
-          const revealSuccessCTA = () => {
-            if (!hasInteracted) {
-              hasInteracted = true;
-              if (sliderCTA) sliderCTA.style.opacity = "0";
-              if (sliderSuccessCTA) {
-                sliderSuccessCTA.style.opacity = "1";
-                sliderSuccessCTA.style.pointerEvents = "auto";
-                sliderSuccessCTA.style.bottom = "-80px";
-              }
-            }
-          };
-
-          const updateSlider = (clientX) => {
-            const rect = sliderRoot.getBoundingClientRect();
-            const x = clientX - rect.left;
-            let percent = (x / rect.width) * 100;
-            if (percent < 0) percent = 0;
-            if (percent > 100) percent = 100;
-
-            sliderOverlay.style.width = percent + "%";
-            sliderHandle.style.left = percent + "%";
-          };
-
-          const startDrag = (e) => {
-            isDragging = true;
-            revealSuccessCTA();
-            updateSlider(e.clientX || e.touches[0].clientX);
-          };
-
-          const stopDrag = () => {
-            isDragging = false;
-          };
-
-          const moveDrag = (e) => {
-            if (!isDragging) return;
-            updateSlider(e.clientX || e.touches[0].clientX);
-          };
-
-          sliderRoot.addEventListener("mousedown", startDrag);
-          window.addEventListener("mouseup", stopDrag);
-          window.addEventListener("mousemove", moveDrag);
-
-          sliderRoot.addEventListener("touchstart", startDrag, {
-            passive: true,
-          });
-          window.addEventListener("touchend", stopDrag);
-          window.addEventListener("touchmove", moveDrag, { passive: true });
-        }
-
-        // Territory Interaction
-        const selectors = document.querySelectorAll(".ledger-item");
-        selectors.forEach((item) => {
-          const activateItem = () => {
-            const target = item.getAttribute("data-target");
-            selectors.forEach((s) => s.classList.remove("active"));
-
-            // Reset Map Nodes
-            document.querySelectorAll(".map-node").forEach((el) => {
-              el.classList.remove("opacity-100");
-              el.classList.add("opacity-50");
-            });
-
-            // Reset Data Cards
-            document.querySelectorAll(".data-card").forEach((card) => {
-              card.classList.remove("opacity-100", "translate-y-0");
-              card.classList.add("opacity-0", "translate-y-4");
-            });
-
-            // Activate Selection
-            item.classList.add("active");
-
-            // Activate Specific Node
-            const node = document.getElementById(`node-${target}`);
-            if (node) {
-              node.classList.remove("opacity-50");
-              node.classList.add("opacity-100");
-            }
-
-            // Activate Specific Data Card
-            const card = document.getElementById(`data-${target}`);
-            if (card) {
-              card.classList.remove("opacity-0", "translate-y-4");
-              card.classList.add("opacity-100", "translate-y-0");
-            }
-          };
-
-          item.addEventListener("mouseenter", activateItem);
-          item.addEventListener("click", activateItem);
-        });
-
-        // --- PHASE TOGGLE LOGIC ---
-        const phaseTabs = document.querySelectorAll(".phase-tab");
-        const phaseContents = document.querySelectorAll(".phase-content");
-
-        if (phaseTabs.length > 0) {
-          phaseTabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-              const targetId = tab.getAttribute("data-target");
-
-              // Reset Tabs
-              phaseTabs.forEach((t) => {
-                t.classList.remove("active", "bg-white/10");
-                t.querySelector(".text-gold").classList.remove("scale-110"); // Reset scale if using that class
-              });
-
-              // Activate Clicked Tab
-              tab.classList.add("active", "bg-white/10");
-
-              // Reset Content
-              phaseContents.forEach((content) => {
-                content.classList.remove("opacity-100", "z-10");
-                content.classList.add(
-                  "opacity-0",
-                  "pointer-events-none",
-                  "z-0"
-                );
-              });
-
-              // Activate Target Content
-              const targetContent = document.getElementById(targetId);
-              if (targetContent) {
-                targetContent.classList.remove(
-                  "opacity-0",
-                  "pointer-events-none",
-                  "z-0"
-                );
-                targetContent.classList.add("opacity-100", "z-10");
-              }
-            });
-          });
-        }
-
-        // --- FAQ COLLAPSIBLE LOGIC ---
-        const faqItems = document.querySelectorAll(".faq-item");
-        if (faqItems.length > 0) {
-          faqItems.forEach((item) => {
-            const button = item.querySelector("button");
-            const answer = item.querySelector(".faq-answer");
-            const icon = item.querySelector(".icon-plus");
-            const title = item.querySelector("h3");
-
-            button.addEventListener("click", () => {
-              const isOpen = answer.classList.contains("grid-rows-[1fr]");
-
-              // Close all other items (Accordion behavior)
-              faqItems.forEach((otherItem) => {
-                if (otherItem !== item) {
-                  const otherAnswer = otherItem.querySelector(".faq-answer");
-                  const otherIcon = otherItem.querySelector(".icon-plus");
-                  const otherTitle = otherItem.querySelector("h3");
-
-                  otherAnswer.classList.remove("grid-rows-[1fr]");
-                  otherAnswer.classList.add("grid-rows-[0fr]");
-                  if (otherIcon) otherIcon.style.transform = "rotate(0deg)";
-                  if (otherTitle) otherTitle.classList.remove("text-gold");
-                }
-              });
-
-              // Toggle current item
-              if (!isOpen) {
-                answer.classList.remove("grid-rows-[0fr]");
-                answer.classList.add("grid-rows-[1fr]");
-                if (icon) icon.style.transform = "rotate(45deg)";
-                if (title) title.classList.add("text-gold");
-              } else {
-                answer.classList.remove("grid-rows-[1fr]");
-                answer.classList.add("grid-rows-[0fr]");
-                if (icon) icon.style.transform = "rotate(0deg)";
-                if (title) title.classList.remove("text-gold");
-              }
-            });
-          });
-        }
-      });
-    </script>
+    </main>
+    <!-- site-footer:start -->
+<footer class="site-footer">
+  <div class="site-footer-ctas" aria-label="Request a design consultation"><a class="site-cta" href="/contact/landscape-lighting">Plan your landscape lighting</a><a class="site-cta site-cta-secondary" href="/contact/holiday-lighting">Holiday lighting consultation</a></div>
+  <div class="site-footer-grid">
+    <div class="site-footer-brand">
+      <a href="/" class="site-logo">GLOW ARTISANS</a>
+      <p>Thoughtful landscape lighting. Beautiful holiday traditions.<br>Designed and installed in Northern Virginia.</p>
+    </div>
+    <nav aria-label="Footer services">
+      <h2>Our services</h2>
+      <a href="/">Landscape Lighting</a>
+      <a href="/holiday">Christmas &amp; Holiday Lighting</a>
+      <a href="/contact/landscape-lighting">Landscape consultation</a>
+      <a href="/contact/holiday-lighting">Holiday consultation</a>
+      <a href="/#regions">Service Areas</a>
+    </nav>
+    <nav aria-label="Footer company">
+      <h2>Glow Artisans</h2>
+      <a href="/#spotlight">Our Work</a>
+      <a href="/our-story">About Us</a>
+      <a href="/contact/landscape-lighting">Landscape Consultation</a>
+    </nav>
+    <div class="site-footer-contact">
+      <h2>Let’s talk</h2>
+      <a href="tel:5717412444">(571) 741-2444</a>
+      <a href="mailto:design@m.glowartisans.com">design@m.glowartisans.com</a>
+      <div class="site-social-links">
+        <a href="https://www.instagram.com/glowartsianslighting/">Instagram</a>
+        <a href="https://www.facebook.com/glowartisanslighting">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-bottom">
+    <span>&copy; 2026 Glow Artisans LLC</span>
+    <a href="/privacy-policy">Privacy Policy</a>
+  </div>
+</footer>
+<!-- site-footer:end -->
+    <script data-build="site-shell" src="/assets/generated/site-shell.0b07043dfa3f.js" defer></script>
   </body>
 </html>

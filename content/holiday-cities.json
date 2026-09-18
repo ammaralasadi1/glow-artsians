@@ -1,0 +1,66 @@
+[
+  {
+    "name": "McLean",
+    "slug": "mclean",
+    "state": "Virginia",
+    "abbr": "VA",
+    "page": "holiday-mclean",
+    "route": "/holiday/mclean-va"
+  },
+  {
+    "name": "Great Falls",
+    "slug": "great-falls",
+    "state": "Virginia",
+    "abbr": "VA",
+    "page": "holiday-great-falls",
+    "route": "/holiday/great-falls-va"
+  },
+  {
+    "name": "Vienna",
+    "slug": "vienna",
+    "state": "Virginia",
+    "abbr": "VA",
+    "page": "holiday-vienna",
+    "route": "/holiday/vienna-va"
+  },
+  {
+    "name": "Oakton",
+    "slug": "oakton",
+    "state": "Virginia",
+    "abbr": "VA",
+    "page": "holiday-oakton",
+    "route": "/holiday/oakton-va"
+  },
+  {
+    "name": "Reston",
+    "slug": "reston",
+    "state": "Virginia",
+    "abbr": "VA",
+    "page": "holiday-reston",
+    "route": "/holiday/reston-va"
+  },
+  {
+    "name": "Potomac",
+    "slug": "potomac",
+    "state": "Maryland",
+    "abbr": "MD",
+    "page": "holiday-potomac",
+    "route": "/holiday/potomac-md"
+  },
+  {
+    "name": "Cabin John",
+    "slug": "cabin-john",
+    "state": "Maryland",
+    "abbr": "MD",
+    "page": "holiday-cabin-john",
+    "route": "/holiday/cabin-john-md"
+  },
+  {
+    "name": "Bethesda",
+    "slug": "bethesda",
+    "state": "Maryland",
+    "abbr": "MD",
+    "page": "holiday-bethesda",
+    "route": "/holiday/bethesda-md"
+  }
+]

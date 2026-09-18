@@ -1,0 +1,82 @@
+body {
+        font-family: "Lato", sans-serif;
+        background-color: #0c0c0c;
+        color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      .font-serif-display {
+        font-family: "Playfair Display", serif;
+      }
+      .text-gold {
+        color: #d4af37;
+      }
+      .bg-gold {
+        background-color: #d4af37;
+      }
+      .border-gold {
+        border-color: #d4af37;
+      }
+
+      /* Button Styles */
+      .btn {
+        display: inline-block;
+        padding: 1.2rem 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        text-align: center;
+        font-size: 0.8rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-gold {
+        background-color: #d4af37;
+        color: #0c0c0c;
+        border: 1px solid #d4af37;
+      }
+      .btn-gold:hover {
+        background-color: #c49f32;
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        transform: translateY(-2px);
+      }
+      .btn-outline {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #fff;
+      }
+      .btn-outline:hover {
+        border-color: #d4af37;
+        color: #d4af37;
+      }
+
+      /* Artisan Aura (Subtle Background) */
+      #aura {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 800px;
+        height: 800px;
+        background: radial-gradient(
+          circle,
+          rgba(212, 175, 55, 0.08) 0%,
+          transparent 70%
+        );
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      /* Static presentation: keep interaction states without decorative motion. */
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+      .glow-line, .house-outline, .light-path {
+        stroke-dasharray: none;
+        stroke-dashoffset: 0;
+      }
+      .btn-luminescent::after { display: none; }

@@ -1,0 +1,47 @@
+# Preserve bookmarks and search results, including URLs backed by real files.
+/holiday-roofline-lighting.html /holiday/services/roofline-christmas-lighting 301!
+/holiday-tree-shrub-lighting.html /holiday/services/tree-shrub-christmas-lighting 301!
+/holiday-wreaths-garlands.html /holiday/services/outdoor-wreaths-garlands 301!
+/holiday-complete-home.html /holiday/services/complete-home-holiday-decorating 301!
+/holiday/services/roofline-christmas-lighting /holiday-roofline-lighting.html 200
+/holiday/services/tree-shrub-christmas-lighting /holiday-tree-shrub-lighting.html 200
+/holiday/services/outdoor-wreaths-garlands /holiday-wreaths-garlands.html 200
+/holiday/services/complete-home-holiday-decorating /holiday-complete-home.html 200
+/index.html           /                 301!
+/contact.html         /contact/landscape-lighting  301!
+/holiday-contact.html /contact/holiday-lighting    301!
+/contact              /contact/landscape-lighting  301!
+/holiday.html         /holiday          301!
+/holiday-mclean.html  /holiday/mclean-va 301!
+/holiday-great-falls.html /holiday/great-falls-va 301!
+/holiday-vienna.html /holiday/vienna-va 301!
+/holiday-oakton.html /holiday/oakton-va 301!
+/holiday-reston.html /holiday/reston-va 301!
+/holiday-potomac.html /holiday/potomac-md 301!
+/holiday-cabin-john.html /holiday/cabin-john-md 301!
+/holiday-bethesda.html /holiday/bethesda-md 301!
+/our-story.html       /our-story        301!
+/great-falls.html     /great-falls      301!
+/privacy-policy.html  /privacy-policy   301!
+/thank-you.html       /thank-you        301!
+
+# Services is a section on the homepage, not a separate page.
+/services.html        /#services        301!
+/services             /#services        301!
+
+# Serve the existing files while keeping the clean URL in the address bar.
+/contact/landscape-lighting /contact.html         200
+/contact/holiday-lighting   /holiday-contact.html 200
+/holiday              /holiday.html         200
+/holiday/mclean-va     /holiday-mclean.html  200
+/holiday/great-falls-va /holiday-great-falls.html 200
+/holiday/vienna-va /holiday-vienna.html 200
+/holiday/oakton-va /holiday-oakton.html 200
+/holiday/reston-va /holiday-reston.html 200
+/holiday/potomac-md /holiday-potomac.html 200
+/holiday/cabin-john-md /holiday-cabin-john.html 200
+/holiday/bethesda-md /holiday-bethesda.html 200
+/our-story            /our-story.html       200
+/great-falls          /great-falls.html      200
+/privacy-policy       /privacy-policy.html  200
+/thank-you            /thank-you.html       200

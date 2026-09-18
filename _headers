@@ -1,0 +1,69 @@
+# Supported by Netlify and Cloudflare Pages. Other hosts need equivalent rules.
+/holiday/services/*
+  Cache-Control: no-cache
+
+/assets/generated/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/responsive/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/responsive-manifest.json
+  Cache-Control: no-cache
+
+/*.html
+  Cache-Control: no-cache
+
+/
+  Cache-Control: no-cache
+
+/contact
+  Cache-Control: no-cache
+
+/contact/landscape-lighting
+  Cache-Control: no-cache
+
+/contact/holiday-lighting
+  Cache-Control: no-cache
+
+/holiday
+  Cache-Control: no-cache
+
+/holiday/mclean-va
+  Cache-Control: no-cache
+
+/our-story
+  Cache-Control: no-cache
+
+/great-falls
+  Cache-Control: no-cache
+
+/privacy-policy
+  Cache-Control: no-cache
+
+/thank-you
+  Cache-Control: no-cache
+
+/holiday/great-falls-va
+  Cache-Control: no-cache
+
+/holiday/vienna-va
+  Cache-Control: no-cache
+
+/holiday/oakton-va
+  Cache-Control: no-cache
+
+/holiday/reston-va
+  Cache-Control: no-cache
+
+/holiday/potomac-md
+  Cache-Control: no-cache
+
+/holiday/cabin-john-md
+  Cache-Control: no-cache
+
+/holiday/bethesda-md
+  Cache-Control: no-cache
