@@ -1,14 +1,13 @@
 .site-page-contact {
-  --contact-bg: #f3f2ec;
+  --contact-bg: #161614;
   --contact-form-bg: #0c0c0c;
-  --contact-ink: #1b3027;
-  --contact-muted: #526258;
-  --contact-accent: #47624f;
-  --contact-link: #2b513d;
-  --contact-border: #ccd3c9;
+  --contact-ink: #f3f0e9;
+  --contact-muted: #c5c2b9;
+  --contact-accent: #d4af37;
+  --contact-link: #e8c56a;
+  --contact-border: #ffffff25;
   --contact-radius: 2px;
 }
 .site-page-contact .consultation-page {
-  background-image: linear-gradient(90deg, #203c2804 1px, transparent 1px);
-  background-size: 80px 100%;
+  background-image: none;
 }
