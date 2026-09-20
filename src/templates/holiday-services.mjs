@@ -1,5 +1,6 @@
 import {readContent} from '../../tooling/content.mjs';
 import {gallery, galleryFigure} from './holiday-gallery.mjs';
+import {organizationNode} from './organization-schema.mjs';
 
 const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const origin = 'https://glowartisans.com';
@@ -26,7 +27,7 @@ export async function renderServicePages(services, cities, images) {
     const heroSrc = (photo.variants.find(v=>v.width===1200)||photo.variants.at(-1)).src;
     const url = origin+s.route;
     const schema = {'@context':'https://schema.org','@graph':[
-      {'@type':'Organization','@id':origin+'/#organization',name:'Glow Artisans',url:origin+'/',telephone:'+1-571-741-2444'},
+      organizationNode(),
       {'@type':'Service','@id':url+'#service',name:s.name,serviceType:s.name,url,description:s.description,provider:{'@id':origin+'/#organization'},areaServed:[{ '@type':'Place',name:'Northern Virginia'},...cities.map(c=>({'@type':'Place',name:`${c.name}, ${c.state}`}))]},
       {'@type':'WebPage','@id':url+'#webpage',url,name:s.title,inLanguage:'en-US',about:{'@id':url+'#service'},breadcrumb:{'@id':url+'#breadcrumb'}},
       {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[['Home','/'],['Christmas & Holiday Lighting','/holiday'],[s.name,s.route]].map(([name,path],i)=>({'@type':'ListItem',position:i+1,name,item:origin+path}))}

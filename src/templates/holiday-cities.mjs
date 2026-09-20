@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import {sourcePath} from '../../tooling/paths.mjs';
+import {organizationNode} from './organization-schema.mjs';
 
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const origin = 'https://glowartisans.com';
@@ -12,7 +13,7 @@ export async function renderCityPages(cities) {
     const schema = {
       '@context': 'https://schema.org',
       '@graph': [
-        {'@type': 'Organization', '@id': `${origin}/#organization`, name: 'Glow Artisans', url: `${origin}/`, telephone: '+1-571-741-2444'},
+        organizationNode(),
         {'@type': 'Service', '@id': `${url}#service`, name: `Exterior Christmas lighting and holiday decorating in ${city.name}, ${city.state}`, serviceType: 'Residential exterior Christmas lighting and outdoor holiday decoration', url, provider: {'@id': `${origin}/#organization`}, areaServed: [{'@type': 'Place', name: `${city.name}, ${city.state}`}, {'@type': 'Place', name: 'Northern Virginia'}], description: 'All-inclusive exterior holiday service for homeowners: design, installation, seasonal maintenance, takedown and storage. Display scope and service availability are confirmed during the consultation.'},
         {'@type': 'WebPage', '@id': `${url}#webpage`, url, name: title, inLanguage: 'en-US', about: {'@id': `${url}#service`}, breadcrumb: {'@id': `${url}#breadcrumb`}},
         {'@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: [['Home', '/'], ['Christmas & Holiday Lighting', '/holiday'], [`${city.name}, ${city.abbr}`, city.route]].map(([name, route], index) => ({'@type': 'ListItem', position: index + 1, name, item: origin + route}))},

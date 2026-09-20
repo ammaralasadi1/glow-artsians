@@ -15,7 +15,7 @@ for (const page of pages) test(page.name + ' preserves approved scope and naviga
  assert.ok(!main.includes('Schedule Your Evening Demo'));
  assert.ok(!main.includes('/contact/holiday-lighting'));
  const schema=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
- assert.equal(schema['@graph'][0].url,'https://glowartisans.com/services/'+page.slug);
+ assert.equal(schema['@graph'].find(s=>s['@type']==='Service').url,'https://glowartisans.com/services/'+page.slug);
  const faqs=schema['@graph'].find(s=>s['@type']==='FAQPage').mainEntity;
  assert.ok(faqs.length>=7);
  for(const faq of faqs) assert.ok(main.includes(escape(faq.name)) && main.includes(escape(faq.acceptedAnswer.text)));

@@ -1,3 +1,5 @@
+import {organizationNode} from './organization-schema.mjs';
+
 export function renderLandscapePage(page, pages) {
 const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const base='https://glowartisans.com', route=`/services/${page.slug}`, url=base+route;
@@ -7,7 +9,7 @@ const image=page.image;
 const area=['McLean, Virginia','Great Falls, Virginia','Vienna, Virginia','Reston, Virginia','Potomac, Maryland','Cabin John, Maryland','Bethesda, Maryland'];
 const faqs=[...page.faqs,['Which areas do you serve?', 'We serve McLean, Great Falls, Vienna and Reston in Virginia, and Potomac, Cabin John and Bethesda in Maryland. Other DMV inquiries are welcome; share your address so we can confirm availability.']];
 const steps=page.key==='maintenance'?['Assessment','Agreed scope','Service work','Testing & walkthrough']:['Consultation','Evening demo','Installation','Final aiming & walkthrough'];
-const schema={'@context':'https://schema.org','@graph':[{'@type':'Service',name:page.name,serviceType:page.name,url,description,provider:{'@type':'Organization',name:'Glow Artisans',url:base,telephone:'+1-571-741-2444'},areaServed:area.map(name=>({'@type':'Place',name}))},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:base+'/'},{'@type':'ListItem',position:2,name:page.name,item:url}]},{'@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))}]};
+const schema={'@context':'https://schema.org','@graph':[organizationNode(),{'@type':'Service',name:page.name,serviceType:page.name,url,description,provider:{'@id':base+'/#organization'},areaServed:area.map(name=>({'@type':'Place',name}))},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:base+'/'},{'@type':'ListItem',position:2,name:page.name,item:url}]},{'@type':'FAQPage',mainEntity:faqs.map(([name,text])=>({'@type':'Question',name,acceptedAnswer:{'@type':'Answer',text}}))}]};
 const cta='<a class="ls-button" href="/contact/landscape-lighting">Schedule Your Consultation <span aria-hidden="true">↗</span></a>';
 return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#0c0c0c" />

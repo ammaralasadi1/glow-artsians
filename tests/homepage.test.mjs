@@ -17,6 +17,6 @@ test('homepage has concise service-first flow and truthful structured data', asy
  for(const phrase of ['GlowCare','Sterling Family','123 Artisan Way','Lifetime Manufacturer Warranty','Estate..','Qulaity']) assert.ok(!html.includes(phrase), phrase);
  const schema=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
  assert.equal(schema['@graph'].find(s=>s['@type']==='FAQPage').mainEntity.length,6);
- assert.ok(!schema['@graph'][0].address);
+ assert.ok(!schema['@graph'][0].address.streetAddress);
  assert.equal((main.match(/Schedule Your Consultation/g)||[]).length,4);
 });
