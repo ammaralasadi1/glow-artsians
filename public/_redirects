@@ -23,7 +23,6 @@
 /holiday-cabin-john.html /holiday/cabin-john-md 301!
 /holiday-bethesda.html /holiday/bethesda-md 301!
 /our-story.html       /our-story        301!
-/great-falls.html     /great-falls      301!
 /privacy-policy.html  /privacy-policy   301!
 /thank-you.html       /thank-you        301!
 
@@ -44,7 +43,6 @@
 /holiday/cabin-john-md /holiday-cabin-john.html 200
 /holiday/bethesda-md /holiday-bethesda.html 200
 /our-story            /our-story.html       200
-/great-falls          /great-falls.html      200
 /privacy-policy       /privacy-policy.html  200
 /thank-you            /thank-you.html       200
 /landscape-installation.html /services/landscape-lighting-installation 301!

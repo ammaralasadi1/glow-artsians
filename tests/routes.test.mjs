@@ -22,7 +22,6 @@ const pages = [
   ...holidayCities.map(city => [city.route, `${city.page}.html`]),
   ...holidayServices.map(service => [service.route, `${service.page}.html`]),
   ['/our-story', 'our-story.html'],
-  ['/great-falls', 'great-falls.html'],
   ['/privacy-policy', 'privacy-policy.html'],
   ['/thank-you', 'thank-you.html'],
 ];

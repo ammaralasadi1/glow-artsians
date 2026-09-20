@@ -19,11 +19,6 @@
     "output": "contact.html"
   },
   {
-    "name": "great-falls",
-    "source": "great-falls.html",
-    "output": "great-falls.html"
-  },
-  {
     "name": "holiday-contact",
     "source": "contact/holiday-lighting.html",
     "output": "holiday-contact.html"
