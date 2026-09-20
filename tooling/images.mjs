@@ -13,7 +13,7 @@ const exists = file => fs.access(file).then(() => true, () => false);
 export async function prepareImages() {
   const cache = path.join(paths.imageCache, 'responsive');
   await fs.mkdir(cache, {recursive: true});
-  const sources = new Set(['/assets/images/portfolio-roof-line.webp']);
+  const sources = new Set(['/assets/images/christmas-roofline-lighting-portfolio.webp']);
   for (const name of ['holiday-gallery', 'holiday-imagery']) {
     for (const item of await readContent(name)) sources.add(item.source);
   }
@@ -30,8 +30,11 @@ export async function prepareImages() {
     const widths = [...new Set([160, 320, 480, 768, 1200, Math.min(metadata.width, 1920)].filter(w => w <= metadata.width))].sort((a, b) => a - b);
     const variants = [];
     for (const width of widths) {
-      const filename = `${id}-${width}.webp`;
+      const description = path.basename(source, path.extname(source)).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      const filename = `${description}-${id}-${width}.webp`;
       const file = path.join(cache, filename);
+      const previous = path.join(cache, `${id}-${width}.webp`);
+      if (!await exists(file) && await exists(previous)) await fs.copyFile(previous, file);
       if (!await exists(file)) await sharp(input).resize({width, withoutEnlargement: true}).webp({quality: 82, effort: 6}).toFile(file);
       variants.push({width, src: `/assets/images/responsive/${filename}`, bytes: (await fs.stat(file)).size});
     }

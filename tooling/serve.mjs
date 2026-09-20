@@ -6,6 +6,7 @@ import {fileURLToPath} from 'node:url';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const types = {
+  '.xml':'application/xml; charset=utf-8',
   '.html':'text/html; charset=utf-8', '.css':'text/css; charset=utf-8',
   '.js':'text/javascript; charset=utf-8', '.json':'application/json',
   '.webp':'image/webp', '.png':'image/png', '.jpg':'image/jpeg',
@@ -43,7 +44,7 @@ export function createPreviewServer() {
       }
       if (route === '/') route = '/index.html';
       // Preview public pages/assets only, never the repository or dependencies.
-      if (!/^\/[a-z-]+\.html$/.test(route) && !route.startsWith('/assets/')) return fail(404,'Not found');
+      if (!/^\/[a-z-]+\.html$/.test(route) && !route.startsWith('/assets/') && !['/robots.txt', '/sitemap.xml'].includes(route)) return fail(404,'Not found');
       if (route.split('/').some(part => part.startsWith('.'))) return fail(404,'Not found');
       const file = await fs.realpath(path.join(root,route));
       const realRoot = await fs.realpath(root);

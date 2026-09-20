@@ -1,4 +1,22 @@
 // The native details menu works without JavaScript. Enhance dismissal and focus.
+// Intent events are not confirmed submissions. Never include form values or URL parameters.
+document.addEventListener('click', event => {
+  const link = event.target.closest?.('a[href]');
+  if (!link) return;
+  const url = new URL(link.href, location.href);
+  let action;
+  let service = 'unspecified';
+  if (url.protocol === 'tel:') action = 'phone_click';
+  else if (url.protocol === 'mailto:') action = 'email_click';
+  else if (url.origin === location.origin && /^\/contact\/(landscape-lighting|holiday-lighting)\/?$/.test(url.pathname)) {
+    action = 'consultation_click';
+    service = url.pathname.includes('holiday') ? 'holiday' : 'landscape';
+  }
+  if (!action) return;
+  const placement = link.closest('.site-header') ? 'header' : link.closest('.site-footer') ? 'footer' : 'content';
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event: 'inquiry_intent', inquiry_action: action, inquiry_service: service, inquiry_placement: placement});
+});
 const menu = document.querySelector('.site-menu');
 if (menu) {
   const trigger = menu.querySelector('summary');

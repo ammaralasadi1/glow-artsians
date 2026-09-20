@@ -1,5 +1,9 @@
 /* Shared, static site navigation. No animation or runtime layout framework. */
 html { scroll-padding-top: 96px; }
+.site-skip { position: fixed; top: 8px; left: 8px; z-index: 2000; transform: translateY(-200%); background: #d4af37; color: #111; padding: 14px 20px; }
+.site-skip:focus { transform: none; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #d4af37; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
 section[id], [id="landscape-consultation"] { scroll-margin-top: 96px; }
 .site-header {
   position: fixed; inset: 0 0 auto; z-index: 1100; width: 100%;

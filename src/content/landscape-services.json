@@ -1,7 +1,12 @@
 [
   {
     "key": "architectural",
-    "introImage": {"src": "/assets/images/architectural-welcoming-entrance.png", "width": 1232, "height": 928, "alt": "Brick home with a warmly illuminated columned entrance and mature tree at blue hour"},
+    "introImage": {
+      "src": "/assets/images/architectural-lighting-columned-brick-entrance.png",
+      "width": 1232,
+      "height": 928,
+      "alt": "Brick home with a warmly illuminated columned entrance and mature tree at blue hour"
+    },
     "slug": "architectural-facade-lighting",
     "name": "Architectural & Façade Lighting",
     "headline": "Let your home’s character shine.",
@@ -58,7 +63,8 @@
         "Pricing is agreed individually after reviewing your property, priorities and installation scope. We discuss your budget before work begins."
       ]
     ],
-    "alt": "Brick residence with selectively illuminated facade and mature trees at blue hour"
+    "alt": "Brick residence with selectively illuminated facade and mature trees at blue hour",
+    "image": "/assets/images/architectural-facade-lighting-home-exterior.png"
   },
   {
     "key": "tree-garden",
@@ -118,7 +124,8 @@
         "Each project is priced individually based on the garden, selected focal points and agreed installation. Your consultation is the place to discuss priorities and budget."
       ]
     ],
-    "alt": "Mature garden with softly illuminated branches and layered planting at twilight"
+    "alt": "Mature garden with softly illuminated branches and layered planting at twilight",
+    "image": "/assets/images/tree-garden-lighting-mature-landscape.png"
   },
   {
     "key": "outdoor-living",
@@ -178,7 +185,8 @@
         "Pricing is individual to the areas, equipment and installation involved. We discuss priorities and budget during the consultation before agreeing the scope."
       ]
     ],
-    "alt": "Quiet terrace, garden path and poolside landscape with subtle warm evening lighting"
+    "alt": "Quiet terrace, garden path and poolside landscape with subtle warm evening lighting",
+    "image": "/assets/images/pathway-outdoor-living-lighting-terrace.png"
   },
   {
     "key": "maintenance",
@@ -246,6 +254,7 @@
         "Pricing follows an assessment of the system and the work you want to undertake. We agree the scope and pricing before work begins, without a fixed package assumption."
       ]
     ],
-    "alt": "Established home and mature garden with balanced warm lighting and deep natural shadows"
+    "alt": "Established home and mature garden with balanced warm lighting and deep natural shadows",
+    "image": "/assets/images/landscape-lighting-maintenance-home-garden.png"
   }
 ]

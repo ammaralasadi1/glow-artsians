@@ -1,7 +1,7 @@
 [
   {
     "page": "holiday-roofline-lighting",
-    "image": "/assets/images/holiday-inspiration-roofline-v2.png",
+    "image": "/assets/images/christmas-roofline-lighting-home-exterior.png",
     "imageAlt": "painted brick home with restrained warm white lights tracing its gabled rooflines at dusk",
     "route": "/holiday/services/roofline-christmas-lighting",
     "name": "Roofline Christmas Lighting",
@@ -30,7 +30,7 @@
   },
   {
     "page": "holiday-tree-shrub-lighting",
-    "image": "/assets/images/holiday-inspiration-trees-v2.png",
+    "image": "/assets/images/christmas-tree-shrub-lighting-garden.png",
     "imageAlt": "mature tree and shrubs wrapped in small warm white lights beside a brick home",
     "route": "/holiday/services/tree-shrub-christmas-lighting",
     "name": "Tree & Shrub Christmas Lighting",
@@ -59,7 +59,7 @@
   },
   {
     "page": "holiday-wreaths-garlands",
-    "image": "/assets/images/holiday-inspiration-wreaths-v2.png",
+    "image": "/assets/images/outdoor-christmas-wreaths-garlands-porch.png",
     "imageAlt": "Georgian brick entrance with an evergreen wreath, burgundy ribbon and softly lit garland",
     "route": "/holiday/services/outdoor-wreaths-garlands",
     "name": "Outdoor Wreaths & Garlands",
@@ -88,7 +88,7 @@
   },
   {
     "page": "holiday-complete-home",
-    "image": "/assets/images/holiday-inspiration-complete-home-v2.png",
+    "image": "/assets/images/complete-home-outdoor-christmas-lighting.png",
     "imageAlt": "traditional brick home with coordinated roofline lighting, a lit garden tree and entrance greenery",
     "route": "/holiday/services/complete-home-holiday-decorating",
     "name": "Complete-Home Exterior Holiday Decorating",

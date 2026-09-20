@@ -23,6 +23,8 @@ pages.push(...await renderCityPages(cities));
 for (const page of pages) await fs.writeFile(outputPath(page.output), page.html);
 const compileAssets = await createAssetCompiler();
 const renderLayout = await createLayoutRenderer();
+const indexableUrls = new Set();
+const pageImages = new Map();
 for (const page of pages) {
   const context = {...page, isCity: cities.some(city => city.page === page.name), isService: services.some(service => service.page === page.name)};
   let html = page.html;
@@ -31,6 +33,15 @@ for (const page of pages) {
   html = renderLayout(html, context);
   html = renderResponsiveImages(html, manifest);
   html = await compileAssets(html, context);
+  if (!/<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex/i.test(html)) {
+    const canonical = html.match(/<link\b[^>]*rel="canonical"[^>]*href="([^"]+)"/)?.[1];
+    if (!canonical?.startsWith('https://glowartisans.com/')) throw new Error(`${page.name}: missing production canonical`);
+    indexableUrls.add(canonical);
+    pageImages.set(canonical, [...new Set([...html.matchAll(/<img\b[^>]*\ssrc="([^"]+)"/g)].map(match => new URL(match[1].replaceAll('&amp;', '&'), canonical).href))]);
+  }
   await fs.writeFile(outputPath(page.output), html.replace(/[\t ]+$/gm, ''));
 }
+const escapeXml = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+await fs.writeFile(outputPath('sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${[...indexableUrls].sort().map(url => `  <url><loc>${escapeXml(url)}</loc>${(pageImages.get(url) || []).map(image => `<image:image><image:loc>${escapeXml(image)}</image:loc></image:image>`).join('')}</url>`).join('\n')}\n</urlset>\n`);
+await fs.writeFile(outputPath('robots.txt'), 'User-agent: *\nAllow: /\n\nSitemap: https://glowartisans.com/sitemap.xml\n');
 console.log(`Built ${pages.length} pages into dist. Source files were not modified.`);

@@ -3,7 +3,7 @@ const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&l
 const base='https://glowartisans.com', route=`/services/${page.slug}`, url=base+route;
 const title=`${page.name} | McLean & DMV | Glow Artisans`;
 const description=`${page.name} for homes and commercial properties in McLean, Great Falls, Vienna, Reston, Potomac, Cabin John and Bethesda. Schedule your consultation.`;
-const image=`/assets/images/landscape-${page.key}.png`;
+const image=page.image;
 const area=['McLean, Virginia','Great Falls, Virginia','Vienna, Virginia','Reston, Virginia','Potomac, Maryland','Cabin John, Maryland','Bethesda, Maryland'];
 const faqs=[...page.faqs,['Which areas do you serve?', 'We serve McLean, Great Falls, Vienna and Reston in Virginia, and Potomac, Cabin John and Bethesda in Maryland. Other DMV inquiries are welcome; share your address so we can confirm availability.']];
 const steps=page.key==='maintenance'?['Assessment','Agreed scope','Service work','Testing & walkthrough']:['Consultation','Evening demo','Installation','Final aiming & walkthrough'];

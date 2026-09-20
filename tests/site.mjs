@@ -39,8 +39,8 @@ assert.equal((holiday.match(/<details>/g)||[]).length,6,'Holiday hub FAQs remain
 JSON.parse(holiday.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
 for (const place of ['McLean','Great Falls','Vienna','Oakton','Potomac','Cabin John','Bethesda']) assert(holiday.includes(place),`Holiday service area: ${place}`);
 const home=await fs.readFile('index.html','utf8');
-assert(home.includes('data-original-src="/assets/images/landscape-slider-before-blue-hour.png"'),'Landscape slider has unlit base');
-assert(/id="slider-inner-img"[\s\S]*?data-original-src="\/assets\/images\/landscape-slider-after-blue-hour.png"/.test(home),'Landscape slider reveals illuminated overlay');
+assert(home.includes('data-original-src="/assets/images/home-garden-before-landscape-lighting.png"'),'Landscape slider has unlit base');
+assert(/id="slider-inner-img"[\s\S]*?data-original-src="\/assets\/images\/home-garden-after-landscape-lighting.png"/.test(home),'Landscape slider reveals illuminated overlay');
 assert(home.indexOf('id="slider-root"')<home.indexOf('id="holiday-introduction"'),'Landscape demonstration precedes holiday feature');
 assert(home.indexOf('id="services"')<home.indexOf('id="holiday-introduction"'),'Landscape services precede the permanent holiday feature');
 assert(!/Seasonal Exclusive|Spring 2026|Slot Remains/.test(home),'Homepage promotion should remain evergreen');
