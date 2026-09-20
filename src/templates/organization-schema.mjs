@@ -10,6 +10,7 @@ export function organizationNode(extra = {}) {
     telephone: '+1-571-741-2444',
     priceRange: '$$$',
     address: {'@type': 'PostalAddress', addressLocality: 'Tysons Corner', addressRegion: 'VA', addressCountry: 'US'},
+    geo: {'@type': 'GeoCoordinates', latitude: 38.9187, longitude: -77.2311},
     openingHoursSpecification: {'@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59'},
     sameAs: [
       'https://www.instagram.com/glowartsianslighting/',
