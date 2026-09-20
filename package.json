@@ -1,6 +1,9 @@
 {
   "name": "glow-artisans-site",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "node tooling/build.mjs && node tooling/dev.mjs",
     "preview": "node tooling/serve.mjs",
