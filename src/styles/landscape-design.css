@@ -1,0 +1,81 @@
+/* Reusable layout for landscape service pages. */
+.site-page-landscape-service { margin: 0; background: #0c0c0c; color: #fff; font-family: "Lato", sans-serif; -webkit-font-smoothing: antialiased; }
+.site-page-landscape-service * { box-sizing: border-box; }
+.ls-width { width: min(1200px, calc(100% - 64px)); margin-inline: auto; }
+.ls-section { padding-block: clamp(64px, 7vw, 104px); }
+.ls-hero { position: relative; margin-top: 80px; min-height: min(700px, calc(100svh - 80px)); display: flex; align-items: end; isolation: isolate; }
+.ls-hero-content { position: relative; z-index: 2; width: min(1200px, calc(100% - 64px)); margin-inline: auto; padding-block: 64px; }
+.ls-hero::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(0,0,0,.78), rgba(0,0,0,.34) 43%, transparent 75%); pointer-events: none; }
+.ls-hero .ls-hero-photo { position: absolute; inset: 0; z-index: 0; }
+.ls-hero .ls-hero-photo img { height: 100%; width: 100%; object-fit: cover; }
+.ls-hero .ls-lead { max-width: 36ch; color: #fff; }
+.ls-hero-follow { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 20px; }
+.ls-hero-follow .ls-location { margin: 0; }
+.ls-breadcrumb { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 56px; font-size: 13px; color: #c4c4c4; }
+.ls-breadcrumb a { text-decoration: underline; text-underline-offset: 4px; }
+.ls-eyebrow { color: #d4af37; text-transform: uppercase; letter-spacing: .16em; font-size: 12px; line-height: 1.6; font-weight: 700; margin: 0 0 18px; }
+.site-page-landscape-service h1, .site-page-landscape-service h2, .site-page-landscape-service h3 { font-family: "Playfair Display", serif; font-weight: 400; text-wrap: balance; }
+.ls-hero h1 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.12; letter-spacing: -.03em; max-width: 1000px; margin: 0; }
+.ls-hero h1 em { color: #d4af37; }
+.site-page-landscape-service h2 { font-size: clamp(30px, 3.5vw, 46px); line-height: 1.18; letter-spacing: -.025em; margin: 0 0 24px; }
+.site-page-landscape-service h3 { font-size: 24px; line-height: 1.35; margin: 16px 0; }
+.site-page-landscape-service p:not(.ls-eyebrow):not(.ls-location):not(.ls-number) { font-size: 17px; line-height: 1.8; text-wrap: pretty; }
+.ls-lead { max-width: 66ch; margin: 28px 0; color: #d5d5d5; }
+.ls-actions, .ls-image-action { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 28px; margin-top: 28px; }
+.ls-button { display: inline-flex; align-items: center; justify-content: center; gap: 20px; min-height: 54px; padding: 16px 24px; background: #d4af37; color: #0c0c0c; font-size: 15px; font-weight: 700; text-align: center; line-height: 1.5; }
+.ls-button:hover { background: #e8ca69; }
+.ls-text-link { display: inline-flex; align-items: center; min-height: 44px; color: #d4af37; text-decoration: underline; text-underline-offset: 6px; line-height: 1.7; font-weight: 700; }
+.ls-location { color: #c4c4c4; font-size: 13px; line-height: 1.8; margin: 28px 0 36px; }
+.ls-photo { margin: 0; }
+.ls-intro-photo { grid-column: 1 / -1; }
+.ls-photo.ls-intro-photo img { aspect-ratio: auto; height: auto; }
+.ls-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.ls-hero-photo img { aspect-ratio: 16 / 9; }
+.ls-two, .ls-intro, .ls-section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.ls-intro p, .ls-two p { margin: 0 0 20px; }
+.ls-section-heading { align-items: end; margin-bottom: 32px; }
+.ls-section-heading p:not(.ls-eyebrow) { max-width: 38ch; color: #d5d5d5; }
+.ls-light { background: #fff; color: #0c0c0c; }
+.ls-light .ls-eyebrow, .ls-light .ls-text-link { color: #75601e; }
+.ls-three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 44px; }
+.ls-three article, .ls-options article { border-top: 1px solid #0c0c0c30; padding-top: 24px; }
+.ls-number { display: block; color: #d4af37; font-size: 13px; line-height: 1.5; letter-spacing: .08em; }
+.ls-light .ls-number { color: #75601e; }
+.ls-options { margin-top: 40px; }
+.ls-process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; list-style: none; padding: 0; margin: 44px 0 28px; }
+.ls-process li { border-top: 1px solid #d4af3750; padding-top: 24px; }
+.ls-process p { color: #d5d5d5; }
+.site-page-landscape-service .ls-note { font-size: 14px !important; line-height: 1.7; color: #c4c4c4; }
+.ls-investment { background: #101315; border-block: 1px solid #ffffff18; }
+.ls-pricing strong { display: block; font: 400 36px/1.3 "Playfair Display", serif; color: #d4af37; margin-bottom: 12px; }
+.ls-pricing > p + p { padding-top: 24px; border-top: 1px solid #ffffff25; }
+.ls-faq { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; }
+.ls-faq details { border-bottom: 1px solid #0c0c0c30; }
+.ls-faq summary { cursor: pointer; padding: 22px 0; font-size: 18px; line-height: 1.5; font-weight: 700; }
+.ls-faq details p { margin: 0 0 24px; }
+.ls-final { text-align: center; }
+.ls-final > p:not(.ls-eyebrow) { max-width: 60ch; margin-inline: auto; color: #d5d5d5; }
+.ls-final .ls-actions { justify-content: center; }
+.ls-related { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px 32px; }
+.site-page-landscape-service :is(a,summary):focus-visible { outline: 2px solid #d4af37; outline-offset: 5px; }
+.ls-skip { position: fixed; top: 8px; left: 8px; transform: translateY(-200%); z-index: 1200; background: #d4af37; color: #0c0c0c; padding: 14px 20px; }
+.ls-skip:focus { transform: none; }
+@media(max-width: 959px) { .ls-process { grid-template-columns: 1fr 1fr; } .ls-three { gap: 24px; } .ls-two, .ls-intro, .ls-section-heading, .ls-faq { gap: 32px; } }
+@media(max-width: 699px) {
+  .ls-width { width: calc(100% - 40px); }
+  .ls-hero { margin-top: 72px; min-height: 0; display: flex; flex-direction: column; align-items: stretch; }
+  .ls-hero-content { width: calc(100% - 40px); padding-block: 28px; }
+  .ls-hero::after { display: none; }
+  .ls-hero .ls-hero-photo { position: relative; }
+  .ls-hero .ls-hero-photo img { height: auto; aspect-ratio: 4 / 3; }
+  .ls-hero .ls-lead { margin: 16px 0; }
+  .ls-hero .ls-actions { margin-top: 18px; }
+  .ls-hero-follow { align-items: start; flex-direction: column; gap: 8px; }
+  .ls-breadcrumb { margin-bottom: 36px; font-size: 12px; }
+  .ls-two, .ls-intro, .ls-section-heading, .ls-three, .ls-process, .ls-faq { grid-template-columns: 1fr; gap: 24px; }
+  .ls-actions, .ls-image-action { gap: 12px; }
+  .ls-button { width: 100%; }
+  .ls-hero-photo img { aspect-ratio: 4 / 3; }
+  .ls-location { margin-bottom: 28px; }
+  .ls-section-heading { align-items: start; }
+}

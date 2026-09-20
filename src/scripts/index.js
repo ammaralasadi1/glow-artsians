@@ -1,196 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-        // Robust Slider Logic with Interaction Overlay
-        const sliderRoot = document.getElementById("slider-root");
-        const sliderOverlay = document.getElementById("slider-overlay");
-        const sliderInnerImg = document.getElementById("slider-inner-img");
-        const sliderHandle = document.getElementById("slider-handle");
-        const sliderCTA = document.getElementById("slider-cta");
-
-        if (sliderRoot) {
-          let isDragging = false;
-          let hasInteracted = false;
-
-          const syncImageWidth = () => {
-            if (sliderInnerImg && sliderRoot) {
-              sliderInnerImg.style.width = `${sliderRoot.offsetWidth}px`;
-            }
-          };
-
-          window.addEventListener("resize", syncImageWidth);
-          syncImageWidth();
-
-          const revealSuccessCTA = () => {
-            if (!hasInteracted) {
-              hasInteracted = true;
-              if (sliderCTA) sliderCTA.style.opacity = "0";
-            }
-          };
-
-          const updateSlider = (clientX) => {
-            const rect = sliderRoot.getBoundingClientRect();
-            const x = clientX - rect.left;
-            let percent = (x / rect.width) * 100;
-            if (percent < 0) percent = 0;
-            if (percent > 100) percent = 100;
-
-            sliderOverlay.style.width = percent + "%";
-            sliderHandle.style.left = percent + "%";
-          };
-
-          const startDrag = (e) => {
-            isDragging = true;
-            revealSuccessCTA();
-            updateSlider(e.clientX || e.touches[0].clientX);
-          };
-
-          const stopDrag = () => {
-            isDragging = false;
-          };
-
-          const moveDrag = (e) => {
-            if (!isDragging) return;
-            updateSlider(e.clientX || e.touches[0].clientX);
-          };
-
-          sliderRoot.addEventListener("mousedown", startDrag);
-          window.addEventListener("mouseup", stopDrag);
-          window.addEventListener("mousemove", moveDrag);
-
-          sliderRoot.addEventListener("touchstart", startDrag, {
-            passive: true,
-          });
-          window.addEventListener("touchend", stopDrag);
-          window.addEventListener("touchmove", moveDrag, { passive: true });
-        }
-
-        // Territory Interaction
-        const selectors = document.querySelectorAll(".ledger-item");
-        selectors.forEach((item) => {
-          const activateItem = () => {
-            const target = item.getAttribute("data-target");
-            selectors.forEach((s) => s.classList.remove("active"));
-
-            // Reset Map Nodes
-            document.querySelectorAll(".map-node").forEach((el) => {
-              el.classList.remove("opacity-100");
-              el.classList.add("opacity-50");
-            });
-
-            // Reset Data Cards
-            document.querySelectorAll(".data-card").forEach((card) => {
-              card.classList.remove("opacity-100", "translate-y-0");
-              card.classList.add("opacity-0", "translate-y-4");
-            });
-
-            // Activate Selection
-            item.classList.add("active");
-
-            // Activate Specific Node
-            const node = document.getElementById(`node-${target}`);
-            if (node) {
-              node.classList.remove("opacity-50");
-              node.classList.add("opacity-100");
-            }
-
-            // Activate Specific Data Card
-            const card = document.getElementById(`data-${target}`);
-            if (card) {
-              card.classList.remove("opacity-0", "translate-y-4");
-              card.classList.add("opacity-100", "translate-y-0");
-            }
-          };
-
-          item.addEventListener("mouseenter", activateItem);
-          item.addEventListener("click", activateItem);
-        });
-
-        // --- PHASE TOGGLE LOGIC ---
-        const phaseTabs = document.querySelectorAll(".phase-tab");
-        const phaseContents = document.querySelectorAll(".phase-content");
-
-        if (phaseTabs.length > 0) {
-          phaseTabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-              const targetId = tab.getAttribute("data-target");
-
-              // Reset Tabs
-              phaseTabs.forEach((t) => {
-                t.classList.remove("active", "bg-white/10");
-                t.querySelector(".text-gold").classList.remove("scale-110"); // Reset scale if using that class
-              });
-
-              // Activate Clicked Tab
-              tab.classList.add("active", "bg-white/10");
-
-              // Reset Content
-              phaseContents.forEach((content) => {
-                content.classList.remove("opacity-100", "z-10");
-                content.classList.add(
-                  "opacity-0",
-                  "pointer-events-none",
-                  "z-0"
-                );
-              });
-
-              // Activate Target Content
-              const targetContent = document.getElementById(targetId);
-              if (targetContent) {
-                targetContent.classList.remove(
-                  "opacity-0",
-                  "pointer-events-none",
-                  "z-0"
-                );
-                targetContent.classList.add("opacity-100", "z-10");
-              }
-            });
-          });
-        }
-
-        // --- FAQ COLLAPSIBLE LOGIC ---
-        const faqItems = document.querySelectorAll(".faq-item");
-        if (faqItems.length > 0) {
-          faqItems.forEach((item, index) => {
-            const button = item.querySelector("button");
-            const answer = item.querySelector(".faq-answer");
-            const icon = item.querySelector(".icon-plus");
-            const title = item.querySelector("h3");
-            answer.id = `homepage-faq-answer-${index + 1}`;
-            button.setAttribute("aria-controls", answer.id);
-            button.setAttribute("aria-expanded", "false");
-
-            button.addEventListener("click", () => {
-              const isOpen = answer.classList.contains("grid-rows-[1fr]");
-
-              // Close all other items (Accordion behavior)
-              faqItems.forEach((otherItem) => {
-                if (otherItem !== item) {
-                  const otherAnswer = otherItem.querySelector(".faq-answer");
-                  const otherIcon = otherItem.querySelector(".icon-plus");
-                  const otherTitle = otherItem.querySelector("h3");
-                  otherItem.querySelector("button").setAttribute("aria-expanded", "false");
-
-                  otherAnswer.classList.remove("grid-rows-[1fr]");
-                  otherAnswer.classList.add("grid-rows-[0fr]");
-                  if (otherIcon) otherIcon.style.transform = "rotate(0deg)";
-                  if (otherTitle) otherTitle.classList.remove("text-gold");
-                }
-              });
-
-              // Toggle current item
-              button.setAttribute("aria-expanded", String(!isOpen));
-              if (!isOpen) {
-                answer.classList.remove("grid-rows-[0fr]");
-                answer.classList.add("grid-rows-[1fr]");
-                if (icon) icon.style.transform = "rotate(45deg)";
-                if (title) title.classList.add("text-gold");
-              } else {
-                answer.classList.remove("grid-rows-[1fr]");
-                answer.classList.add("grid-rows-[0fr]");
-                if (icon) icon.style.transform = "rotate(0deg)";
-                if (title) title.classList.remove("text-gold");
-              }
-            });
-          });
-        }
-      });
+  const root = document.getElementById("slider-root");
+  if (!root) return;
+  const overlay = document.getElementById("slider-overlay");
+  const image = document.getElementById("slider-inner-img");
+  const handle = document.getElementById("slider-handle");
+  const hint = document.getElementById("slider-cta");
+  let value = 50;
+  let dragging = false;
+  root.setAttribute("role", "slider");
+  root.setAttribute("tabindex", "0");
+  root.setAttribute("aria-label", "Reveal landscape lighting");
+  root.setAttribute("aria-valuemin", "0");
+  root.setAttribute("aria-valuemax", "100");
+  const update = next => {
+    value = Math.max(0, Math.min(100, next));
+    overlay.style.width = value + "%";
+    handle.style.left = value + "%";
+    root.setAttribute("aria-valuenow", String(Math.round(value)));
+    root.setAttribute("aria-valuetext", Math.round(value) + "% illuminated");
+  };
+  const sync = () => { image.style.width = root.offsetWidth + "px"; };
+  sync(); update(value);
+  window.addEventListener("resize", sync);
+  const move = event => {
+    const bounds = root.getBoundingClientRect();
+    update((event.clientX - bounds.left) / bounds.width * 100);
+  };
+  root.style.touchAction = "pan-y";
+  root.addEventListener("pointerdown", event => {
+    if (event.button !== 0) return;
+    dragging = true;
+    root.setPointerCapture(event.pointerId);
+    hint.style.opacity = "0";
+    move(event);
+  });
+  root.addEventListener("pointermove", event => { if (dragging) move(event); });
+  root.addEventListener("pointerup", () => { dragging = false; });
+  root.addEventListener("pointercancel", () => { dragging = false; });
+  root.addEventListener("keydown", event => {
+    const keys = {ArrowRight: value + 5, ArrowUp: value + 5, ArrowLeft: value - 5, ArrowDown: value - 5, Home: 0, End: 100};
+    if (!(event.key in keys)) return;
+    event.preventDefault();
+    hint.style.opacity = "0";
+    update(keys[event.key]);
+  });
+});

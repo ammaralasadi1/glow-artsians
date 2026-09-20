@@ -42,7 +42,7 @@ const home=await fs.readFile('index.html','utf8');
 assert(home.includes('data-original-src="/assets/images/landscape-slider-before-blue-hour.png"'),'Landscape slider has unlit base');
 assert(/id="slider-inner-img"[\s\S]*?data-original-src="\/assets\/images\/landscape-slider-after-blue-hour.png"/.test(home),'Landscape slider reveals illuminated overlay');
 assert(home.indexOf('id="slider-root"')<home.indexOf('id="holiday-introduction"'),'Landscape demonstration precedes holiday feature');
-assert(home.indexOf('id="holiday-introduction"')<home.indexOf('id="services"'),'Holiday feature remains discoverable');
+assert(home.indexOf('id="services"')<home.indexOf('id="holiday-introduction"'),'Landscape services precede the permanent holiday feature');
 assert(!/Seasonal Exclusive|Spring 2026|Slot Remains/.test(home),'Homepage promotion should remain evergreen');
 const consultationPages = [
   {file:'contact.html',route:'/contact/landscape-lighting',formId:'lrHwC458HnS2mgYg2RGQ',height:927},

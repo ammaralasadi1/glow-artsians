@@ -1,0 +1,251 @@
+[
+  {
+    "key": "architectural",
+    "introImage": {"src": "/assets/images/architectural-welcoming-entrance.png", "width": 1232, "height": 928, "alt": "Brick home with a warmly illuminated columned entrance and mature tree at blue hour"},
+    "slug": "architectural-facade-lighting",
+    "name": "Architectural & Façade Lighting",
+    "headline": "Let your home’s character shine.",
+    "lead": "Thoughtful light reveals the architecture you love—without lighting every surface.",
+    "introTitle": "A welcoming entrance.<br>A more considered evening view.",
+    "intro": [
+      "The shape of a roofline, the rhythm of columns, the texture of brick: architectural lighting starts with what makes your home distinctive. We balance those features with the garden so the building feels part of the setting, not separate from it.",
+      "For a street-facing home in Vienna or a wooded property in Great Falls, we consider the approach, the views from inside, and how much darkness should remain. Your evening demo helps you judge the effect on your own architecture."
+    ],
+    "cards": [
+      [
+        "Entrances and arrival",
+        "Give the front door and approach a clear place in the composition, with an inviting sense of arrival."
+      ],
+      [
+        "Texture and proportion",
+        "Use selective accents to reveal masonry, columns and architectural depth rather than washing the entire facade in light."
+      ],
+      [
+        "The whole evening view",
+        "Balance the building with surrounding trees and planting, considering brightness and the views beyond your property."
+      ]
+    ],
+    "commercial": "We also design and install architectural lighting for commercial properties. Share your building, operating hours and priorities so we can discuss a suitable scope alongside access and the surrounding setting.",
+    "steps": [
+      "We review your architecture, evening views, priorities and budget, including any existing plan or equipment.",
+      "See the proposed balance of highlights and shadows on your facade at dusk before agreeing the installation direction.",
+      "We place the agreed lighting and route wiring with care around planting and hardscape; methods depend on your property.",
+      "At dusk, we adjust the aiming and review the facade, entrance and controls with you."
+    ],
+    "faqs": [
+      [
+        "What is architectural and facade lighting?",
+        "It is outdoor lighting arranged to reveal a building’s form, materials and entrance after dark. The aim is a balanced composition, not simply more brightness."
+      ],
+      [
+        "Can you light my facade without making it look too bright?",
+        "We use selective highlights and preserve shadows. The evening demo lets you discuss brightness and the features you want emphasized before installation."
+      ],
+      [
+        "Can facade lighting work with my garden lighting?",
+        "Yes. We consider the architecture and landscape together so the house, planting and approach feel connected. Existing lighting can be reviewed during the consultation."
+      ],
+      [
+        "Do you offer commercial architectural lighting?",
+        "Yes. We welcome commercial projects as well as residential work. Scope is agreed around the building, access, operating needs and setting."
+      ],
+      [
+        "Can you work from an outside design or use equipment I own?",
+        "Yes. We install outside designs and customer-supplied equipment. We review the plan, equipment condition and compatibility before agreeing what will be installed."
+      ],
+      [
+        "How is architectural lighting priced?",
+        "Pricing is agreed individually after reviewing your property, priorities and installation scope. We discuss your budget before work begins."
+      ]
+    ],
+    "alt": "Brick residence with selectively illuminated facade and mature trees at blue hour"
+  },
+  {
+    "key": "tree-garden",
+    "slug": "tree-garden-lighting",
+    "name": "Tree & Garden Lighting",
+    "headline": "A garden worth staying up for.",
+    "lead": "Discover the branches, textures and quiet depth that make your garden feel different after dark.",
+    "introTitle": "Your favorite trees.<br>A new evening perspective.",
+    "intro": [
+      "Tree and garden lighting creates layers: a sculptural branch in the foreground, planting gently revealed beyond it, and darkness that lets each focal point breathe. We begin with the garden you have, rather than treating every tree alike.",
+      "From mature canopy in McLean and Great Falls to intimate gardens in Potomac and Cabin John, we consider the views from your home and the places you enjoy outdoors. The right composition can feel calm and expansive without lighting the whole lawn."
+    ],
+    "cards": [
+      [
+        "Trees with character",
+        "Highlight selected trunks, branching patterns and canopy to give your garden depth and a natural focal point."
+      ],
+      [
+        "Moonlighting and downlighting",
+        "Where the tree and site are suitable, tree-mounted lighting can bring a gentle downward light effect to the garden below."
+      ],
+      [
+        "Planting in layers",
+        "Balance specimen planting and garden features with shadow so the scene feels composed rather than uniformly bright."
+      ]
+    ],
+    "commercial": "We also welcome tree and garden lighting for commercial landscapes. We discuss the setting, visitor routes and maintenance access while keeping the lighting balanced with its surroundings.",
+    "steps": [
+      "Walk us through favorite trees, garden views and the spaces you use. We discuss ground-based and tree-mounted options suited to the site.",
+      "Experience proposed focal points and brightness at dusk, including how the garden looks from indoors.",
+      "We install the agreed lighting with routing and placement adapted to planting, hardscape and suitable tree locations.",
+      "We refine the aiming after dark and walk through the garden views and controls with you."
+    ],
+    "faqs": [
+      [
+        "What is tree and garden lighting?",
+        "It uses selected light and shadow to reveal trees, planting and garden features after dark. A good composition considers the view from both outdoors and inside your home."
+      ],
+      [
+        "Do you offer tree-mounted moonlighting?",
+        "Yes. We offer tree-mounted downlighting and moonlighting as well as ground-based lighting. Suitability and placement are assessed for the individual tree and property."
+      ],
+      [
+        "Will every tree need to be illuminated?",
+        "No. We choose focal points with you and leave space for darkness. Lighting fewer elements thoughtfully can create a more balanced view."
+      ],
+      [
+        "Can garden lighting change as my plants grow?",
+        "Yes. We offer re-aiming, adjustment and relocation where appropriate as planting changes. Any maintenance or upgrade scope is agreed individually."
+      ],
+      [
+        "Can you light commercial gardens and landscaped grounds?",
+        "Yes. We serve residential and commercial properties. We review the landscape, use of the space and access before agreeing the work."
+      ],
+      [
+        "How much does tree and garden lighting cost?",
+        "Each project is priced individually based on the garden, selected focal points and agreed installation. Your consultation is the place to discuss priorities and budget."
+      ]
+    ],
+    "alt": "Mature garden with softly illuminated branches and layered planting at twilight"
+  },
+  {
+    "key": "outdoor-living",
+    "slug": "pathway-outdoor-living-lighting",
+    "name": "Pathway & Outdoor Living Lighting",
+    "headline": "Make room for the evening.",
+    "lead": "Welcoming paths, relaxed terraces and outdoor spaces that invite you to linger.",
+    "introTitle": "From your front walk<br>to your favorite seat.",
+    "intro": [
+      "Your outdoor lighting should follow the way you live. We connect the entrance, steps and garden paths with the patios, decks and seating areas you use after sunset, keeping the overall effect comfortable and coherent.",
+      "For a Reston deck, a Bethesda courtyard or a Potomac poolside landscape, we consider movement and atmosphere together. The goal is not a row of bright fixtures; it is an outdoor setting that feels easy to enjoy."
+    ],
+    "cards": [
+      [
+        "Walkways and transitions",
+        "Consider entrances, paths and steps as connected routes, with attention to changes in level and surrounding brightness."
+      ],
+      [
+        "Patios, decks and gathering spaces",
+        "Create a comfortable evening setting for conversation and meals. Café and string lighting can be included where it suits your plans."
+      ],
+      [
+        "Poolside landscapes",
+        "Bring the surrounding planting, seating and routes into the lighting composition. This service does not include underwater pool-light installation."
+      ]
+    ],
+    "commercial": "We also light commercial outdoor spaces, including entrances, walkways and gathering areas. Tell us how the space is used and when it operates so we can agree the right approach.",
+    "steps": [
+      "Tell us how you move through and spend time in the space. We review paths, steps, seating, existing equipment and your budget.",
+      "See how proposed lighting feels around your routes and gathering spaces, then discuss brightness and atmosphere.",
+      "We install the agreed system around existing planting and hardscape using methods appropriate to the site.",
+      "We fine-tune the aiming at dusk and review the routes, seating areas and controls with you."
+    ],
+    "faqs": [
+      [
+        "What areas can pathway and outdoor living lighting cover?",
+        "We can include walkways, entrances, steps, patios, decks, seating areas, and the landscapes surrounding pools. The scope is agreed around the spaces you use."
+      ],
+      [
+        "Do you install café or string lighting?",
+        "Yes. Decorative café and string lighting can be part of an outdoor living project. We discuss placement and how it fits the overall lighting composition."
+      ],
+      [
+        "Does pool-area lighting include underwater lights?",
+        "No. This service covers the surrounding landscape, routes and outdoor living areas, not underwater pool-light installation."
+      ],
+      [
+        "Can you light paths without a line of visible fixtures?",
+        "We consider discreet placement and lighting effects suited to the route and planting. The final approach depends on the property; the evening demo helps you evaluate the result."
+      ],
+      [
+        "Do you work on commercial patios and walkways?",
+        "Yes. We welcome commercial projects as well as homes, with scope agreed around the space, operating needs and installation conditions."
+      ],
+      [
+        "How is outdoor living lighting priced?",
+        "Pricing is individual to the areas, equipment and installation involved. We discuss priorities and budget during the consultation before agreeing the scope."
+      ]
+    ],
+    "alt": "Quiet terrace, garden path and poolside landscape with subtle warm evening lighting"
+  },
+  {
+    "key": "maintenance",
+    "slug": "landscape-lighting-maintenance-upgrades",
+    "name": "Landscape Lighting Maintenance & Upgrades",
+    "headline": "Bring the balance back.",
+    "lead": "Thoughtful care for the lighting you have—and a clear plan for what comes next.",
+    "introTitle": "Your garden evolves.<br>Your lighting can too.",
+    "intro": [
+      "A tree grows, a planting bed changes, or a once-balanced view no longer feels right. Maintenance starts with understanding what has changed and what you want your outdoor lighting to do now.",
+      "We service systems installed by Glow Artisans and by others. Whether your McLean home needs troubleshooting or your Bethesda garden is ready for a new direction, we assess the existing system before agreeing the work."
+    ],
+    "cards": [
+      [
+        "Care and adjustment",
+        "Cleaning, re-aiming as plants grow, timer and control adjustments, and replacing failed lamps or fixtures can form part of the agreed service."
+      ],
+      [
+        "Troubleshooting and repairs",
+        "We assess lighting issues, wiring and transformers to identify what needs attention. Repair recommendations follow the assessment."
+      ],
+      [
+        "A considered upgrade",
+        "Options include LED conversions, adding or relocating lights, replacement fixtures or transformers, updated timers or controls, and a complete redesign."
+      ]
+    ],
+    "commercial": "We also maintain and upgrade commercial landscape lighting, including systems installed by others. We discuss access, operating needs and the existing equipment before agreeing a service scope.",
+    "steps": [
+      "Tell us what is not working or what you would like to change. We assess the existing lighting, equipment and setting.",
+      "We explain the recommended work and agree scope and pricing individually. Visit arrangements are discussed for your project.",
+      "We carry out the agreed repairs, adjustments or upgrades, with care around your planting and hardscape.",
+      "We test the agreed work and walk you through the changes and controls, reviewing the lighting effect as appropriate."
+    ],
+    "faqs": [
+      [
+        "Do you maintain lighting installed by another company?",
+        "Yes. We work on our own installations and systems installed by others. We first assess the equipment and condition, then agree a suitable service scope."
+      ],
+      [
+        "What can landscape lighting maintenance include?",
+        "Services can include troubleshooting, repairs, cleaning, re-aiming, replacement lamps or fixtures, timer and control adjustments, and wiring or transformer assessment. The specific work is agreed individually."
+      ],
+      [
+        "Can you upgrade an existing system to LED?",
+        "Yes. LED conversions are among the upgrades we offer. We assess compatibility with the existing equipment before recommending the work."
+      ],
+      [
+        "Can you adjust lighting when trees and shrubs have grown?",
+        "Yes. Re-aiming and, where appropriate, adding or relocating lights can help adapt the composition to changing planting. We assess what suits your garden."
+      ],
+      [
+        "Do you offer recurring maintenance plans?",
+        "Maintenance arrangements are discussed individually. We do not assume a particular visit schedule or plan before reviewing your needs."
+      ],
+      [
+        "Can you redesign rather than just repair my lighting?",
+        "Yes. We can discuss a complete redesign as well as individual upgrades to fixtures, transformers, timers and controls. We help distinguish what can be retained from what you want to change."
+      ],
+      [
+        "Do you service commercial landscape lighting?",
+        "Yes. We welcome commercial maintenance and upgrade inquiries, including systems installed by others. Scope and access are agreed for each property."
+      ],
+      [
+        "How are maintenance and upgrades priced?",
+        "Pricing follows an assessment of the system and the work you want to undertake. We agree the scope and pricing before work begins, without a fixed package assumption."
+      ]
+    ],
+    "alt": "Established home and mature garden with balanced warm lighting and deep natural shadows"
+  }
+]

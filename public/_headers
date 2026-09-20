@@ -1,4 +1,7 @@
 # Supported by Netlify and Cloudflare Pages. Other hosts need equivalent rules.
+/services/*
+  Cache-Control: no-cache
+
 /holiday/services/*
   Cache-Control: no-cache
 

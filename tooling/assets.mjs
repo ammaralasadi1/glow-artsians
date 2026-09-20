@@ -31,7 +31,7 @@ export async function createAssetCompiler() {
   const styles = new Map();
   const scripts = new Map();
   return async function compilePage(html, {name, isCity, isService}) {
-    const styleName = isService ? 'holiday-service' : isCity ? 'holiday-city' : name;
+    const styleName = isService ? 'holiday-service' : isCity ? 'holiday-city' : name.startsWith('landscape-') ? 'landscape-design' : name;
     if (!styles.has(styleName)) {
       const base = ['contact', 'holiday-contact'].includes(name) ? 'consultation' : name === 'holiday' || isCity || isService ? 'holiday-shared' : null;
       const code = base ? Buffer.concat([await style(base), await style(styleName)]) : await style(styleName);

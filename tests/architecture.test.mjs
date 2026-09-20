@@ -11,7 +11,7 @@ test('page registries have unique output filenames and all sources exist', async
   const cities = await readContent('holiday-cities');
   const services = await readContent('holiday-services');
   const filenames = [...pages.map(p => p.output), ...cities.map(p => `${p.page}.html`), ...services.map(p => `${p.page}.html`)];
-  assert.equal(filenames.length, 20);
+  assert.equal(filenames.length, 26);
   assert.equal(new Set(filenames).size, filenames.length);
   for (const filename of filenames) await fs.access(path.join(paths.output, filename));
 });

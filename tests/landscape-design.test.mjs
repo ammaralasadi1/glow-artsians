@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {test} from 'node:test';
+import {outputPath} from '../tooling/paths.mjs';
+
+test('landscape design page preserves agreed scope, pricing, geography and conversion paths', async () => {
+  const html = await fs.readFile(outputPath('landscape-design.html'), 'utf8');
+  const main = html.match(/<main\b[\s\S]*?<\/main>/)[0];
+  assert.equal((main.match(/<h1\b/g) || []).length, 1);
+  assert.equal((main.match(/<details>/g) || []).length, 7);
+  assert.equal((main.match(/<img\b/g) || []).length, 2);
+  assert.ok(main.includes('fetchpriority="high"'));
+  assert.ok(main.includes('loading="lazy"'));
+  assert.ok(main.includes('Standalone design'));
+  assert.ok(main.includes('scope, deliverables and fees agreed individually'));
+  assert.ok(main.includes('$5,000') && main.includes('$15,000 to $50,000'));
+  assert.ok(main.includes('Standalone design fees are agreed separately.'));
+  const introduction = main.match(/<section class="ls-investment"[\s\S]*?<\/section>/)[0];
+  assert.ok(introduction.includes('Start with what<br>matters most to you.'));
+  assert.ok(!introduction.includes('$'));
+  assert.ok(introduction.includes('Scope and pricing are agreed individually before work begins.'));
+  for (const city of ['McLean', 'Great Falls', 'Vienna', 'Reston', 'Potomac', 'Cabin John', 'Bethesda']) assert.ok(main.includes(city));
+  for (const step of ['Consultation', 'Evening demo', 'Installation', 'Final aiming &amp; walkthrough']) assert.ok(main.includes(`<h3>${step}</h3>`));
+  assert.equal((main.match(/Schedule Your Evening Demo/g) || []).length, 4);
+  assert.ok(!main.includes('/contact/holiday-lighting'));
+  assert.ok(!/<iframe|<video/.test(main));
+  const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.ok(schema['@graph'].some(item => item['@type'] === 'Service'));
+  const faqs = schema['@graph'].find(item => item['@type'] === 'FAQPage').mainEntity;
+  assert.equal(faqs.length, 7);
+  for (const faq of faqs) assert.ok(main.includes(faq.name) && main.includes(faq.acceptedAnswer.text));
+  const home = await fs.readFile(outputPath('index.html'), 'utf8');
+  assert.ok(home.includes('class="landscape-design-card-link"'));
+  assert.ok(home.includes('href="/services/custom-landscape-lighting-design"'));
+});

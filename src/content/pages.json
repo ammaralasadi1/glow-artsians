@@ -1,4 +1,18 @@
 [
+  {"name":"landscape-architectural","landscapeKey":"architectural","output":"landscape-architectural.html"},
+  {"name":"landscape-tree-garden","landscapeKey":"tree-garden","output":"landscape-tree-garden.html"},
+  {"name":"landscape-outdoor-living","landscapeKey":"outdoor-living","output":"landscape-outdoor-living.html"},
+  {"name":"landscape-maintenance","landscapeKey":"maintenance","output":"landscape-maintenance.html"},
+  {
+    "name": "landscape-installation",
+    "source": "services/landscape-lighting-installation.html",
+    "output": "landscape-installation.html"
+  },
+  {
+    "name": "landscape-design",
+    "source": "services/custom-landscape-lighting-design.html",
+    "output": "landscape-design.html"
+  },
   {
     "name": "contact",
     "source": "contact/landscape-lighting.html",

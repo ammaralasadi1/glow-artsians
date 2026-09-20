@@ -9,7 +9,13 @@ const root = new URL('../dist/', import.meta.url);
 const holidayCities = await readContent('holiday-cities');
 const holidayServices = await readContent('holiday-services');
 const pages = [
+  ['/services/architectural-facade-lighting', 'landscape-architectural.html'],
+  ['/services/tree-garden-lighting', 'landscape-tree-garden.html'],
+  ['/services/pathway-outdoor-living-lighting', 'landscape-outdoor-living.html'],
+  ['/services/landscape-lighting-maintenance-upgrades', 'landscape-maintenance.html'],
+  ['/services/landscape-lighting-installation', 'landscape-installation.html'],
   ['/', 'index.html'],
+  ['/services/custom-landscape-lighting-design', 'landscape-design.html'],
   ['/contact/landscape-lighting', 'contact.html'],
   ['/contact/holiday-lighting', 'holiday-contact.html'],
   ['/holiday', 'holiday.html'],
